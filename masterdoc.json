@@ -3,6 +3,10 @@
   "Language": "English",
   "Files": [
     {
+      "RawFilePath": "https://raw.githubusercontent.com/Prajwal5180/Fabric-Copilot/refs/heads/main/Getting-Started.md",
+      "Order": 1
+    },
+    {
       "RawFilePath": "https://raw.githubusercontent.com/Prajwal5180/Fabric-Copilot/refs/heads/main/fabric-copilot.md",
       "Order": 1
     }
