@@ -85,15 +85,13 @@ In this lab, you will complete the following tasks:
 
 3. **Create a workspace** dialog opens on the right side of the browser.
 
-4. Type the name **<inject key= "WorkspaceName" enableCopy="true"/>**, **validate** the availability of the name, and click on **Advanced**.
+4. Type the name **Workspace<inject key="DeploymentID" enableCopy="false"/>**, **validate** the availability of the name, and click on **Advanced**.
 
     >**Note:** Only use the workspace name provided above.
 
-    >**NOTE:** If the name **<inject key= "WorkspaceName" enableCopy="false"/>** is already taken, refresh the page and check again. A workspace with that name may already be created. If so, add a different suffix until the name is available.
-
     ![works-apply.png](images1/media/workspace01.png)
 
-5. Ensure **Fabric capacity** is enabled, verify that **fabric...- North Central US** is selected under **Capacity**, and then click **Apply**.
+5. Ensure **Fabric capacity** is enabled, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/>** is selected under **Capacity**, and then click **Apply**.
 
     ![works-apply.png](images1/media/workspace02.png)
 
@@ -133,11 +131,11 @@ analysis and visualization.
 
     ![Power Query toolbar](images1/media/image6.jpeg)
 
-5. On the **Home** tab, select **Get data**. Select **More** and then select **New source**.
+5. On the **Home** tab, select **New query** >> **Get data** >> **More** and then select **New source**.
 
     ![Get data dropdown menu options displayed.](images1/media/image7.png)
 
-6. In the **Choose data source** field, enter odata to filter the possible data sources, and then select **OData.**
+6. In the **Choose data source** field, enter **OData** to filter the possible data sources, and then select **OData.**
 
     ![Choose data source options](images1/media/image8.jpeg)
 
@@ -145,14 +143,11 @@ analysis and visualization.
 
     ![Connect to data source options men](images1/media/image9.jpeg)
 
-8. In the **Choose Data** window, select the following seven tables, and then select **Create.**
-
-    **Customers**,**Employees**,**Order_Details**,**Orders**,**Products**,**Shippers**,**Suppliers**
+8. In the **Choose Data** window, select the following seven tables **Customers**,**Employees**,**Order_Details**,**Orders**,**Products**,**Shippers**,**Suppliers**, and then select **Create.** 
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image10.png)
 
-9. Load the data to the Lakehouse by selecting **Publish** or **Save & Run.** Check that the Lakehouse selected is the one you created in the last activity.
-
+9. Load the data to the Lakehouse by selecting **Publish**. Check that the Lakehouse selected is the one you created in the last activity.
 
 10. The query should look like the following example:
 
@@ -162,9 +157,9 @@ analysis and visualization.
 
 In this activity, you will ingest the dataset into the Lakehouse File section using Data Pipelines.
 
-1. In the **customers** table, scroll to the right and examine
-    the **Country** column. Notice that the countries
-    include **Argentina** and **Mexico**.
+1. You will be navigated to your workspace. Select **North Wind Data** dataflow that you have created.
+
+1. In the **Customers** table, scroll to the right and examine the **Country** column. Notice that the countries include **Argentina** and **Mexico**.
 
     ![Customers table](images1/media/image12.png)
 
@@ -176,10 +171,10 @@ In this activity, you will ingest the dataset into the Lakehouse File section us
 
     The desired Applied Step text is :
     ```
-    Table.SelectRows(#\"Navigation 1\", each List.Contains({\"Mexico\",
-    \"Brazil\", \"Argentina\", \"Chile\", \"Peru\", \"Colombia\",
-    \"Venezuela\", \"Ecuador\", \"Bolivia\", \"Paraguay\", \"Uruguay\",
-    \"Guyana\", \"Suriname\"}, \[Country\]))
+    Table.SelectRows(#"Navigation 1", each List.Contains({"Mexico",
+    "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", 
+    "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", 
+    "Suriname"}, [Country]))
     ```
 3. It selected Mexico only:
 
@@ -188,10 +183,10 @@ In this activity, you will ingest the dataset into the Lakehouse File section us
     You can undo the step by selecting **Undo**. Afterwards, type: Only keep South American customers. If this step returns Mexico only, then insert the following step in the **transformation** tab:
 
     ```
-    Table.SelectRows(#\"Navigation 1\", each List.Contains({\"Mexico\",
-    \"Brazil\", \"Argentina\", \"Chile\", \"Peru\", \"Colombia\",
-    \"Venezuela\", \"Ecuador\", \"Bolivia\", \"Paraguay\", \"Uruguay\",
-    \"Guyana\", \"Suriname\"}, \[Country\]))
+    Table.SelectRows(#"Navigation 1", each
+    List.Contains({"Mexico", "Brazil", "Argentina", "Chile",
+    "Peru", "Colombia", "Venezuela", "Ecuador", "Bolivia", 
+    "Paraguay", "Uruguay", "Guyana", "Suriname"}, [Country]))
     ```
     ![Customers table](images1/media/image15.jpeg)
 
@@ -218,8 +213,8 @@ In this activity, you will ingest the dataset into the Lakehouse File section us
     The desired Applied Step text is :
 
     ```
-    Table.Group(#\"Navigation 1\", {\"Country\"}, {{\"Total Customers\",
-    each Table.RowCount(\_)}})
+    Table.Group(#"Navigation 1", {"Country"}, {{"Total Customers",
+    each Table.RowCount(_)}})
     ```
 
 7. The query outputs a list displaying the number of customers per country.
@@ -347,27 +342,19 @@ notebooks.
     >**Note**: This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.*
 
     ```
-    storage_account_name = \"azureopendatastorage\" container_name =
-    \"nyctlc\"
-
-    sas_token = r\"\" \# Specify blank since container is public with
-    anonymous access
-
-    spark.conf.set(\"fs.azure.sas.%s.%s.blob.core.windows.net\" %
-    (container_name, storage_account_name),sas_token)
-
-    directory = \"yellow\"
-
+    storage_account_name = "azureopendatastorage" container_name = "nyctlc"
+    sas_token = r"" # Specify blank since container is public with anonymous
+    access
+    spark.conf.set("fs.azure.sas.%s.%s.blob.core.windows.net" % (container_name,
+    storage_account_name),sas_token)
+    directory = "yellow"
     year = 2016
-
-    months = \"1,2,3,4,5,6\"
-
+    months = "1,2,3,4,5,6"
     wasbs_path =
-    f\"wasbs://{container_name}@{storage_account_name}.blob.core.windows.net/{directory}\"
-    nyc_yellowtaxi_df = spark.read.parquet(wasbs_path)
-
-    filtered_nyc_yellowtaxi_df = nyc_yellowtaxi_df.filter(f\"puYear =
-    {year} AND puMonth IN ({months})\")
+    f"wasbs://{container_name}@{storage_account_name}.blob.core.windows.net/{dir
+    ectory}" nyc_yellowtaxi_df = spark.read.parquet(wasbs_path)
+    filtered_nyc_yellowtaxi_df = nyc_yellowtaxi_df.filter(f"puYear = {year} AND 
+    puMonth IN ({months})")
     ```
 
     >**Warning**: As each cell runs, a message will indicate that Spark jobs are in progress. Once processing is complete, a message will confirm the success of the Spark jobs. If the code in a particular cell fails, processing for the other cells will not continue.*
@@ -375,13 +362,11 @@ notebooks.
 12. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code saves the data as a delta table in the Lakehouse.
 
     ```
-    table_name = \"nyc_yellowtaxi_raw\"
-
-    filtered_nyc_yellowtaxi_df.write.mode(\"overwrite\").format(\"delta\").saveAsTable(f\"{table_nam
-    e}\")
-
-    print(f\"Spark dataframe (filtered_nyc_yellowtaxi_df) saved to a delta
-    table: {table_name}\")
+    table_name = "nyc_yellowtaxi_raw"
+    filtered_nyc_yellowtaxi_df.write.mode("overwrite").format("delta").saveAsTable(
+    f"{table_nam e}")
+    print(f"Spark dataframe (filtered_nyc_yellowtaxi_df) saved to a delta table:
+    {table_name}")
     ```
 
     ![Notebook text](images1/media/image44.jpeg)
@@ -390,9 +375,8 @@ notebooks.
 
     ```
     %%sql
-
-    select puYear, puMonth, count(\*) from nyc_yellowtaxi_raw group by
-    puYear, puMonth order by puYear, puMonth
+    select puYear, puMonth, count(*) from nyc_yellowtaxi_raw group by puYear,
+    puMonth order by puYear, puMonth
     ```
 
     >**Note**: The output dataset from the query should contain 6 rows, with each row showing the year, month, and the number of records for that period.
@@ -400,10 +384,10 @@ notebooks.
     ![Notebook with the output dataset](images1/media/image45.png)
 
 14. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code counts the number of records returned.
+
     ```
     filtered_nyc_yellowtaxi_df.count()
     ```
-
     ![Notebook screen](images1/media/image46.jpeg)
 
     During testing, 69,402,938 rows were returned.
@@ -425,6 +409,7 @@ notebooks.
     ![Filtered_nyc_yellowtaxi_df dataframe structure](images1/media/image48.png)
 
 16. If Copilot does not create a command for you, add a new cell to the notebook. Add the following code to the new cell and then select the **Run cell** button:
+
     ```
     filtered_nyc_yellowtaxi_df.describe().show()
     ```
@@ -432,9 +417,11 @@ notebooks.
 
 17. At the bottom of the **Copilot** pane, enter the following prompt and then select **Enter**. Copilot should respond with a command that you can run to create the dataframe.
 
+    ```
+    Create a dataframe by loading data from nyc_yellowtaxi_raw table and sampling it with 1 percentage, count the rows in the dataframe and show the amount.
+    ```
     ![Notebook screen](images1/media/image50.png)
 
-    Create a dataframe by loading data from nyc_yellowtaxi_raw table and sampling it with 1 percentage, count the rows in the dataframe and show the amount.
 
 18. Select **Insert code** to create a new cell in the Notebook. Run the cell:
 
@@ -444,8 +431,9 @@ notebooks.
 
     ```
     %%code
-
-    Create a dataframe by loading data from nyc_yellowtaxi_raw table and sampling it with 1 percentage, count the rows in the dataframe and show the amount.
+    Create a dataframe by loading data from nyc_yellowtaxi_raw table and
+    sampling it with 1 percentage, count the rows in the dataframe and show the 
+    amount.
     ```
 **Important:** If you want to learn more about Chat-Magics, go to [Overview of chat-magics in Microsoft Fabric
 notebook](https://learn.microsoft.com/en-us/fabric/get-started/copilot-notebooks-chat-magics)
