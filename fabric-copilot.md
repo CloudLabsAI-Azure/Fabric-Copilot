@@ -233,7 +233,7 @@ In this activity, you will ingest the dataset into the Lakehouse File section us
 
     ![Quantity column results](images1/media/image23.png)
 
-11. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor**.
+11. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** under **Query** section.
 
 12. Review the definition of the formula used in the query.
 
@@ -268,9 +268,7 @@ In this activity, you will ingest the dataset into the Lakehouse File section us
 
 19. Select the **Orders** query.
 
-20. In the **Copilot** pane, enter the following text and then select **Send**:
-
-    Create a new query named "Value By Delivery Country\" showing the order value aggregated by shipCountry.
+20. In the **Copilot** pane, enter the following text and then select **Send**: **Create a new query named "Value By Delivery Country" showing the order value aggregated by shipCountry.**
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image31.png)
 
@@ -278,7 +276,7 @@ In this activity, you will ingest the dataset into the Lakehouse File section us
 
     ![Table containing the shipCountry](images1/media/image32.jpeg)
 
-22. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** to verify the correct formula.
+22. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** under **Query** section to verify the correct formula.
     ![Power Querytoolbar](images1/media/image33.png)
 
 23. The value of Freight is being used. Should this be the intended behavior? Review Copilot's actions to confirm.
@@ -303,7 +301,7 @@ In this activity, you will explore Copilot capabilities in Fabric
 notebooks.
 
 1. Open a new browser tab and go to
-    [**[https://app.powerbi.com/]{.underline}**](https://app.powerbi.com/)
+    [PowerBI](https://app.powerbi.com/)
 
 2. Open the Fabric training Workspace you created previously.
 
@@ -331,7 +329,7 @@ notebooks.
 
     ![Run cell screen](images1/media/image42.png)
 
-    >**Note**: The following command may error out. Please copy and paste the entire code snippet to Copilot to get the correct code and replace it.*
+    >**Note**: The following command may error out. Please copy and paste the entire code snippet to Copilot to get the correct code and replace it.
 
 10. Move the cursor to the lower left of the last cell in the notebook and select **+ code** to add a new cell.
 
@@ -339,7 +337,7 @@ notebooks.
 
 11. Enter the following code in the new cell and then select **Run cell**.
 
-    >**Note**: This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.*
+    >**Note**: This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.
 
     ```
     storage_account_name = "azureopendatastorage" container_name = "nyctlc"
@@ -568,6 +566,6 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 6. Ask Copilot to generate a report to monitor the current inventory by submitting the following prompt:
 *Create a report monitoring the product inventory.*
 
-    ![Copilot pane](images1/media/image70.png)
+    ![Toolbar](images1/media/image70.png)
 
 7. Save the report so any other report consumer has access to it. 
