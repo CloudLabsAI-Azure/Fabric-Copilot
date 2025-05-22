@@ -462,16 +462,15 @@ In this activity, you will use Copilot in Power BI to generate reports and enhan
 
 1. Open the **Power BI** application and select **Blank Report** to create a new dashboard. 
 
-    [Power BI menu](images1/media/image52.png)
+    ![Power BI menu](images1/media/image52.png)
 
 2. Ensure the Copilot button is enabled.  
 
     ![](images1/media/image53.png) 
 
-3. Select **Get Data** to connect to the dataset needed for your
- report.
+3. Select **Get Data** >> **More...** to connect to the dataset needed for your report.
 
-4. Select **Microsoft Fabric** and then select **Lakehouses.**  
+4. Select **Microsoft Fabric** and then select **Lakehouses** >> **Connect**
 
     ![Get Data menu](images1/media/image54.png)
 
@@ -480,6 +479,8 @@ In this activity, you will use Copilot in Power BI to generate reports and enhan
     ![Lakehouse view](images1/media/image55.png)
 
     ![Connect option](images1/media/image56.png)
+
+6. Then, login with your odl credentials.
 
 6. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load**:
 
@@ -502,45 +503,40 @@ In this activity, you will use Copilot in Power BI to generate reports and enhan
 
 Let's use Dax query copilot to generate a new measure for **total Sales after Discount (measure)** and update the description of the current measure.
 
-1. Select on **Dax query view**, then **Copilot (Preview).**  
-
+1. Select on **Dax query view**, then **Copilot (Preview).**
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image59.png)
-
-     
 
     ![A screenshot shows a Copilot prompt in Dax query view. The Copilot prompt field has the text "Ask Copilot to write or edit a DAX query or ask a related question."](images1/media/image60.png)
  
 
-    Ensure that the 'Measure Descriptions with Copilot' feature is enabled. Navigate to **File \Options \Preview** **Features**, then enable Measure Descriptions with Copilot at the bottom of the list.
+2. Ensure that the 'Measure Descriptions with Copilot' feature is enabled. Navigate to **File \Options \Preview** **Features**, then enable Measure Descriptions with Copilot at the bottom of the list.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image61.png)
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image62.png)
 
-1. Navigate to the **Model** and select the **new measure** created. 
+3. Navigate to the **Model** and select the **new measure** created. 
 
-2. Navigate to the **Properties** section for the model and select **Create with Copilot (preview).** Copilot generates a new measure description in a few seconds.
+4. Navigate to the **Properties** section for the model and select **Create with Copilot (preview).** Copilot generates a new measure description in a few seconds.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image63.png)
 
-3. Review the measure description to ensure that it aligns with your model. Select **Keep it** to save the description.
+5. Review the measure description to ensure that it aligns with your model. Select **Keep it** to save the description.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image64.png)
 
     Now, let's publish the report to the Power BI service so that consumers can visualize and derive insights from it.
 
-4. Select **File** and then select **Publish.** 
+6. Select **File** and then select **Publish.** 
 
     ![](images1/media/image65.png)
 
-5. Select **Save** and then save the report as **Northwind Order Analysis** under your desired location on your machine.
+7. Select **Save** and then save the report as **Northwind Order Analysis** under your desired location on your machine.
 
-6. Publish it under **'My Workspace'** or the workspace created during Activity 7.
+8. Publish it under **'My Workspace'** or the workspace created during Activity 7.
 
 ### Task 3: Explore Copilot for PowerBI as a report consumer(optional)
-
- 
 
 1. Open your published report by selecting [Microsoft Fabric](https://app.fabric.microsoft.com/). Navigate to your workspace and then select the **Northwind Order Analysis.**
 
