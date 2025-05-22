@@ -340,19 +340,20 @@ notebooks.
     >**Note**: This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.
 
     ```
-    storage_account_name = "azureopendatastorage" container_name = "nyctlc"
-    sas_token = r"" # Specify blank since container is public with anonymous
-    access
-    spark.conf.set("fs.azure.sas.%s.%s.blob.core.windows.net" % (container_name,
-    storage_account_name),sas_token)
+    storage_account_name = "azureopendatastorage"
+    container_name = "nyctlc"
+
+    sas_token = r"" # Specify blank since container is public with anonymous access
+
+    spark.conf.set("fs.azure.sas.%s.%s.blob.core.windows.net" % (container_name, storage_account_name),sas_token)
+
     directory = "yellow"
     year = 2016
     months = "1,2,3,4,5,6"
-    wasbs_path =
-    f"wasbs://{container_name}@{storage_account_name}.blob.core.windows.net/{dir
-    ectory}" nyc_yellowtaxi_df = spark.read.parquet(wasbs_path)
-    filtered_nyc_yellowtaxi_df = nyc_yellowtaxi_df.filter(f"puYear = {year} AND 
-    puMonth IN ({months})")
+    wasbs_path = f"wasbs://{container_name}@{storage_account_name}.blob.core.windows.net/{directory}"
+    nyc_yellowtaxi_df = spark.read.parquet(wasbs_path)
+
+    filtered_nyc_yellowtaxi_df = nyc_yellowtaxi_df.filter(f"puYear = {year} AND puMonth IN ({months})")
     ```
 
     >**Warning**: As each cell runs, a message will indicate that Spark jobs are in progress. Once processing is complete, a message will confirm the success of the Spark jobs. If the code in a particular cell fails, processing for the other cells will not continue.*
