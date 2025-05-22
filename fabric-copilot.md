@@ -362,10 +362,9 @@ notebooks.
 
     ```
     table_name = "nyc_yellowtaxi_raw"
-    filtered_nyc_yellowtaxi_df.write.mode("overwrite").format("delta").saveAsTable(
-    f"{table_nam e}")
-    print(f"Spark dataframe (filtered_nyc_yellowtaxi_df) saved to a delta table:
-    {table_name}")
+
+    filtered_nyc_yellowtaxi_df.write.mode("overwrite").format("delta").saveAsTable(f"{table_name}")
+    print(f"Spark dataframe (filtered_nyc_yellowtaxi_df) saved to a delta table: {table_name}")
     ```
 
     ![Notebook text](images1/media/image44.jpeg)
@@ -374,8 +373,7 @@ notebooks.
 
     ```
     %%sql
-    select puYear, puMonth, count(*) from nyc_yellowtaxi_raw group by puYear,
-    puMonth order by puYear, puMonth
+    select puYear, puMonth, count(*) from nyc_yellowtaxi_raw group by puYear, puMonth order by puYear, puMonth
     ```
 
     >**Note**: The output dataset from the query should contain 6 rows, with each row showing the year, month, and the number of records for that period.
@@ -430,9 +428,7 @@ notebooks.
 
     ```
     %%code
-    Create a dataframe by loading data from nyc_yellowtaxi_raw table and
-    sampling it with 1 percentage, count the rows in the dataframe and show the 
-    amount.
+    Create a dataframe by loading data from nyc_yellowtaxi_raw table and sampling it with 1 percentage, count the rows in the dataframe and show the amount.
     ```
 **Important:** If you want to learn more about Chat-Magics, go to [Overview of chat-magics in Microsoft Fabric
 notebook](https://learn.microsoft.com/en-us/fabric/get-started/copilot-notebooks-chat-magics)
