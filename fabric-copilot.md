@@ -497,7 +497,7 @@ In this activity, you will use Copilot in Power BI to generate reports and enhan
 
 9. Next, select **"Suggest content for a new report page"** based on the semantic model.
 
-10. Select **Order Analysis** to generate a report analyzing order quantities, unit prices, and discounts.
+10. Select **Sales Performance** to generate a report analyzing order details, unit prices, and quantities sold.
 
 ### Task 2:  Create DAX queries and update measures descriptions using Copilot
 
@@ -510,7 +510,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     ![A screenshot shows a Copilot prompt in Dax query view. The Copilot prompt field has the text "Ask Copilot to write or edit a DAX query or ask a related question."](images1/media/image60.png)
  
 
-2. Ensure that the 'Measure Descriptions with Copilot' feature is enabled. Navigate to **File \Options \Preview** **Features**, then enable Measure Descriptions with Copilot at the bottom of the list.
+2. Ensure that the 'Measure Descriptions with Copilot' feature is enabled. Navigate to **File >> Options and settings >> Options Preview** **Features**, then enable Measure Descriptions with Copilot at the bottom of the list.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image61.png)
 
@@ -556,8 +556,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
     ![Toolbar](images1/media/image69.png)
 
-6. Ask Copilot to generate a report to monitor the current inventory by submitting the following prompt:
-*Create a report monitoring the product inventory.*
+6. Ask Copilot to generate a report to monitor the current inventory by submitting the following prompt: *Create a report monitoring the product inventory.*
 
     ![Toolbar](images1/media/image70.png)
 
