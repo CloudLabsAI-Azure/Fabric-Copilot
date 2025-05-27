@@ -1,6 +1,6 @@
-# Lab 1: Create and set up Fabric Workspace 
+# Fabric Copilot Hands On Lab
 
-## Estimated Duration: minutes
+## Estimated Duration: 4 hours
 
 ## Lab Overview
 
@@ -24,6 +24,7 @@ Participants should have:
 - Fundamental knowledge of Power BI – ability to create simple reports and visualizations.
 - Awareness of Azure and Microsoft services – basic understanding of Azure portal navigation and Microsoft Fabric concepts.
 - Comfort with web-based tools – ability to use cloud services and tools like notebooks and dashboards.
+
 ## Exercise 1: Create and set up Fabric Workspace
 
 ### Task 1: Start Free fabric trial
