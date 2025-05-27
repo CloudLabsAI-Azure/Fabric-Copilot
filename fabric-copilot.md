@@ -20,56 +20,43 @@ In this lab, you will complete the following tasks:
 
 ## Task 1: Enable a Microsoft Fabric trial license
 
-1. On the lab VM desktop, open the **browser** and navigate to [Microsoft Power BI Portal](https://app.powerbi.com/). You will be navigated to the login page.
+1. On the lab VM desktop, open the **Edge browser** and open Microsoft Fabric in a new tab by copy pasting the link [Microsoft Fabric](https://app.fabric.microsoft.com/home). You will be navigated to the login page.
 
-    >**Note:** If you're using the lab environment, it may sign you
-    automatically.
-
-    >**Note:** If you are not using the lab environment and have an existing
-    Power BI account, you may want to use the browser in private / incognito
-    mode.
-
-2. Copy the Username and paste it into the Email field of the dialog and select Submit.
+1. On the **Microsoft** tab, you will see the login screen. Enter the following **Email/Username** and then click on **Next**.
 
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
 
-        ![](images1/media/image6.png)
+        ![](images1/media/exercise-1-img-89.png)
 
-3. On the **Sign into Microsoft Azure** tab, you will see the login screen. Enter the following **Email/Username** and then click on **Next**.
-
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-
-        ![](images1/media/image-7.png)
-
-4. Now enter the following **Password** and click on **Sign in.**
+1. Now, enter the following **Password** and click on **Sign in.**
 
    - **Password:** <inject key="AzureAdUserPassword"></inject>
 
-        ![](images1/media/image8.png)
+        ![](images1/media/exercise-1-img-90.png)
 
-5. You will be navigated to the familiar **Power BI Service Home page**.
+1. On the **Stay signed in?** tab click on **Yes**.
 
-6. We assume you are familiar with the layout of Power BI Service. If you have any questions, please do not hesitate to ask the instructor.
+    ![](images1/media/exercise-1-img-91.png)
 
-    Currently, you are in the **My Workspace**. To work with Fabric items,
-    you will need a trial license and a workspace that has Fabric license
-    assigned. Let's set this up.
+1. You will be navigated to the **Fabric Service Home page**.
 
-7. On the top right corner of the screen, select the **user** **icon**.
+1. We assume you are familiar with the layout of Fabric Service. If you have any questions, please do not hesitate to ask the instructor.
 
-8. Select **Free trial**.
+1. Currently, you are in the **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license assigned. Let's set this up.
+
+1. On the top right corner of the screen, select the **user icon (1)** and select **Free trial (2)**.
 
     ![](images1/media/image9.png)
 
-9. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
+1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
 
     ![](images1/media/image-10.png)
 
-10. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.
+1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.
 
     ![](images1/media/image-11.png)
 
-11. You will be navigated to the **Microsoft** **Fabric Home page**.
+1. You will be navigated to the **Microsoft** **Fabric Home page**.
 
     ![](images1/media/image-12.png)
 
@@ -77,23 +64,23 @@ In this lab, you will complete the following tasks:
 
 ## Task 2: Create a Fabric Workspace
 
-1. Now let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar. A dialog opens.
+1. Now let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar.
 
-2. Click **+ New workspace** **(2)** found at the bottom of the pop-out menu.
+2. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
-    ![](images1/media/image-13.png)
+    ![](images1/media/exercise-1-img-92.png)
 
 3. **Create a workspace** dialog opens on the right side of the browser.
 
-4. Type the name **Workspace<inject key="DeploymentID" enableCopy="false"/>**, **validate** the availability of the name, and click on **Advanced**.
+4. Type the name **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)**, validate the availability of the name, and click on **Advanced (2)**.
 
     >**Note:** Only use the workspace name provided above.
 
-    ![works-apply.png](images1/media/workspace01.png)
+    ![works-apply.png](images1/media/exercise-1-img-2.png)
 
-5. Ensure **Fabric capacity** is enabled, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/>** is selected under **Capacity**, and then click **Apply**.
+5. Ensure **Fabric capacity (1)** is enabled, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
 
-    ![works-apply.png](images1/media/workspace02.png)
+    ![works-apply.png](images1/media/exercise-1-img-3.png)
 
     >**Note:** Close any pop-up that appears on the screen.
 
@@ -101,10 +88,7 @@ In this lab, you will complete the following tasks:
 
     >**Note:** Wait for the Power BI Workspace to load.
 
-    A new workspace has been created, and you will be able to navigate into
-    this workspace. We will bring data from the different data sources into
-    a Lakehouse and use the data from the Lakehouse to build our model and
-    report on it. The first step is to create a Lakehouse.
+1. A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into a Lakehouse and use the data from the Lakehouse to build our model and report on it.
 
 # Exercise 2: Explore Copilot for Data Flows
 
@@ -115,190 +99,197 @@ enable Copilot before you can use it. Copilot in Fabric is not available
 in all regions. In this activity, you will integrate Copilot for data
 analysis and visualization.
 
-1. Log into your Fabric workspace.
+1. Ensure you're logged into your Fabric workspace before proceeding.
 
-    >**Note**: If you don't have a workspace set up, go to the following link to access a functional work environment. You should have your Fabric account open. https://aka.ms/UnlockingDataMgmtAIWorkshop_Fabricworkspace
+1. Click on **+ New item (1)** button. In the pop-up window search for **Lakehouse (2)** in the search bar and click on **Lakehouse (3)**.
 
-2. In the **Get data in your lakehouse** pane, select **New Dataflow Gen2**.
+    ![Lakehouse](images1/media/exercise-1-img-28.png)
 
-    ![Get data in your lakehouse' option, with the Dataflow Gen2 option displayed](images1/media/image4.png)
+1. Copy the name **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and paste it in the **Name** field. Click on the **Lakehouse schemas (2)** checkbox and then click on the **Create (3)** button.
 
-3. Select the **Dataflow Gen2** in the menu, then in the **Name** field, enter **North Wind Data**.
+    ![Lakehouse](images1/media/exercise-1-img-93.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image5.png)
+1. You will be navigated to the newly created lakehouse.
 
-5. On the **Home** tab, select **New query** >> **Get data** >> **More**.
+1. From the lakehouse page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
 
-    ![Get data dropdown menu options displayed.](images1/media/image7.png)
+    ![Lakehouse](images1/media/exercise-1-img-94.png)
 
-6. In the **Choose data source** field, enter **OData** to filter the possible data sources, and then select **OData.**
+1. Select the **Dataflow Gen2** in the menu, select the **Dataflow 1 (1)** then in the **Name** field, enter **North Wind Data (2)** and then press **Enter** from the keyboard.
 
-    ![Choose data source options](images1/media/image8.jpeg)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-95.png)
 
-7. In the **Connect to data source** window, under **Connection settings**, in the **URL** field, enter https://services.odata.org/V4/Northwind/Northwind.svc/ and then select **Next.**
+1. On the **North Wind Data** dataflow gen2 **Home** tab, select **Get data (1)** >> **More (2)**.
 
-    ![Connect to data source options men](images1/media/image9.jpeg)
+    ![Get data dropdown menu options displayed.](images1/media/exercise-1-img-96.png)
 
-8. In the **Choose Data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**, and then select **Create.** 
+1. In the **Choose data source** field, enter **OData (1)** to filter the possible data sources, and then select **OData (2).**
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image10.png)
+    ![Choose data source options](images1/media/exercise-1-img-97.png)
 
-9. Load the data to the Lakehouse by selecting **Publish**. Check that the Lakehouse selected is the one you created in the last activity.
+1. In the **Connect to data source** window, under **Connection settings**, in the **URL** field, copy and paste **https://services.odata.org/V4/Northwind/Northwind.svc/** and then select **Next.**
 
-10. The query should look like the following example:
+    ![Connect to data source options men](images1/media/exercise-1-img-9.png)
 
-    ![Queries created](images1/media/image11.png)
+1. In the **Choose Data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**, and then select **Create.** 
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-10.png)
+
+1. Check that the **Lakehouse (1)** selected is the one you created previously in the lab. You can hover to **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Publish (2)**.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-98.png)
+
+1. The query should look like the following:
+
+    ![Queries created](images1/media/exercise-1-img-12.png)
 
 ## Task 2: Ingest the dataset via Data Pipelines to Lakehouse File Section
 
-In this activity, you will ingest the dataset into the Lakehouse File section using Data Pipelines.
+In this task, you will ingest the dataset into the **Lakehouse File** section using Data Pipelines.
 
 1. You will be navigated to your workspace. Select **North Wind Data** dataflow that you have created.
 
-1. In the **Customers** table, scroll to the right and examine the **Country** column. Notice that the countries include **Argentina** and **Mexico**.
+    ![Queries created](images1/media/exercise-1-img-99.png)
 
-    ![Customers table](images1/media/image12.png)
+1. Select the **Customers** table, scroll to the right and examine the **Country** column. Notice that the countries include **Argentina** and **Mexico**.
 
-4. On the Power Query toolbar, on the **Home** tab select **Copilot**.
+    ![Customers table](images1/media/exercise-1-img-13.png)
 
-    ![Power Query toolbar](images1/media/image6.jpeg)
+1. On the **Power Query** toolbar, on the **Home** tab select **Copilot**.
 
-2. In the **Copilot** pane enter **Only keep South American customers** and then select **Send**.
+    ![Power Query toolbar](images1/media/exercise-1-img-100.png)
+
+    >**Note**: If the Copilot option isn't visible, try zooming out in your browser.
+
+1. In the **Copilot** pane enter **Only keep South American customers** and then select **Send**.
 
     ![Copilto pane](images1/media/image13.png)
 
-    >**Note**: Due to the nature of Copilot you may end up with differing results. You can also try Only keep customers from South American countries
+    >**Note**: Due to the nature of Copilot you may end up with differing results. You can also try **Only keep customers from South American countries**.
 
     The desired Applied Step text is :
     ```
-    Table.SelectRows(#"Navigation 1", each List.Contains({"Mexico",
-    "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", 
-    "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", 
-    "Suriname"}, [Country]))
+    Table.SelectRows(#"Navigation 1", each List.Contains({"Mexico", "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname"}, [Country]))
     ```
-3. It selected Mexico only:
+1. It will select Mexico only:
 
-    ![A screenshot of a computer Description automatically generated](images1/media/image14.png)
+    ![A screenshot of a computer Description automatically generated](images1/media/exercise-1-img-15.png)
 
-    You can undo the step by selecting **Undo**. Afterwards, type: Only keep South American customers. If this step returns Mexico only, then insert the following step in the **transformation** tab:
+1. You can undo the step by selecting **Undo**. Afterwards, type: **Only keep South American customers**. If this step returns Mexico only, then insert the following step in the **transformation** tab:
 
     ```
-    Table.SelectRows(#"Navigation 1", each
-    List.Contains({"Mexico", "Brazil", "Argentina", "Chile",
-    "Peru", "Colombia", "Venezuela", "Ecuador", "Bolivia", 
-    "Paraguay", "Uruguay", "Guyana", "Suriname"}, [Country]))
+    Table.SelectRows(#"Navigation 1", each List.Contains({"Mexico", "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname"}, [Country]))
     ```
-    ![Customers table](images1/media/image15.jpeg)
+    ![Customers table](images1/media/exercise-1-img-102.png)
 
-4. The **Country** column has been filtered and now only includes customers from South America.
+1. The **Country** column has been filtered and now only includes customers from South America.
 
-    ![Country colum](images1/media/image16.png)
+    ![Country colum](images1/media/exercise-1-img-103.png)
 
-5. In the **Copilot** pane, select **Undo** to revert the changes, as we want to use Copilot against the whole dataset.
+1. In the **Copilot** pane, select **Undo** to revert the changes, as we want to use Copilot against the whole dataset.
 
-6. In the **Copilot** pane, enter **How many customers in each country?** and then select **Send**.
+    ![Country colum](images1/media/exercise-2-img-1.png)
+
+1. In the **Copilot** pane, enter **How many customers in each country?** and then select **Send**.
 
     ![Copilot pane](images1/media/image17.png)
 
-    Sometimes, due to the nature of Copilot, you may end up with different results or errors. Select **Undo** in the Copilot chat.
+1. Sometimes, due to the nature of Copilot, you may end up with different results or errors. Select **Undo** in the Copilot chat.
 
-    ![Example screen showing errors in the Country column.](images1/media/image18.png)
+    ![Example screen showing errors in the Country column.](images1/media/exercise-1-img-17.png)
 
-    ![Undo button located above the Copilot pane.](images1/media/image19.png)
+    ![Undo button located above the Copilot pane.](images1/media/exercise-2-img-1.png)
 
-    >**Note**: You need to have an accurate question, so you can also try:
-
-    What is the total number of customers in each country?
+    >**Note**: You need to have an accurate question, so you can also try: **What is the total number of customers in each country?**
 
     The desired Applied Step text is :
 
     ```
-    Table.Group(#"Navigation 1", {"Country"}, {{"Total Customers",
-    each Table.RowCount(_)}})
+    Table.Group(#"Navigation 1", {"Country"}, {{"Total Customers", each Table.RowCount(_)}})
     ```
 
-7. The query outputs a list displaying the number of customers per country.
+1. The query outputs a list displaying the number of customers per country.
 
     ![Query outputs](images1/media/image20.png)
 
-8. In the **Copilot** pane, select **Undo** to revert the changes.
+1. In the **Copilot** pane, select **Undo** to revert the changes.
 
     ![Undo button on the Copilot pane ](images1/media/image21.png)
 
-9. Select the **Order_Details** query, then in the **Copilot** pane, enter **Only keep orders whose quantities are above the median value** and then select **Send**.
+1. Select the **Order_Details** query, then in the **Copilot** pane, enter **Only keep orders whose quantities are above the median value** and then select **Send**.
 
     ![Copilot pane](images1/media/image22.png)
 
-10. The **Quantity** column now displays all values above 20.
+1. The **Quantity** column now displays all values above 20.
 
-    ![Quantity column results](images1/media/image23.png)
+    ![Quantity column results](images1/media/exercise-2-img-2.png)
 
-11. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** under **Query** section.
+1. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** under **Query** section.
 
-12. Review the definition of the formula used in the query.
+    ![Power Query toolbar](images1/media/exercise-1-img-19.png)
 
-    ![Power Query toolbar](images1/media/image24.jpeg)
+1. Review the definition of the formula used in the query.
 
-13. Select **Cancel** to exit the Advanced editor without making changes.
+1. Select **Cancel** to exit the Advanced editor without making changes.
 
-    ![Formula used in the query.](images1/media/image25.png)
+    ![Formula used in the query.](images1/media/exercise-1-img-20.png)
 
-14. In the **Copilot** pane, select **Undo** to revert the changes.
+1. In the **Copilot** pane, select **Undo** to revert the changes.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image26.png)
 
 
-15. In the **Copilot** pane, enter **Create a new query with data for official public holidays for Australia in 2024** and then select **Send**.
+1. In the **Copilot** pane, enter **Create a new query with data for official public holidays for Australia in 2024** and then select **Send**.
 
-    ![Copilot pane](images1/media/image27.png)
+    ![Copilot pane](images1/media/exercise-1-img-21.png)
 
-    ![Table with the Query results](images1/media/image28.jpeg)
+    ![Table with the Query results](images1/media/exercise-2-img-3.png)
 
-    Australian public holidays have been added to the list. Review them as needed.
+1. Australian public holidays have been added to the list. Review them as needed.
 
-16. In the **Copilot** pane, select **Undo** to revert the changes.
+1. In the **Copilot** pane, select **Undo** to revert the changes.
 
-17. In the **Copilot** pane, enter the following text and then select **Send**: **Create a new query with average monthly temperatures for Spain between 2022 and 2025. Display the Months in columns.**
+    ![Table with the Query results](images1/media/exercise-2-img-4.png)
+
+1. In the **Copilot** pane, enter the following text: **Create a new query with average monthly temperatures for Spain between 2022 and 2025. Display the Months in columns** and then select **Send**
 
     ![A screenshot of a computer ](images1/media/image29.png)
 
-18. In the **Copilot** pane, select **Undo** to revert the changes.
+    ![Copilot pane](images1/media/exercise-1-img-23.png)
+
+1. In the **Copilot** pane, select **Undo** to revert the changes.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image30.png)
 
-19. Select the **Orders** query.
+1. Select the **Orders** query.
 
-20. In the **Copilot** pane, enter the following text and then select **Send**: **Create a new query named "Value By Delivery Country" showing the order value aggregated by shipCountry.**
+1. In the **Copilot** pane, enter the following text: **Create a new query named "Value By Delivery Country" showing the order value aggregated by shipCountry** and then select **Send**
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image31.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-24.png)
 
-21. A table containing the shipCountry and order value aggregates is displayed.
+1. A table containing the **shipCountry** and **Order value aggregates** is displayed.
 
-    ![Table containing the shipCountry](images1/media/image32.jpeg)
+    ![Table containing the shipCountry](images1/media/exercise-1-img-25.png)
 
-22. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** under **Query** section to verify the correct formula.
-    ![Power Querytoolbar](images1/media/image33.png)
+1. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** under **Query** section to verify the correct formula.
 
-23. The value of Freight is being used. Should this be the intended behavior? Review Copilot's actions to confirm.
+    ![Power Querytoolbar](images1/media/exercise-1-img-19.png)
+
+1. The value of Freight is being used. Should this be the intended behavior? Review Copilot's actions to confirm.
 
     ![Advance editor](images1/media/image34.png)
 
-24. Select **Cancel** to close the Advanced editor, and then in the **Copilot** pane, select **Undo** to revert the changes.
+1. Select **Cancel** to close the Advanced editor, and then in the **Copilot** pane, select **Undo** to revert the changes.
 
-25. Check the destination location of the dataset in the bottom right corner. 
+1. Check the destination location of the dataset in the bottom right corner. 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image35.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-5.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image36.png)
-
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image37.png)
-
-26. Select **Publish** to publish your data to your lake house. Select your target Lakehouse connection before publishing. (Skip this step if you already published the dataset in an earlier step.)
+1. Select **Publish** to publish your data to your lake house. Select your target Lakehouse connection before publishing. (Skip this step if you already published the dataset in an earlier step.)
 
 ## Exercise 2: Exploring Copilot capabilities in Fabric notebooks
 
-In this activity, you will explore Copilot capabilities in Fabric
-notebooks.
+In this exercise, you will explore Copilot capabilities in Fabric notebooks.
 
 1. Open a new browser tab and go to
     [PowerBI](https://app.powerbi.com/)
