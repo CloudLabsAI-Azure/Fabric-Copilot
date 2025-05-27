@@ -127,11 +127,7 @@ analysis and visualization.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image5.png)
 
-4. On the Power Query toolbar, on the **Home** tab select **Copilot**.
-
-    ![Power Query toolbar](images1/media/image6.jpeg)
-
-5. On the **Home** tab, select **New query** >> **Get data** >> **More** and then select **New source**.
+5. On the **Home** tab, select **New query** >> **Get data** >> **More**.
 
     ![Get data dropdown menu options displayed.](images1/media/image7.png)
 
@@ -143,7 +139,7 @@ analysis and visualization.
 
     ![Connect to data source options men](images1/media/image9.jpeg)
 
-8. In the **Choose Data** window, select the following seven tables **Customers**,**Employees**,**Order_Details**,**Orders**,**Products**,**Shippers**,**Suppliers**, and then select **Create.** 
+8. In the **Choose Data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**, and then select **Create.** 
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image10.png)
 
@@ -162,6 +158,10 @@ In this activity, you will ingest the dataset into the Lakehouse File section us
 1. In the **Customers** table, scroll to the right and examine the **Country** column. Notice that the countries include **Argentina** and **Mexico**.
 
     ![Customers table](images1/media/image12.png)
+
+4. On the Power Query toolbar, on the **Home** tab select **Copilot**.
+
+    ![Power Query toolbar](images1/media/image6.jpeg)
 
 2. In the **Copilot** pane enter **Only keep South American customers** and then select **Send**.
 
@@ -206,7 +206,7 @@ In this activity, you will ingest the dataset into the Lakehouse File section us
 
     ![Undo button located above the Copilot pane.](images1/media/image19.png)
 
-    >**Note**: You need to have an accurate question, so you can also try:*
+    >**Note**: You need to have an accurate question, so you can also try:
 
     What is the total number of customers in each country?
 
@@ -395,7 +395,7 @@ notebooks.
 
     ![Copilot lateral pane](images1/media/image47.png)
 
-    >**Warning**:: Copilot for Fabric notebooks is in preview. During lab testing, we experienced mixed results when we submitted this prompt. In some cases, Copilot responds with a Python command that you can enter in a cell to describe the dataframe structure. The command should resemble the following:
+    >**Warning**: Copilot for Fabric notebooks is in preview. During lab testing, we experienced mixed results when we submitted this prompt. In some cases, Copilot responds with a Python command that you can enter in a cell to describe the dataframe structure. The command should resemble the following:
 
     ```
     filtered_nyc_yellowtaxi_df.describe().show()
@@ -510,7 +510,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     ![A screenshot shows a Copilot prompt in Dax query view. The Copilot prompt field has the text "Ask Copilot to write or edit a DAX query or ask a related question."](images1/media/image60.png)
  
 
-2. Ensure that the 'Measure Descriptions with Copilot' feature is enabled. Navigate to **File >> Options and settings >> Options Preview** **Features**, then enable Measure Descriptions with Copilot at the bottom of the list.
+2. Ensure that the 'Measure Descriptions with Copilot' feature is enabled. Navigate to **File >> Options and settings >> Options >> Preview Features**, then enable **Measure descriptions with Copilot** at the bottom of the list.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image61.png)
 
@@ -550,8 +550,35 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 3. Select **Summarize visual on the page** to gain insights from each visual.
 
+    ```
+    The total sales amount to 56.5K.
+
+    Sales by region show that each region, including AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY, has a sales value of 56.5K.
+
+    Sales by product reveal a wide range of sales values. Product 38 had the highest sales at 5.9K, accounting for 10.45% of the total sales. The lowest sales were for Product 48, with a value of 71.4. Other notable products include Product 29 with sales of 3.71K and Product 59 with sales of 2.76K.
+
+    The calculated insights highlight that Product 38's sales were 8,166.67% higher than Product 48's sales. The sales values across all 77 products ranged from 71.4 to 5.9K.
+    ```
+
 4. Select "**Answer questions for leadership**" to prepare for your upcoming meeting with leadership.
 
+    ```
+    The Northwind Order Analysis report provides an overview of sales performance across different products and regions. The total sales amount to 56.5K. Sales by region indicate that each region, including AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY, has a uniform sales value of 56.5K.
+
+    Sales by product show a wide range of sales values. Product 38 had the highest sales at 5.9K, accounting for 10.45% of the total sales. The lowest sales were for Product 48, with a value of 71.4. Other notable products include Product 29 with sales of 3.71K and Product 59 with sales of 2.76K.
+
+    The calculated insights highlight that Product 38's sales were 8,166.67% higher than Product 48's sales. The sales values across all 77 products ranged from 71.4 to 5.9K.
+
+    ### Questions Leadership Could Ask:
+    - Why do all regions have the same sales value of 56.5K?
+    - What factors contributed to Product 38 achieving the highest sales?
+    - How can we improve sales for products with lower sales values, such as Product 48?
+    - Are there any seasonal trends or external factors affecting the sales distribution across products?
+    - What strategies can be implemented to increase overall sales performance?
+    - How do the sales figures compare to previous periods or forecasts?
+    - What are the key drivers behind the sales performance of top-selling products like Product 38 and Product 29?
+    - Are there any specific regions or products that require targeted marketing efforts?
+    ```
 5. Select **Edit.**
 
     ![Toolbar](images1/media/image69.png)
