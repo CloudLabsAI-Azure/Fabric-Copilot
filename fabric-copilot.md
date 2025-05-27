@@ -4,21 +4,29 @@
 
 ## Lab Overview
 
-
+This hands-on lab provides comprehensive training on leveraging Microsoft Fabric and Copilot capabilities for data ingestion, preparation, and visualization. Participants will create and set up a Fabric workspace, including starting a free trial and linking it with Copilot-enabled capacity (F2). They will ingest datasets into the Lakehouse via Data Pipelines, explore Copilot’s AI-assisted features in Fabric notebooks, and connect to Fabric datasets to generate visualizations in Power BI using Copilot. Additionally, participants will use Copilot to write DAX queries, update measure descriptions, and optionally explore Copilot as a report consumer, gaining a solid understanding of its potential across the data and analytics workflows in Microsoft Fabric.
 
 ## Lab objectives
 
-In this lab, you will complete the following tasks:
+In this lab, you will complete the following exercises:
 
-- Task 1: Start Free fabric trial 
+- Exercise 1: Create and set up Fabric Workspace 
 
-- Task 2: Create workspace and link with Fabric Copilot enabled capacity (F2) 
+- Exercise 2: Explore Copilot for Data Flows
+
+- Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
 
 ## Prerequisites
 
-## Exercise 1: Start Free fabric trial
+Participants should have:
 
-## Task 1: Enable a Microsoft Fabric trial license
+- Basic familiarity with data concepts – understanding of datasets, dataflows, and data pipelines.
+- Fundamental knowledge of Power BI – ability to create simple reports and visualizations.
+- Awareness of Azure and Microsoft services – basic understanding of Azure portal navigation and Microsoft Fabric concepts.
+- Comfort with web-based tools – ability to use cloud services and tools like notebooks and dashboards.
+## Exercise 1: Create and set up Fabric Workspace
+
+### Task 1: Start Free fabric trial
 
 1. On the lab VM desktop, open the **Edge browser** and open Microsoft Fabric in a new tab by copy pasting the link [Microsoft Fabric](https://app.fabric.microsoft.com/home). You will be navigated to the login page.
 
@@ -60,9 +68,7 @@ In this lab, you will complete the following tasks:
 
     ![](images1/media/image-12.png)
 
-# Fabric Workspace
-
-## Task 2: Create a Fabric Workspace
+### Task 2: Create workspace and link with Fabric Copilot enabled capacity (F2)
 
 1. Now let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar.
 
@@ -90,7 +96,7 @@ In this lab, you will complete the following tasks:
 
 1. A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into a Lakehouse and use the data from the Lakehouse to build our model and report on it.
 
-# Exercise 2: Explore Copilot for Data Flows
+## Exercise 2: Explore Copilot for Data Flows
 
 Microsoft has integrated Copilot and other generative AI features into
 Fabric to introduce new ways for you to transform and analyze data,
@@ -98,6 +104,8 @@ generate insights, and create visualizations and reports. You must
 enable Copilot before you can use it. Copilot in Fabric is not available
 in all regions. In this activity, you will integrate Copilot for data
 analysis and visualization.
+
+### Task 1: Ingest the dataset via Data Pipelines to Lakehouse File Section
 
 1. Ensure you're logged into your Fabric workspace before proceeding.
 
@@ -142,8 +150,6 @@ analysis and visualization.
 1. The query should look like the following:
 
     ![Queries created](images1/media/exercise-1-img-12.png)
-
-## Task 2: Ingest the dataset via Data Pipelines to Lakehouse File Section
 
 In this task, you will ingest the dataset into the **Lakehouse File** section using Data Pipelines.
 
@@ -287,7 +293,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Select **Publish** to publish your data to your lake house. Select your target Lakehouse connection before publishing. (Skip this step if you already published the dataset in an earlier step.)
 
-## Exercise 2: Exploring Copilot capabilities in Fabric notebooks
+### Task 2: Exploring Copilot capabilities in Fabric notebooks
 
 In this exercise, you will explore Copilot capabilities in Fabric notebooks.
 
@@ -435,7 +441,7 @@ create.
 
 In this exercise, you'll explore the capabilities of Copilot in Data Factory. The Power BI Copilot will be covered in a later exercise within this lab.
 
-**Prerequisite **
+Prerequisite:
 
 - Ensure that the Power BI Desktop application is installed on your local machine.
 
@@ -445,9 +451,7 @@ In this exercise, you'll explore the capabilities of Copilot in Data Factory. Th
 
 - Copilot is turned on by default in Fabric and now generally available, however it is not supported in sovereign clouds due to GPU availability. 
 
-## Exercise 1: Generate reports using Copilot for Power BI
-
-In this activity, you will use Copilot in Power BI to generate reports and enhance your data analysis process.
+In this exercise, you will use Copilot in Power BI to generate reports and enhance your data analysis process.
 
 ### Task 1: Connect to a Fabric dataset and create visualizations using Copilot
 
@@ -579,3 +583,5 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     ![Toolbar](images1/media/image70.png)
 
 7. Save the report so any other report consumer has access to it. 
+
+## You have successfully completed the lab.
