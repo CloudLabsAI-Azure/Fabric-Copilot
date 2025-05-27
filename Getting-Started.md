@@ -29,10 +29,6 @@ Participants should have the following prerequisites:
 
 The architecture for the **Microsoft Fabric with Copilot** lab enables end-to-end data integration, analytics, and visualization workflows using Fabric's advanced tools and AI capabilities. It begins with creating a dedicated **workspace** to manage resources and collaborate effectively. **Data ingestion** is facilitated through **pipelines** and **Spark-powered** notebooks, storing data in a **Lakehouse** for analysis. Structured data is processed in a **data warehouse**, where **tables** and **data models** are created for efficient querying and reporting. **Fabric Copilot** enhances automation by enabling natural language interactions for data ingestion, transformation, and report generation. This streamlined architecture provides scalability, productivity, and actionable insights, supporting complex data engineering and analytics scenarios.
 
-## Architechture Diagram
-
-![](Images/fabricarc.png)
-
 ## Explanation of Components
 
 The architecture for this lab involves several key components:
@@ -75,83 +71,25 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
 
-![](./images/overview-14.png) 
+![](images1/media/getting-started-1.png)
 
 ## Exploring Your Lab Resources
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![](./images/overview-15.png) 
+![](images1/media/getting-started-4.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![](./images/overview-16.png) 
+![](images1/media/getting-started-5.png)
  
 ## Managing Your Virtual Machine
  
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
-![](./images/overview-17.png) 
-
-## Login to Azure Portal
-
-1. In the JumpVM, click on the Azure portal shortcut of the Microsoft Edge browser from the desktop.
-
-    ![](./images/overview-6.png) 
-   
-1. On the **Sign in to Microsoft Azure** tab you will see a login screen, enter the following email/username and then click on **Next**. 
-   * Email/Username: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
-   
-     ![](./images/overview-1.png) 
-     
-1. Now enter the following password and click on **Sign in**.
-   * Password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
-   
-     ![](./images/overview-2.png) 
-
-1. On **Action Required** pop-up, click on **Ask later**. Incase if you dont get the option to Skip this, then please follow the below steps to setup MFA.
-
-     ![](./images/ask-later.png "Ask Later")
-
-## Steps to Proceed with MFA Setup if "Ask Later" Option is Not Visible [Optional]
-
-1. On **Action Required** pop-up, click on **Next**.
-
-     ![](./images/mfa1.png "Ask Later")
-
-1. In the Keep your account secure window, The window that appears and the steps that follow are for the Microsoft Authenticator app method. Select **Next**.
-
-   ![](./images/mfa2.png "Ask Later")
-
-    >**NOTE:** If you don't have the Microsoft Authenticator app installed on your mobile device , select **Download** now and follow the steps.
-
-1. On the Set up your account page opens, select **Next.**
-
-   ![](./images/mfa3.png "Ask Later")
-
-1. Scan the QR code through your phone. On the phone, inside the Authenticator app select Work or school account, and scan the QR code. Select **Next**.
-
-   ![](./images/mfa4.png "Ask Later")
-
-1. On the Keep your account secure page. Enter the code, which is shown on the Authenticator app.
-
-   ![](./images/mfa5.png "Ask Later")
-
-1. Once the code is entered. click **Next**
-
-   ![](./images/mfa6.png "Ask Later")
-
-1. Select Done, on the Success! page.
-
-    ![](./images/mfa7.png "Ask Later")
-
-1. If you see the pop-up **Stay Signed in?**, click **Yes**.
-
-1. If you see the pop-up **You have free Azure Advisor recommendations!**, close the window to continue the lab.
-
-1. If a **Welcome to Microsoft Azure** popup window appears, click **Cancel** to skip the tour.
+![](images1/media/getting-started-3.png)
 
 ## Support Contact
 
@@ -164,6 +102,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![](./images/overview-13.png)
+![](images1/media/getting-started-4.png)
 
-### Happy Learning!!
+### Happy Learning!
