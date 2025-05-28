@@ -108,6 +108,8 @@ analysis and visualization.
 
 ### Task 1: Ingest the dataset via Data Pipelines to Lakehouse File Section
 
+In this task, you will ingest the dataset into the **Lakehouse File** section using Data Pipelines.
+
 1. Ensure you're logged into your Fabric workspace before proceeding.
 
 1. Click on **+ New item (1)** button. In the pop-up window search for **Lakehouse (2)** in the search bar and click on **Lakehouse (3)**.
@@ -151,8 +153,6 @@ analysis and visualization.
 1. The query should look like the following:
 
     ![Queries created](images1/media/exercise-1-img-12.png)
-
-In this task, you will ingest the dataset into the **Lakehouse File** section using Data Pipelines.
 
 1. You will be navigated to your workspace. Select **North Wind Data** dataflow that you have created.
 
@@ -245,7 +245,6 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image26.png)
 
-
 1. In the **Copilot** pane, enter **Create a new query with data for official public holidays for Australia in 2024** and then select **Send**.
 
     ![Copilot pane](images1/media/exercise-1-img-21.png)
@@ -296,15 +295,13 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 ### Task 2: Exploring Copilot capabilities in Fabric notebooks
 
-In this exercise, you will explore Copilot capabilities in Fabric notebooks.
+In this task, you will explore Copilot capabilities in Fabric notebooks.
 
 1. Open a new browser tab and go to [PowerBI](https://app.powerbi.com/)
 
 1. In the lower left of the navigation pane for the workspace, select **Fabric**.
 
-1. Open the **Workspace<inject key="DeploymentID" enableCopy="false"/>** fabric training workspace that you created previously.
-
-1. Select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** lakehouse you created previously.
+1. Open the **Workspace<inject key="DeploymentID" enableCopy="false"/>** fabric training workspace that you created previously. Then, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** you created previously.
 
 1. On the menu for the Fabric workshop Lakehouse, select **Open notebook** >> **New notebook**.
 
@@ -446,7 +443,7 @@ minimal manual effort.
 automatically build reports based on topics you select or prompts you
 create.
 
-In this exercise, you'll explore the capabilities of Copilot in Data Factory. The Power BI Copilot will be covered in a later exercise within this lab.
+In this exercise, you'll explore the capabilities of Copilot in Data Factory. The Power BI Copilot will be covered in a later exercise within this lab and will use Copilot in Power BI to generate reports and enhance your data analysis process.
 
 Prerequisite:
 
@@ -456,9 +453,7 @@ Prerequisite:
 
 - You must have the necessary permission to read the curated dataset from OneLake.
 
-- Copilot is turned on by default in Fabric and now generally available, however it is not supported in sovereign clouds due to GPU availability. 
-
-In this exercise, you will use Copilot in Power BI to generate reports and enhance your data analysis process.
+- Copilot is turned on by default in Fabric and now generally available, however it is not supported in sovereign clouds due to GPU availability.
 
 ### Task 1: Connect to a Fabric dataset and create visualizations using Copilot
 
