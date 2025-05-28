@@ -298,42 +298,43 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 In this exercise, you will explore Copilot capabilities in Fabric notebooks.
 
-1. Open a new browser tab and go to
-    [PowerBI](https://app.powerbi.com/)
+1. Open a new browser tab and go to [PowerBI](https://app.powerbi.com/)
 
-2. Open the Fabric training Workspace you created previously.
+1. In the lower left of the navigation pane for the workspace, select **Fabric**.
 
-3. In the lower left of the navigation pane for the workspace, select **Fabric**.
+1. Open the **Workspace<inject key="DeploymentID" enableCopy="false"/>** fabric training workspace that you created previously.
 
-4. Select the bronze Lakehouse you created previously. 
+1. Select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** lakehouse you created previously.
 
-5. On the menu for the Fabric workshop Lakehouse and then select **Open notebook** >> **New notebook**.
+1. On the menu for the Fabric workshop Lakehouse, select **Open notebook** >> **New notebook**.
 
-    ![Bronze lakehouse meny](images1/media/image38.png)
+    ![Bronze lakehouse meny](images1/media/exercise-2-img-7.png)
 
-6. At the upper left of the page, select the notebook name. Replace the name with CopilotDemoNotebook and select **Enter**
+    >**Note**: If tour pop-up appears, feel free to skip it for now.
 
-    ![Notebook options](images1/media/image39.png)
+    ![Bronze lakehouse meny](images1/media/exercise-2-img-9.png)
 
-7. On the menu for the notebook, select **Copilot**.
+1. At the upper left of the page, select the notebook name. Replace the name with **CopilotDemoNotebook** and select **Enter** from keyboard.
 
-8. Select **Get Started**. Copilot adds a new cell to the notebook.
+    ![Notebook options](images1/media/exercise-2-img-8.png)
 
-    ![Notebook menu](images1/media/image40.png)
+1. From the notebook menu, select **Copilot**.
 
-    ![Notebook screen with Copilot pane on the side](images1/media/image41.jpeg)
+    ![Notebook menu](images1/media/exercise-1-img-34.png)
 
-9. Select **Run cell** (the triangular Play button) to install the packages that Copilot needs.
+    >**Note**: If tour pop-up appears, feel free to skip it for now.
 
-    ![Run cell screen](images1/media/image42.png)
+1. Click **Get Started** in the Copilot tab, then select **Run cell** button to initiate the session. Once the session has started, you can proceed to the next step.
 
-    >**Note**: The following command may error out. Please copy and paste the entire code snippet to Copilot to get the correct code and replace it.
+    ![Notebook screen with Copilot pane on the side](images1/media/exercise-2-img-10.png)
 
-10. Move the cursor to the lower left of the last cell in the notebook and select **+ code** to add a new cell.
+    >**Note**: As this is your first session, it may take a few minutes (around 5–10 minutes) to get started.
 
-    ![Last cell of the notebook](images1/media/image43.png)
+1. Move the cursor to the lower left of the last cell in the notebook and select **+ code** to add a new cell.
 
-11. Enter the following code in the new cell and then select **Run cell**.
+    ![Last cell of the notebook](images1/media/exercise-2-img-11.png)
+
+1. Enter the following **code (1)** in the new cell and then select **Run cell (2)**.
 
     >**Note**: This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.
 
@@ -354,9 +355,11 @@ In this exercise, you will explore Copilot capabilities in Fabric notebooks.
     filtered_nyc_yellowtaxi_df = nyc_yellowtaxi_df.filter(f"puYear = {year} AND puMonth IN ({months})")
     ```
 
-    >**Warning**: As each cell runs, a message will indicate that Spark jobs are in progress. Once processing is complete, a message will confirm the success of the Spark jobs. If the code in a particular cell fails, processing for the other cells will not continue.*
+    >**Warning**: As each cell runs, a message will indicate that Spark jobs are in progress. Once processing is complete, a message will confirm the success of the Spark jobs. If the code in a particular cell fails, processing for the other cells will not continue.
 
-12. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code saves the data as a delta table in the Lakehouse.
+    ![Last cell of the notebook](images1/media/exercise-1-img-36.png)
+
+1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code saves the data as a delta table in the Lakehouse.
 
     ```
     table_name = "nyc_yellowtaxi_raw"
@@ -365,9 +368,9 @@ In this exercise, you will explore Copilot capabilities in Fabric notebooks.
     print(f"Spark dataframe (filtered_nyc_yellowtaxi_df) saved to a delta table: {table_name}")
     ```
 
-    ![Notebook text](images1/media/image44.jpeg)
+    ![Notebook text](images1/media/exercise-1-img-37.png)
 
-13. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code runs a query to select and aggregate data.
+1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code runs a query to select and aggregate data.
 
     ```
     %%sql
@@ -376,22 +379,22 @@ In this exercise, you will explore Copilot capabilities in Fabric notebooks.
 
     >**Note**: The output dataset from the query should contain 6 rows, with each row showing the year, month, and the number of records for that period.
 
-    ![Notebook with the output dataset](images1/media/image45.png)
+    ![Notebook with the output dataset](images1/media/exercise-1-img-38.png)
 
-14. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code counts the number of records returned.
+1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code counts the number of records returned.
 
     ```
     filtered_nyc_yellowtaxi_df.count()
     ```
-    ![Notebook screen](images1/media/image46.jpeg)
+    ![Notebook screen](images1/media/exercise-1-img-39.png)
 
-    During testing, 69,402,938 rows were returned.
+    >**Note**: During testing, 69,402,938 rows were returned.
 
-15. At the bottom of the Copilot pane, enter the following prompt and then select **Enter**:
-
-    Describe the structure of the filtered_nyc_yellowtaxi_df dataframe
+1. At the bottom of the Copilot pane, enter the prompt **Describe the structure of the filtered_nyc_yellowtaxi_df dataframe** and then select **Enter**.
 
     ![Copilot lateral pane](images1/media/image47.png)
+
+    ![Copilot lateral pane](images1/media/exercise-1-img-40.png)
 
     >**Warning**: Copilot for Fabric notebooks is in preview. During lab testing, we experienced mixed results when we submitted this prompt. In some cases, Copilot responds with a Python command that you can enter in a cell to describe the dataframe structure. The command should resemble the following:
 
@@ -399,36 +402,39 @@ In this exercise, you will explore Copilot capabilities in Fabric notebooks.
     filtered_nyc_yellowtaxi_df.describe().show()
     ```
 
-    In other cases, Copilot responded with "I'm unable to provide a description without more context or the structure of the dataset" or "I must decline to assist with that request." These issues should be resolved as this Copilot evolves.
+1. In other cases, Copilot responded with **I'm unable to provide a description without more context or the structure of the dataset** or **I must decline to assist with that request**. These issues should be resolved as this Copilot evolves.
 
-    ![Filtered_nyc_yellowtaxi_df dataframe structure](images1/media/image48.png)
-
-16. If Copilot does not create a command for you, add a new cell to the notebook. Add the following code to the new cell and then select the **Run cell** button:
+1. If Copilot does not create a command for you, add a new cell to the notebook. Add the following code to the new cell and then select the **Run cell** button:
 
     ```
     filtered_nyc_yellowtaxi_df.describe().show()
     ```
-    ![](images1/media/image49.png)
+    ![](images1/media/exercise-1-img-42.png)
 
-17. At the bottom of the **Copilot** pane, enter the following prompt and then select **Enter**. Copilot should respond with a command that you can run to create the dataframe.
+    ![](images1/media/exercise-1-img-43.png)
+
+1. At the bottom of the **Copilot** pane, enter the following prompt and then select **Enter**. Copilot should respond with a command that you can run to create the dataframe.
 
     ```
     Create a dataframe by loading data from nyc_yellowtaxi_raw table and sampling it with 1 percentage, count the rows in the dataframe and show the amount.
     ```
-    ![Notebook screen](images1/media/image50.png)
 
+1. Select **Insert code** to create a new cell in the Notebook. Run the cell:
 
-18. Select **Insert code** to create a new cell in the Notebook. Run the cell:
+    ![Notebook screen](images1/media/exercise-1-img-44.png)
 
-    ![Notebook screen](images1/media/image51.jpeg)
+    ![Notebook screen](images1/media/exercise-1-img-45.png)
 
-19. If Copilot does not create the command for you, add a new cell to the notebook. Then, add the following code to the new cell and then select the **Run cell** button.
+1. If Copilot does not create the command for you, add a new cell to the notebook. Then, add the following code to the new cell and then select the **Run cell** button.
 
     ```
     %%code
     Create a dataframe by loading data from nyc_yellowtaxi_raw table and sampling it with 1 percentage, count the rows in the dataframe and show the amount.
     ```
-**Important:** If you want to learn more about Chat-Magics, go to [Overview of chat-magics in Microsoft Fabric
+
+    ![Notebook screen](images1/media/exercise-1-img-46.png)
+
+    **Important:** If you want to learn more about Chat-Magics, go to [Overview of chat-magics in Microsoft Fabric
 notebook](https://learn.microsoft.com/en-us/fabric/get-started/copilot-notebooks-chat-magics)
 
 # Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
@@ -456,107 +462,189 @@ In this exercise, you will use Copilot in Power BI to generate reports and enhan
 
 ### Task 1: Connect to a Fabric dataset and create visualizations using Copilot
 
-1. Open the **Power BI** application and select **Blank Report** to create a new dashboard. 
+1. Launch the **Power BI** application by double clicking the desktop shortcut icon.
 
-    ![Power BI menu](images1/media/image52.png)
+    ![](images1/media/exercise-2-img-14.png)
 
-2. Ensure the Copilot button is enabled.  
+1. Click on **Sign in (1)** from the upper right corner of the application. Provide Email: **<inject key="AzureAdUserEmail" enableCopy="true"/> (2)** then click **Continue (3)**.
 
-    ![](images1/media/image53.png) 
+    ![](images1/media/exercise-1-img-48.png)
 
-3. Select **Get Data** >> **More...** to connect to the dataset needed for your report.
+1. On the **Sign in to Microsoft** tab you will see a login screen, enter the following email and then click on **Next**.
 
-4. Select **Microsoft Fabric** and then select **Lakehouses** >> **Connect**
+   * Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
+   
+     ![](images1/media/exercise-1-img-49.png)
+     
+1. Now enter the following password and click on **Sign in**.
 
-    ![Get Data menu](images1/media/image54.png)
+   * Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
+   
+     ![](images1/media/exercise-1-img-50.png) 
 
-5. Select the Lakehouse created in the earlier activity and select **Connect to SQL endpoint** by selecting the arrow next to **Connect**.
+1. On **Automatically sign in to all desktop apps and websites on this device** pop-up, click on **No, this app only**.
 
-    ![Lakehouse view](images1/media/image55.png)
+    ![](images1/media/exercise-1-img-51.png)
 
-    ![Connect option](images1/media/image56.png)
+1. Select **Blank Report** to create a new dashboard. 
 
-6. Then, login with your odl credentials.
+    ![Power BI menu](images1/media/exercise-1-img-47.png)
 
-6. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load**:
+1. Ensure the Copilot button is enabled.  
 
-    Customers, employees, orders, order_details, products, shippers 
+    ![](images1/media/exercise-2-img-13.png) 
 
-    ![Targeted dataset](images1/media/image57.png)
+1. Select **Get Data** >> **More...** to connect to the dataset needed for your report.
 
-7. Create a real-time connection to your Lakehouse by selecting
-    **Direct Query:**
+    ![](images1/media/exercise-1-img-52.png) 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image58.png)
+1. Select **Microsoft Fabric (1)** and then select **Lakehouses (2)** >> **Connect (3)**
 
-8. Once connected, let\'s use Copilot to summarize our data. Select the **Prompt Guide**, then select **"Give me an executive summary."**
+    ![Get Data menu](images1/media/exercise-1-img-53.png)
 
-9. Next, select **"Suggest content for a new report page"** based on the semantic model.
+1. Select the **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** created in the earlier exercise and select **Connect to SQL endpoint (3)** by selecting the arrow next to **Connect (2)**.
 
-10. Select **Sales Performance** to generate a report analyzing order details, unit prices, and quantities sold.
+    ![Lakehouse view](images1/media/exercise-2-img-15.png)
+
+1. Then, login with your ODL credentials.
+
+   * Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>**
+
+   * Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
+
+1. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load**:
+
+    **Customers, employees, orders, order_details, products, shippers**
+
+    ![Targeted dataset](images1/media/exercise-1-img-79.png)
+
+1. Create a real-time connection to your Lakehouse by selecting **Direct Query (1)** then **OK (2)**.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-80.png)
+
+1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide**, then select **"Give me an executive summary."**
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-16.png)
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-81.png)
+
+1. Next, select **"Suggest content for a new report page"** based on the semantic model.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-17.png)
+
+1. Select **+ Create (1)** under **Sales Performance** to generate a report analyzing order details, unit prices, and quantities sold.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-82.png)
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-83.png)
 
 ### Task 2:  Create DAX queries and update measures descriptions using Copilot
 
 Let's use Dax query copilot to generate a new measure for **total Sales after Discount (measure)** and update the description of the current measure.
 
-1. Select on **Dax query view**, then **Copilot (Preview).**
+1. Select the **Dax query view (1)**, then **Copilot (Preview) (2).**
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image59.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-18.png)
 
-    ![A screenshot shows a Copilot prompt in Dax query view. The Copilot prompt field has the text "Ask Copilot to write or edit a DAX query or ask a related question."](images1/media/image60.png)
- 
+1. Ensure that the **Measure Descriptions with Copilot** feature is enabled. Navigate to **File >> Options and settings (1) >> Options (2).**
 
-2. Ensure that the 'Measure Descriptions with Copilot' feature is enabled. Navigate to **File >> Options and settings >> Options >> Preview Features**, then enable **Measure descriptions with Copilot** at the bottom of the list.
+    ![](images1/media/exercise-1-img-72.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image61.png)
+1. Under options tab, select **Preview Features (1)**, then enable **Measure descriptions with Copilot (2)** at the bottom of the list if not enabled then select **OK (3)**
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image62.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-073.png)
 
-3. Navigate to the **Model** and select the **new measure** created. 
+    >**Note:** If you make any feature updates, then restart the Power BI application for the changes to take effect.
 
-4. Navigate to the **Properties** section for the model and select **Create with Copilot (preview).** Copilot generates a new measure description in a few seconds.
+    ![](images1/media/exercise-1-img-74.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image63.png)
+1. Under **Dax query view (1)**, select **Copilot (Preview) (2)** then select **Suggest measures** option.
 
-5. Review the measure description to ensure that it aligns with your model. Select **Keep it** to save the description.
+    ![](images1/media/exercise-2-img-22.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image64.png)
+1. Once measure has been generated, verify it and click **Keep query**.
 
-    Now, let's publish the report to the Power BI service so that consumers can visualize and derive insights from it.
+    ![](images1/media/exercise-2-img-19.png)
 
-6. Select **File** and then select **Publish.** 
+1. Now, you can **Run (1)** the query to see the results of the query generated and then click **Update model with changes (2)** to generate measures in Model.
 
-    ![](images1/media/image65.png)
+    ![](images1/media/exercise-2-img-21.png)
 
-7. Select **Save** and then save the report as **Northwind Order Analysis** under your desired location on your machine.
+1. You will notice **Measures** will be generated under **Model**.
 
-8. Publish it under **'My Workspace'** or the workspace created during Activity 7.
+    ![](images1/media/exercise-2-img-23.png)
+
+1. Navigate to the **Model view (1)** and select the **New measure (2)** created. Navigate to the **Properties** section for the model and select **Create with Copilot (preview) (3).** Copilot generates a new measure description in a few seconds.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-24.png)
+
+1. Review the measure description to ensure that it aligns with your model. Select **Keep it** to save the description.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-25.png)
+
+1. You will observe that the description has been automatically added by Copilot.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-26.png)
+
+1. Now, let's publish the report to the Power BI service so that consumers can visualize and derive insights from it.
+
+1. Select **Home** and then select **Publish.** 
+
+    ![](images1/media/exercise-2-img-27.png)
+
+1. Select **Save** and then save the report as **Northwind Order Analysis** under your desired location on your machine.
+
+    ![](images1/media/exercise-2-img-28.png)
+
+    ![](images1/media/exercise-2-img-29.png)
+
+1. Select **Workspace<inject key="DeploymentID" enableCopy="false"/>** and click **Select** to publish it under the workspace.
+
+    ![](images1/media/exercise-2-img-31.png)
+
+1. After report getting published, you will see the Success pop up window.
+
+    ![](images1/media/exercise-2-img-30.png)
 
 ### Task 3: Explore Copilot for PowerBI as a report consumer(optional)
 
-1. Open your published report by selecting [Microsoft Fabric](https://app.fabric.microsoft.com/). Navigate to your workspace and then select the **Northwind Order Analysis.**
+1. Open your published report by going to the link [Microsoft Fabric](https://app.fabric.microsoft.com/). Navigate to your workspace and then select the **Northwind Order Analysis**. You will see the visual report displayed on the screen.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image66.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-37.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image67.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-32.png)
 
-2. Select the **Copilot** logo on the top-right and open the prompt guide. 
+1. Select the **Copilot** logo on the top-right and click on **Get started** to open the prompt guide. 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image68.png)
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-33.png)
 
-3. Select **Summarize visual on the page** to gain insights from each visual.
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-34.png)
+
+1. Select **Prompt guide** then click **Summarize visual on the page** to gain insights from each visual. The output you observe should resemble the example below:
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-35.png)
 
     ```
-    The total sales amount to 56.5K.
+    The "Sales Performance" page of the Northwind Order Analysis report contains three visuals:
 
-    Sales by region show that each region, including AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY, has a sales value of 56.5K.
+    1. **Total Sales**:
 
-    Sales by product reveal a wide range of sales values. Product 38 had the highest sales at 5.9K, accounting for 10.45% of the total sales. The lowest sales were for Product 48, with a value of 71.4. Other notable products include Product 29 with sales of 3.71K and Product 59 with sales of 2.76K.
+        - The total sales amount is $56.5K.
 
-    The calculated insights highlight that Product 38's sales were 8,166.67% higher than Product 48's sales. The sales values across all 77 products ranged from 71.4 to 5.9K.
+    2. **Sales by Region**:
+
+        - Sales are uniformly distributed across all regions listed, each with a sales amount of $56.5K.
+        - Regions include AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY.
+
+    3. **Sales by Product**:
+        - Sales are uniformly distributed across all products listed, each with a sales amount of $56.5K.
+
+        - Products include Alice Mutton, Aniseed Syrup, Boston Crab Meat, Camembert Pierrot, Carnarvon Tigers, Chai, Chang, Chartreuse verte, Chef Anton's Cajun Seasoning, Chef Anton's Gumbo Mix, Chocolade, Côte de Blaye, Escargots de Bourgogne, Filo Mix, Flotemysost, Geitost, Genen Shouyu, Gnocchi di nonna Alice, Gorgonzola Telino, Grandma's Boysenberry Spread, Gravad lax, Guaraná Fantástica, Gudbrandsdalsost, Gula Malacca, Gumbär Gummibärchen, Gustaf's Knäckebröd, Ikura, Inlagd Sill, Ipoh Coffee, Jack's New England Clam Chowder, Konbu, Lakkalikööri, Laughing Lumberjack Lager, Longlife Tofu, Louisiana Fiery Hot Pepper Sauce, Louisiana Hot Spiced Okra, Manjimup Dried Apples, Mascarpone Fabioli, Maxilaku, Mishi Kobe Niku, Mozzarella di Giovanni, Nord-Ost Matjeshering, Northwoods Cranberry Sauce, NuNuCa Nuß-Nougat-Creme, Original Frankfurter grüne Soße, Outback Lager, Pâté chinois, Pavlova, Perth Pasties, Queso Cabrales, Queso Manchego La Pastora, Raclette Courdavault, Ravioli Angelo, Rhönbräu Klosterbier, Röd Kaviar, Rogede sild, Rössle Sauerkraut, Sasquatch Ale, Schoggi Schokolade, Scottish Longbreads, Singaporean Hokkien Fried Mee, Sir Rodney's Marmalade, Sir Rodney's Scones, Sirop d'érable, Spegesild, Steeleye Stout, Tarte au sucre, Teatime Chocolate Biscuits, Thüringer Rostbratwurst, Tofu, Tourtière, Tunnbröd, Uncle Bob's Organic Dried Pears, Valkoinen suklaa, Vegie-spread, Wimmers gute Semmelknödel, and Zaanse koeken.
     ```
 
-4. Select "**Answer questions for leadership**" to prepare for your upcoming meeting with leadership.
+1. Again, select **Prompt guide** then click **Answer questions from leadership** to prepare for your upcoming meeting with leadership. The output you observe should resemble the example below.
+
+    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-36.png)
 
     ```
     The Northwind Order Analysis report provides an overview of sales performance across different products and regions. The total sales amount to 56.5K. Sales by region indicate that each region, including AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY, has a uniform sales value of 56.5K.
@@ -575,14 +663,11 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     - What are the key drivers behind the sales performance of top-selling products like Product 38 and Product 29?
     - Are there any specific regions or products that require targeted marketing efforts?
     ```
-5. Select **Edit.**
 
-    ![Toolbar](images1/media/image69.png)
-
-6. Ask Copilot to generate a report to monitor the current inventory by submitting the following prompt: *Create a report monitoring the product inventory.*
+1. Ask Copilot to generate a report to monitor the current inventory by submitting the following prompt: **Create a report monitoring the product inventory.**
 
     ![Toolbar](images1/media/image70.png)
 
-7. Save the report so any other report consumer has access to it. 
+1. You can follow the prompts to generate the report. Make sure to save the report if you want to access it later with the most recent updates.
 
 ## You have successfully completed the lab.
