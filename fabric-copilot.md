@@ -115,7 +115,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/exercise-1-img-10.png)
 
-1. Check that the **Lakehouse (1)** selected is the one you created previously in the lab. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Publish (2)**.
+1. Ensure that **Lakehouse (1)** is selected as the data destination. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Publish (2)**.
 
     ![](images1/media/exercise-1-img-98.png)
 
@@ -284,7 +284,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Bronze lakehouse meny](images1/media/exercise-2-img-9.png)
 
-1. At the upper left of the page, select the notebook name. Replace the name with **CopilotDemoNotebook** and select **Enter** from keyboard.
+1. At the upper left of the page, select the **Notebook 1** notebook name. Replace the name with **CopilotDemoNotebook** and select **Enter** from keyboard.
 
     ![](images1/media/02062025(11).png)
 
@@ -309,6 +309,8 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 1. Enter the following **code (1)** in the new cell and then select **Run cell (2)**.
 
     >**Note:** This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.
+
+    >**Note:** Running the code may take 2–3 minutes. Please wait for it to complete.
 
     ```
     storage_account_name = "azureopendatastorage"
@@ -517,6 +519,10 @@ In this exercise, you'll explore the capabilities of Copilot in Data Factory. Th
 
     ![](images1/media/exercise-1-img-82.png)
 
+1. To view the chart clearly after generating the report, minimize the **Filters (1)**, **Visualizations (2)**, and **Data (3)** panes, and close the **Copilot Suggestions (4)** tab. 
+
+    ![](images1/media/exercise-2-img-39.png)
+
     ![](images1/media/exercise-1-img-83.png)
 
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
@@ -539,9 +545,11 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. Under the options tab, select **Preview features (1)**, then enable **Measure descriptions with Copilot (2)** at the bottom of the list if not enabled, then select **OK (3)**
 
-    ![](images1/media/exercise-1-img-073.png)
+    ![](images1/media/exercise-2-img-40.png)
 
-    >**Note:** If you make any feature updates, then restart the Power BI application for the changes to take effect.
+    >**Note:** If you make any feature updates, a pop-up will appear prompting you to restart the Power BI application for the changes to take effect. Click **OK** to proceed.
+
+    >**Note:** Do not restart Power BI at this moment.
 
     ![](images1/media/exercise-1-img-74.png)
 
@@ -556,6 +564,12 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 1. Now, you can **Run (1)** the query to see the results of the query generated and then click **Update model with changes (2)** to generate measures in Model.
 
     ![](images1/media/exercise-2-img-21.png)
+
+
+    >**Note:** You may need to wait for 1-2 minutes for **Update model with changes** option to be enabled after running the query.
+
+    >**Note:** Since these are **Copilot** suggested measures, they might differ from the screenshots shown in the guide.
+
 
 1. You will notice **Measures** will be generated under **Model**.
 
@@ -593,13 +607,22 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
     ![](images1/media/exercise-2-img-30.png)
 
-### Task 3: Explore Copilot for Power BI as a report consumer(optional)
+### Task 3: Explore Copilot for Power BI as a report consumer
 
-1. Open your published report by going to the link [Microsoft Fabric](https://app.fabric.microsoft.com/). Navigate to your workspace and then select the **Northwind Order Analysis**. You will see the visual report displayed on the screen.
+1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar if not opened.
+
+   ```
+   https://app.fabric.microsoft.com/
+   ```
+
+1. Navigate to your workspace and then select the **Northwind Order Analysis** report. You will see the visual report displayed on the screen :
 
     ![](images1/media/exercise-2-img-37.png)
 
     ![](images1/media/exercise-2-img-32.png)
+
+
+1. Open your published report by going to the link [Microsoft Fabric](https://app.fabric.microsoft.com/). Navigate to your workspace and then select the **Northwind Order Analysis**. You will see the visual report displayed on the screen.
 
 1. Select the **Copilot** logo on the top-right and click on **Get started** to open the prompt guide. 
 
