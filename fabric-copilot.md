@@ -127,15 +127,21 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Queries created](images1/media/exercise-1-img-99.png)
 
+    > **Note:** Please wait a few minutes until **North Wind Data** becomes clickable.
+
 1. Select the **Customers** table, scroll to the right and examine the **Country** column. Notice that the countries include **Argentina** and **Mexico**.
 
-    ![Customers table](images1/media/exercise-1-img-13.png)
+    ![Customers table](images1/media/02062025(6).png)
 
-1. On the **Power Query** toolbar, on the **Home** tab select **Copilot**.
+1. On the **Power Query** toolbar, go to the **Home** tab, click the **dropdown** **>** option, and then select **Copilot**.
 
-    ![Power Query toolbar](images1/media/exercise-1-img-100.png)
+    ![Customers table](images1/media/02062025(7).png)
 
-    >**Note:** If the Copilot option isn't visible, try zooming out in your browser.
+    ![Customers table](images1/media/02062025(8).png)
+
+    > **Note:** If the **Copilot** option isn’t visible, try reducing your browser's zoom level.
+
+    ![Customers table](images1/media/02062025(9).png)
 
 1. In the **Copilot** pane enter **Only keep South American customers** and then select **Send**.
 
