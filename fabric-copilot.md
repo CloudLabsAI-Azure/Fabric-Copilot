@@ -97,7 +97,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Select the **Dataflow Gen2** in the menu, select the **Dataflow 1 (1)** then in the **Name** field, enter **North Wind Data (2)** and then press **Enter** from the keyboard.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-95.png)
+    ![](images1/media/exercise-1-img-95.png)
 
 1. On the **North Wind Data** dataflow gen2 **Home** tab, select **Get data (1)** >> **More (2)**.
 
@@ -113,11 +113,11 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Choose Data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**, and then select **Create.** 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-10.png)
+    ![](images1/media/exercise-1-img-10.png)
 
 1. Check that the **Lakehouse (1)** selected is the one you created previously in the lab. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Publish (2)**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-98.png)
+    ![](images1/media/exercise-1-img-98.png)
 
 1. The query should look like the following:
 
@@ -220,7 +220,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image26.png)
+    ![](images1/media/image26.png)
 
 1. In the **Copilot** pane, enter **Create a new query with data for official public holidays for Australia in 2024** and then select **Send**.
 
@@ -242,13 +242,13 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/image30.png)
+    ![](images1/media/image30.png)
 
 1. Select the **Orders** query.
 
 1. In the **Copilot** pane, enter the following text: **Create a new query named "Value By Delivery Country" showing the order value aggregated by shipCountry** and then select **Send**
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-24.png)
+    ![](images1/media/exercise-1-img-24.png)
 
 1. A table containing the **shipCountry** and **Order value aggregates** is displayed.
 
@@ -266,7 +266,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Check the destination location of the dataset in the bottom right corner. 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-5.png)
+    ![](images1/media/exercise-2-img-5.png)
 
 1. Select **Publish** to publish your data to your lake house. Select your target Lakehouse connection before publishing. (Skip this step if you already published the dataset in an earlier step.)
 
@@ -487,7 +487,7 @@ In this exercise, you'll explore the capabilities of Copilot in Data Factory. Th
 
 1. Create a real-time connection to your Lakehouse by selecting **DirectQuery (1)** then **OK (2)**.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-80.png)
+    ![](images1/media/exercise-1-img-80.png)
 
 1. On the Home menu, click on **Copilot**.
 
@@ -505,19 +505,19 @@ In this exercise, you'll explore the capabilities of Copilot in Data Factory. Th
 
 1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide**, then select **"Give me an executive summary."**
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-16.png)
+    ![](images1/media/exercise-2-img-16.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-81.png)
+    ![](images1/media/exercise-1-img-81.png)
 
 1. Next, select **"Suggest content for a new report page"** based on the semantic model.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-17.png)
+    ![](images1/media/exercise-2-img-17.png)
 
 1. Select **+ Create (1)** under **Sales Performance** to generate a report analyzing order details, unit prices, and quantities sold.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-82.png)
+    ![](images1/media/exercise-1-img-82.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-83.png)
+    ![](images1/media/exercise-1-img-83.png)
 
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
@@ -527,15 +527,19 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. Select the **Dax query view (1)**, then **Copilot (Preview) (2).**
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-18.png)
+    ![](images1/media/exercise-2-img-18.png)
 
-1. Ensure that the **Measure Descriptions with Copilot** feature is enabled. Navigate to **File >> Options and settings (1) >> Options (2).**
+    >**Note:** Close any pop-up that appears on the screen.
+
+    ![](images1/media/02062025(18).png)
+
+1. Ensure that the **Measure Descriptions with Copilot** feature is enabled. Navigate to **File -> Options and settings (1) -> Options (2).**
 
     ![](images1/media/exercise-1-img-72.png)
 
-1. Under the options tab, select **Preview Features (1)**, then enable **Measure descriptions with Copilot (2)** at the bottom of the list if not enabled, then select **OK (3)**
+1. Under the options tab, select **Preview features (1)**, then enable **Measure descriptions with Copilot (2)** at the bottom of the list if not enabled, then select **OK (3)**
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-073.png)
+    ![](images1/media/exercise-1-img-073.png)
 
     >**Note:** If you make any feature updates, then restart the Power BI application for the changes to take effect.
 
@@ -559,15 +563,15 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. Navigate to the **Model view (1)** and select the **New measure (2)** created. Navigate to the **Properties** section for the model and select **Create with Copilot (preview) (3).** Copilot generates a new measure description in a few seconds.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-24.png)
+    ![](images1/media/exercise-2-img-24.png)
 
 1. Review the measure description to ensure that it aligns with your model. Select **Keep it** to save the description.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-25.png)
+    ![](images1/media/exercise-2-img-25.png)
 
 1. You will observe that the description has been automatically added by Copilot.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-26.png)
+    ![](images1/media/exercise-2-img-26.png)
 
 1. Now, let's publish the report to the Power BI service so that consumers can visualize and derive insights from it.
 
@@ -593,19 +597,19 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. Open your published report by going to the link [Microsoft Fabric](https://app.fabric.microsoft.com/). Navigate to your workspace and then select the **Northwind Order Analysis**. You will see the visual report displayed on the screen.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-37.png)
+    ![](images1/media/exercise-2-img-37.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-32.png)
+    ![](images1/media/exercise-2-img-32.png)
 
 1. Select the **Copilot** logo on the top-right and click on **Get started** to open the prompt guide. 
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-33.png)
+    ![](images1/media/exercise-2-img-33.png)
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-34.png)
+    ![](images1/media/exercise-2-img-34.png)
 
 1. Select **Prompt guide** then click **Summarize visual on the page** to gain insights from each visual. The output you observe should resemble the example below:
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-35.png)
+    ![](images1/media/exercise-2-img-35.png)
 
     ```
     The "Sales Performance" page of the Northwind Order Analysis report contains three visuals:
@@ -627,7 +631,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. Again, select **Prompt guide** then click **Answer questions from leadership** to prepare for your upcoming meeting with leadership. The output you observe should resemble the example below.
 
-    ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-2-img-36.png)
+    ![](images1/media/exercise-2-img-36.png)
 
     ```
     The Northwind Order Analysis report provides an overview of sales performance across different products and regions. The total sales amount to 56.5K. Sales by region indicate that each region, including AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY, has a uniform sales value of 56.5K.
