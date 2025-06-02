@@ -276,7 +276,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
 1. In the **Workspace<inject key="DeploymentID" enableCopy="false"/>** Fabric workspace you created earlier, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** you previously created.
 
-1. On the menu for the Fabric workshop Lakehouse, select **Open notebook** **->** **New notebook**.
+1. On the menu for the Fabric workshop Lakehouse, select **Open notebook -> New notebook**.
 
     ![Bronze lakehouse meny](images1/media/exercise-2-img-7.png)
 
@@ -286,23 +286,25 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
 1. At the upper left of the page, select the notebook name. Replace the name with **CopilotDemoNotebook** and select **Enter** from keyboard.
 
-    ![Notebook options](images1/media/02062025(11).png)
+    ![](images1/media/02062025(11).png)
 
 1. From the notebook menu, click on the **ellipsis (...)** and select **Copilot**.
 
-    ![Notebook options](images1/media/02062025(12).png)
+    ![](images1/media/02062025(12).png)
 
     >**Note:** If tour pop-up appears, feel free to skip it for now.
 
-1. Click **Get Started** in the Copilot tab, then select **Run cell** button to initiate the session. Once the session has started, you can proceed to the next step.
+1. Click **Get Started (1)** in the Copilot tab, then select **Run cell (2)** button to initiate the session. Once the session has started, you can proceed to the next step.
 
-    ![Notebook screen with Copilot pane on the side](images1/media/exercise-2-img-10.png)
+    ![](images1/media/02062025(13).png)
 
-    >**Note:** As this is your first session, it may take a few minutes (around 5–10 minutes) to get started.
+    >**Note:** As this is your first session, it may take a few minutes (around 1-2 minutes) to get started.
 
-1. Move the cursor to the lower left of the last cell in the notebook and select **+ code** to add a new cell.
+1. Move the cursor to the lower left of the last cell in the notebook and select **+ Code** to add a new cell.
 
-    ![Last cell of the notebook](images1/media/exercise-2-img-11.png)
+   > **Note:** If you don’t see the **+ Code** button, try hovering the mouse slightly below the last cell.
+
+    ![](images1/media/exercise-2-img-11.png)
 
 1. Enter the following **code (1)** in the new cell and then select **Run cell (2)**.
 
@@ -327,7 +329,15 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     >**Warning:** As each cell runs, a message will indicate that Spark jobs are in progress. Once processing is complete, a message will confirm the success of the Spark jobs. If the code in a particular cell fails, processing for the other cells will not continue.
 
-    ![Last cell of the notebook](images1/media/exercise-1-img-36.png)
+    ![](images1/media/exercise-1-img-36.png)
+
+    > **Note:** To view the Spark jobs, expand the **Spark jobs** section as shown in the snapshot below.
+
+    ![](images1/media/02062025(14).png)
+
+    ![](images1/media/02062025(15).png)
+
+    > **Note:** Running the code may take 2–3 minutes. Please wait for it to complete.
 
 1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code saves the data as a delta table in the Lakehouse.
 
