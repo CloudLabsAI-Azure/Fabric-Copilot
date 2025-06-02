@@ -18,19 +18,21 @@ In this lab, you will complete the following exercises:
 
 ### Task 1: Start Free fabric trial
 
-1. On the top right corner of the screen, select the **user icon (1)** and select **Free trial (2)**.
+1. On the top right corner of the screen, select the **User icon** and select **Free trial**.
 
     ![](images1/media/image9.png)
 
-1. Upgrade to a free Microsoft Fabric trial dialog opens. Select **Activate**.
+1. On Activate your 60-day free Fabric trial capacity dialog opens. Select **Activate**.
 
-    ![](images1/media/image-10.png)
+    ![](images1/media/02062025(3).png)
 
-1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Fabric Home Page**.
+    > **Note:** The Trial capacity region may differ from the one shown in the screenshot. Don't worry - just activate it and proceed to the next step. 
 
-    ![](images1/media/image-11.png)
+1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Got it**.
 
-1. You will be navigated to the **Microsoft** **Fabric Home page**.
+    ![](images1/media/02062025(4).png)
+
+1. You will be navigated to the **Microsoft Fabric Home page**.
 
     ![](images1/media/image-12.png)
 
