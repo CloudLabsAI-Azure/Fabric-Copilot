@@ -56,6 +56,8 @@ In this lab, you will complete the following exercises:
 
     ![works-apply.png](images1/media/exercise-1-img-3.png)
 
+    > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, Apply it, and continue to the next step. 
+
     >**Note:** Close any pop-up that appears on the screen.
 
     ![gotit-popup.png](images1/media/gotit-popup.png)
