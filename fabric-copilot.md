@@ -1,6 +1,4 @@
-# Fabric Copilot Hands On Lab
-
-## Estimated Duration: 4 hours
+# Fabric Copilot Hands-On Lab
 
 ## Lab Overview
 
@@ -16,42 +14,9 @@ In this lab, you will complete the following exercises:
 
 - Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
 
-## Prerequisites
-
-Participants should have:
-
-- Basic familiarity with data concepts – understanding of datasets, dataflows, and data pipelines.
-- Fundamental knowledge of Power BI – ability to create simple reports and visualizations.
-- Awareness of Azure and Microsoft services – basic understanding of Azure portal navigation and Microsoft Fabric concepts.
-- Comfort with web-based tools – ability to use cloud services and tools like notebooks and dashboards.
-
-## Exercise 1: Create and set up Fabric Workspace
+## Exercise 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
 
 ### Task 1: Start Free fabric trial
-
-1. On the lab VM desktop, open the **Edge browser** and open Microsoft Fabric in a new tab by copy pasting the link [Microsoft Fabric](https://app.fabric.microsoft.com/home). You will be navigated to the login page.
-
-1. On the **Microsoft** tab, you will see the login screen. Enter the following **Email/Username** and then click on **Next**.
-
-   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
-
-        ![](images1/media/exercise-1-img-89.png)
-
-1. Now, enter the following **Password** and click on **Sign in.**
-
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
-
-        ![](images1/media/exercise-1-img-90.png)
-
-1. On the **Stay signed in?** tab click on **Yes**.
-
-    ![](images1/media/exercise-1-img-91.png)
-
-1. You will be navigated to the **Fabric Service Home page**.
-
-1. We assume you are familiar with the layout of Fabric Service. If you have any questions, please do not hesitate to ask the instructor.
-
-1. Currently, you are in the **My Workspace**. To work with Fabric items, you will need a trial license and a workspace that has Fabric license assigned. Let's set this up.
 
 1. On the top right corner of the screen, select the **user icon (1)** and select **Free trial (2)**.
 
