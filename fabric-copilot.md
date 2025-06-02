@@ -274,9 +274,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 In this task, you will explore Copilot capabilities in Fabric notebooks.
 
-1. On the the **Workspace<inject key="DeploymentID" enableCopy="false"/>** fabric training workspace that you created previously. Then, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** you created previously.
+1. In the **Workspace<inject key="DeploymentID" enableCopy="false"/>** Fabric workspace you created earlier, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** you previously created.
 
-1. On the menu for the Fabric workshop Lakehouse, select **Open notebook** >> **New notebook**.
+1. On the menu for the Fabric workshop Lakehouse, select **Open notebook** **->** **New notebook**.
 
     ![Bronze lakehouse meny](images1/media/exercise-2-img-7.png)
 
@@ -286,11 +286,11 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
 1. At the upper left of the page, select the notebook name. Replace the name with **CopilotDemoNotebook** and select **Enter** from keyboard.
 
-    ![Notebook options](images1/media/exercise-2-img-8.png)
+    ![Notebook options](images1/media/02062025(11).png)
 
-1. From the notebook menu, select **Copilot**.
+1. From the notebook menu, click on the **ellipsis (...)** and select **Copilot**.
 
-    ![Notebook menu](images1/media/exercise-1-img-34.png)
+    ![Notebook options](images1/media/02062025(12).png)
 
     >**Note:** If tour pop-up appears, feel free to skip it for now.
 
