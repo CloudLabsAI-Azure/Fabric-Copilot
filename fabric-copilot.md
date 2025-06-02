@@ -453,17 +453,19 @@ In this exercise, you'll explore the capabilities of Copilot in Data Factory. Th
 
 1. Select **Blank Report** to create a new dashboard. 
 
-    ![Power BI menu](images1/media/exercise-1-img-47.png)
+    ![Power BI menu](images1/media/exercise-1-img-47.png) 
 
-1. Ensure the Copilot button is enabled.
+    >**Note:** If you receive any pop-ups, please **Close** them.
 
-    ![](images1/media/exercise-2-img-13.png) 
+    ![alt text](image.png)
+
+    ![alt text](image-1.png)
 
 1. Select **Get Data** **->** **More...** to connect to the dataset needed for your report.
 
     ![](images1/media/exercise-1-img-52.png) 
 
-1. Select **Microsoft Fabric (1)** and then select **Lakehouses (2)** >> **Connect (3)**
+1. Select **Microsoft Fabric (1)** and then select **Lakehouses (2) -> Connect (3)**
 
     ![Get Data menu](images1/media/exercise-1-img-53.png)
 
@@ -479,13 +481,27 @@ In this exercise, you'll explore the capabilities of Copilot in Data Factory. Th
 
 1. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load:**
 
-    **Customers, employees, orders, order_details, products, shippers**
+    **Customers, Employees, Orders, Order_Details, Products, Shippers, Suppliers**
 
     ![Targeted dataset](images1/media/exercise-1-img-79.png)
 
-1. Create a real-time connection to your Lakehouse by selecting **Direct Query (1)** then **OK (2)**.
+1. Create a real-time connection to your Lakehouse by selecting **DirectQuery (1)** then **OK (2)**.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-80.png)
+
+1. On the Home menu, click on **Copilot**.
+
+    ![](images1/media/exercise-2-img-13.png)
+
+    >**Note:** If you're unable to find Copilot, try zooming out the browser tab to 80% - it should then become visible.
+
+1. Select the workspace **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)** and click **OK (2)**.
+
+    ![Customers table](images1/media/02062025(16).png)
+
+1. Click **Get started** in the Copilot chat window.
+
+    ![Customers table](images1/media/02062025(17).png)
 
 1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide**, then select **"Give me an executive summary."**
 
@@ -503,7 +519,9 @@ In this exercise, you'll explore the capabilities of Copilot in Data Factory. Th
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-83.png)
 
-### Task 2:  Create DAX queries and update measure descriptions using Copilot
+    > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
+
+### Task 2: Create DAX queries and update measure descriptions using Copilot
 
 Let's use Dax query copilot to generate a new measure for **total Sales after Discount (measure)** and update the description of the current measure.
 
