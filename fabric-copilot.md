@@ -34,7 +34,7 @@ In this lab, you will complete the following exercises:
 
     ![](images1/media/image-12.png)
 
-### Task 2: Create workspace and link with Fabric Copilot enabled capacity (F2)
+### Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
 1. Now let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar.
 
@@ -77,7 +77,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Ensure you're logged into your Fabric workspace before proceeding.
 
-1. Click on **+ New item (1)** button. In the pop-up window search for **Lakehouse (2)** in the search bar and click on **Lakehouse (3)**.
+1. Click on **+ New item (1)** button. In the pop-up window, search for **Lakehouse (2)** in the search bar and click on **Lakehouse (3)**.
 
     ![Lakehouse](images1/media/exercise-1-img-28.png)
 
@@ -111,7 +111,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-10.png)
 
-1. Check that the **Lakehouse (1)** selected is the one you created previously in the lab. You can hover to **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Publish (2)**.
+1. Check that the **Lakehouse (1)** selected is the one you created previously in the lab. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Publish (2)**.
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-98.png)
 
@@ -131,18 +131,19 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Power Query toolbar](images1/media/exercise-1-img-100.png)
 
-    >**Note**: If the Copilot option isn't visible, try zooming out in your browser.
+    >**Note:** If the Copilot option isn't visible, try zooming out in your browser.
 
 1. In the **Copilot** pane enter **Only keep South American customers** and then select **Send**.
 
     ![Copilto pane](images1/media/image13.png)
 
-    >**Note**: Due to the nature of Copilot you may end up with differing results. You can also try **Only keep customers from South American countries**.
+    >**Note:** Due to the nature of Copilot, you may end up with differing results. You can also try **Only keep customers from South American countries**.
 
     The desired Applied Step text is :
     ```
     Table.SelectRows(#"Navigation 1", each List.Contains({"Mexico", "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname"}, [Country]))
     ```
+
 1. It will select Mexico only:
 
     ![A screenshot of a computer Description automatically generated](images1/media/exercise-1-img-15.png)
@@ -152,6 +153,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
     ```
     Table.SelectRows(#"Navigation 1", each List.Contains({"Mexico", "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname"}, [Country]))
     ```
+
     ![Customers table](images1/media/exercise-1-img-102.png)
 
 1. The **Country** column has been filtered and now only includes customers from South America.
@@ -172,7 +174,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Undo button located above the Copilot pane.](images1/media/exercise-2-img-1.png)
 
-    >**Note**: You need to have an accurate question, so you can also try: **What is the total number of customers in each country?**
+    >**Note:** You need to have an accurate question, so you can also try: **What is the total number of customers in each country?**
 
     The desired Applied Step text is :
 
@@ -272,7 +274,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Bronze lakehouse meny](images1/media/exercise-2-img-7.png)
 
-    >**Note**: If tour pop-up appears, feel free to skip it for now.
+    >**Note:** If tour pop-up appears, feel free to skip it for now.
 
     ![Bronze lakehouse meny](images1/media/exercise-2-img-9.png)
 
@@ -284,13 +286,13 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Notebook menu](images1/media/exercise-1-img-34.png)
 
-    >**Note**: If tour pop-up appears, feel free to skip it for now.
+    >**Note:** If tour pop-up appears, feel free to skip it for now.
 
 1. Click **Get Started** in the Copilot tab, then select **Run cell** button to initiate the session. Once the session has started, you can proceed to the next step.
 
     ![Notebook screen with Copilot pane on the side](images1/media/exercise-2-img-10.png)
 
-    >**Note**: As this is your first session, it may take a few minutes (around 5–10 minutes) to get started.
+    >**Note:** As this is your first session, it may take a few minutes (around 5–10 minutes) to get started.
 
 1. Move the cursor to the lower left of the last cell in the notebook and select **+ code** to add a new cell.
 
@@ -298,7 +300,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
 1. Enter the following **code (1)** in the new cell and then select **Run cell (2)**.
 
-    >**Note**: This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.
+    >**Note:** This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.
 
     ```
     storage_account_name = "azureopendatastorage"
@@ -317,7 +319,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
     filtered_nyc_yellowtaxi_df = nyc_yellowtaxi_df.filter(f"puYear = {year} AND puMonth IN ({months})")
     ```
 
-    >**Warning**: As each cell runs, a message will indicate that Spark jobs are in progress. Once processing is complete, a message will confirm the success of the Spark jobs. If the code in a particular cell fails, processing for the other cells will not continue.
+    >**Warning:** As each cell runs, a message will indicate that Spark jobs are in progress. Once processing is complete, a message will confirm the success of the Spark jobs. If the code in a particular cell fails, processing for the other cells will not continue.
 
     ![Last cell of the notebook](images1/media/exercise-1-img-36.png)
 
@@ -339,7 +341,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
     select puYear, puMonth, count(*) from nyc_yellowtaxi_raw group by puYear, puMonth order by puYear, puMonth
     ```
 
-    >**Note**: The output dataset from the query should contain 6 rows, with each row showing the year, month, and the number of records for that period.
+    >**Note:** The output dataset from the query should contain 6 rows, with each row showing the year, month, and the number of records for that period.
 
     ![Notebook with the output dataset](images1/media/exercise-1-img-38.png)
 
@@ -350,7 +352,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
     ```
     ![Notebook screen](images1/media/exercise-1-img-39.png)
 
-    >**Note**: During testing, 69,402,938 rows were returned.
+    >**Note:** During testing, 69,402,938 rows were returned.
 
 1. At the bottom of the Copilot pane, enter the prompt **Describe the structure of the filtered_nyc_yellowtaxi_df dataframe** and then select **Enter**.
 
@@ -358,7 +360,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Copilot lateral pane](images1/media/exercise-1-img-40.png)
 
-    >**Warning**: Copilot for Fabric notebooks is in preview. During lab testing, we experienced mixed results when we submitted this prompt. In some cases, Copilot responds with a Python command that you can enter in a cell to describe the dataframe structure. The command should resemble the following:
+    >**Warning:** Copilot for Fabric notebooks is in preview. During lab testing, we experienced mixed results when we submitted this prompt. In some cases, Copilot responds with a Python command that you can enter in a cell to describe the dataframe structure. The command should resemble the following:
 
     ```
     filtered_nyc_yellowtaxi_df.describe().show()
@@ -401,24 +403,11 @@ notebook](https://learn.microsoft.com/en-us/fabric/get-started/copilot-notebooks
 
 # Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
 
-Let's leverage Copilot for Power BI to create interactive reports using curated data stored in OneLake. This exercise will guide you through the end-to-end process: connecting to your dataset, using Copilot for Power BI to explore data, and generating insightful visualizations with
-minimal manual effort.
+Let's leverage Copilot for Power BI to create interactive reports using curated data stored in OneLake. This exercise will guide you through the end-to-end process: connecting to your dataset, using Copilot for Power BI to explore data, and generating insightful visualizations with minimal manual effort.
 
-**Power BI:** This integration incorporates generative AI to
-automatically build reports based on topics you select or prompts you
-create.
+**Power BI:** This integration incorporates generative AI to automatically build reports based on topics you select or prompts you create.
 
 In this exercise, you'll explore the capabilities of Copilot in Data Factory. The Power BI Copilot will be covered in a later exercise within this lab and will use Copilot in Power BI to generate reports and enhance your data analysis process.
-
-Prerequisite:
-
-- Ensure that the Power BI Desktop application is installed on your local machine.
-
-- Ensure Copilot for Power BI is enabled.
-
-- You must have the necessary permission to read the curated dataset from OneLake.
-
-- Copilot is turned on by default in Fabric and now generally available, however it is not supported in sovereign clouds due to GPU availability.
 
 ### Task 1: Connect to a Fabric dataset and create visualizations using Copilot
 
@@ -430,7 +419,7 @@ Prerequisite:
 
     ![](images1/media/exercise-1-img-48.png)
 
-1. On the **Sign in to Microsoft** tab you will see a login screen, enter the following email and then click on **Next**.
+1. On the **Sign in to Microsoft** tab, you will see a login screen. Enter the following email and then click on **Next**.
 
    * Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
    
@@ -442,7 +431,7 @@ Prerequisite:
    
      ![](images1/media/exercise-1-img-50.png) 
 
-1. On **Automatically sign in to all desktop apps and websites on this device** pop-up, click on **No, this app only**.
+1. On the **Automatically sign in to all desktop apps and websites on this device** pop-up, click on **No, this app only**.
 
     ![](images1/media/exercise-1-img-51.png)
 
@@ -466,13 +455,13 @@ Prerequisite:
 
     ![Lakehouse view](images1/media/exercise-2-img-15.png)
 
-1. Then, login with your ODL credentials.
+1. Then, log in with the below credentials.
 
    * Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>**
 
    * Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
 
-1. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load**:
+1. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load:**
 
     **Customers, employees, orders, order_details, products, shippers**
 
@@ -498,7 +487,7 @@ Prerequisite:
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-83.png)
 
-### Task 2:  Create DAX queries and update measures descriptions using Copilot
+### Task 2:  Create DAX queries and update measure descriptions using Copilot
 
 Let's use Dax query copilot to generate a new measure for **total Sales after Discount (measure)** and update the description of the current measure.
 
@@ -510,7 +499,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
     ![](images1/media/exercise-1-img-72.png)
 
-1. Under options tab, select **Preview Features (1)**, then enable **Measure descriptions with Copilot (2)** at the bottom of the list if not enabled then select **OK (3)**
+1. Under the options tab, select **Preview Features (1)**, then enable **Measure descriptions with Copilot (2)** at the bottom of the list if not enabled, then select **OK (3)**
 
     ![A screenshot of a computer AI-generated content may be incorrect.](images1/media/exercise-1-img-073.png)
 
@@ -522,7 +511,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
     ![](images1/media/exercise-2-img-22.png)
 
-1. Once measure has been generated, verify it and click **Keep query**.
+1. Once the measure has been generated, verify it and click **Keep query**.
 
     ![](images1/media/exercise-2-img-19.png)
 
@@ -562,11 +551,11 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
     ![](images1/media/exercise-2-img-31.png)
 
-1. After report getting published, you will see the Success pop up window.
+1. After the report gets published, you will see the Success pop-up window.
 
     ![](images1/media/exercise-2-img-30.png)
 
-### Task 3: Explore Copilot for PowerBI as a report consumer(optional)
+### Task 3: Explore Copilot for Power BI as a report consumer(optional)
 
 1. Open your published report by going to the link [Microsoft Fabric](https://app.fabric.microsoft.com/). Navigate to your workspace and then select the **Northwind Order Analysis**. You will see the visual report displayed on the screen.
 
@@ -587,16 +576,16 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     ```
     The "Sales Performance" page of the Northwind Order Analysis report contains three visuals:
 
-    1. **Total Sales**:
+    1. **Total Sales:**
 
         - The total sales amount is $56.5K.
 
-    2. **Sales by Region**:
+    2. **Sales by Region:**
 
         - Sales are uniformly distributed across all regions listed, each with a sales amount of $56.5K.
         - Regions include AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY.
 
-    3. **Sales by Product**:
+    3. **Sales by Product:**
         - Sales are uniformly distributed across all products listed, each with a sales amount of $56.5K.
 
         - Products include Alice Mutton, Aniseed Syrup, Boston Crab Meat, Camembert Pierrot, Carnarvon Tigers, Chai, Chang, Chartreuse verte, Chef Anton's Cajun Seasoning, Chef Anton's Gumbo Mix, Chocolade, Côte de Blaye, Escargots de Bourgogne, Filo Mix, Flotemysost, Geitost, Genen Shouyu, Gnocchi di nonna Alice, Gorgonzola Telino, Grandma's Boysenberry Spread, Gravad lax, Guaraná Fantástica, Gudbrandsdalsost, Gula Malacca, Gumbär Gummibärchen, Gustaf's Knäckebröd, Ikura, Inlagd Sill, Ipoh Coffee, Jack's New England Clam Chowder, Konbu, Lakkalikööri, Laughing Lumberjack Lager, Longlife Tofu, Louisiana Fiery Hot Pepper Sauce, Louisiana Hot Spiced Okra, Manjimup Dried Apples, Mascarpone Fabioli, Maxilaku, Mishi Kobe Niku, Mozzarella di Giovanni, Nord-Ost Matjeshering, Northwoods Cranberry Sauce, NuNuCa Nuß-Nougat-Creme, Original Frankfurter grüne Soße, Outback Lager, Pâté chinois, Pavlova, Perth Pasties, Queso Cabrales, Queso Manchego La Pastora, Raclette Courdavault, Ravioli Angelo, Rhönbräu Klosterbier, Röd Kaviar, Rogede sild, Rössle Sauerkraut, Sasquatch Ale, Schoggi Schokolade, Scottish Longbreads, Singaporean Hokkien Fried Mee, Sir Rodney's Marmalade, Sir Rodney's Scones, Sirop d'érable, Spegesild, Steeleye Stout, Tarte au sucre, Teatime Chocolate Biscuits, Thüringer Rostbratwurst, Tofu, Tourtière, Tunnbröd, Uncle Bob's Organic Dried Pears, Valkoinen suklaa, Vegie-spread, Wimmers gute Semmelknödel, and Zaanse koeken.
