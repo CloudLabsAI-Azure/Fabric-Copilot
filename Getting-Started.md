@@ -1,6 +1,6 @@
 # Fabric Copilot
 
-## Overall Estimated Duration: 4 Hours
+### Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -67,7 +67,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
 
 ## Virtual Machine & Lab Guide
  
-Your virtual machine is your workhorse throughout the workshop. The lab guide is your roadmap to success.
+Your virtual machine is your workhorse throughout the workshop. The **Guide** is your roadmap to success.
 
 ![](images1/media/getting-started-1.png)
 
@@ -93,7 +93,7 @@ Feel free to start, stop, or restart your virtual machine as needed from the **R
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![alt text](image-1.png)
+![](images1/media/02062025(1).png)
 
 ## Let's Get Started with Fabric Portal
  
@@ -107,7 +107,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![](images1/media/exercise-1-img-89.png)
+     ![](images1/media/02062025(2).png)
  
 3. Now enter the following password and click on **Sign in**.
  
