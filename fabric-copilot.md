@@ -20,11 +20,11 @@ In this lab, you will complete the following exercises:
 
 1. On the top right corner of the screen, select the **User icon** and select **Free trial**.
 
-    ![](images1/media/image9.png)
+    ![](images1/media/02062025(3).png)
 
 1. On Activate your 60-day free Fabric trial capacity dialog opens. Select **Activate**.
 
-    ![](images1/media/02062025(3).png)
+    ![](images1/media/image-10.png)
 
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
