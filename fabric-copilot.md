@@ -337,8 +337,6 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![](images1/media/02062025(15).png)
 
-    > **Note:** Running the code may take 2–3 minutes. Please wait for it to complete.
-
 1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code saves the data as a delta table in the Lakehouse.
 
     ```
@@ -392,6 +390,8 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
     ![](images1/media/exercise-1-img-42.png)
 
     ![](images1/media/exercise-1-img-43.png)
+
+    > **Note:** Running the code may take 2–3 minutes. Please wait for it to complete.
 
 1. At the bottom of the **Copilot** pane, enter the following prompt and then select **Enter**. Copilot should respond with a command that you can run to create the dataframe.
 
