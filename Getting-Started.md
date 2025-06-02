@@ -1,6 +1,6 @@
 # Fabric Copilot
 
-## Overall Estimated Duration: 4 hours
+## Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -10,20 +10,18 @@ This hands-on lab introduces participants to Microsoft Fabric and its Copilot fe
 
 This lab is designed to provide participants with practical experience in utilizing Microsoft Fabric and its Copilot feature to create workspaces, ingest and transform data, and analyze data within a warehouse.
 
-- **Create a Fabric workspace**: Sign up for the Microsoft Fabric Trial and set up a workspace to explore data integration, analytics, and visualization tools..
-- **Ingest data with a pipeline in Microsoft Fabric**: Implement ETL/ELT solutions using pipelines and Apache Spark to load and transform data into a Lakehouse for analysis.
-- **Data Engineering - Ingest Data in Fabric with Fabric Copilot**: Utilize Fabric Copilot and Dataflow Gen2 to create a data pipeline, leveraging natural language for data ingestion and transformation.
-- **Data Warehouse - Analyze Data in a Warehouse with Fabric Copilot**: Analyze data in a warehouse by connecting to data sources, running queries, and visualizing insights using Fabric Copilot to enhance decision-making.
+- **Create a Fabric workspace:** Sign up for the Microsoft Fabric Trial and set up a workspace to explore data integration, analytics, and visualization tools..
+- **Ingest data with a pipeline in Microsoft Fabric:** Implement ETL/ELT solutions using pipelines and Apache Spark to load and transform data into a Lakehouse for analysis.
+- **Data Engineering - Ingest Data in Fabric with Fabric Copilot:** Utilize Fabric Copilot and Dataflow Gen2 to create a data pipeline, leveraging natural language for data ingestion and transformation.
+- **Data Warehouse - Analyze Data in a Warehouse with Fabric Copilot:** Analyze data in a warehouse by connecting to data sources, running queries, and visualizing insights using Fabric Copilot to enhance decision-making.
 
 ## Prerequisites
 
 Participants should have the following prerequisites:
 
-- **Basic understanding of data management and analytics**: Familiarity with data concepts and terminology will aid in navigating Microsoft Fabric's features.
-- **Familiarity with Microsoft 365 tools**: Experience with common Microsoft 365 applications, such as Excel and Power BI, will be beneficial.
-- **Azure subscription with appropriate permissions**: Access to an Azure account with the necessary permissions to create and manage resources within Microsoft Fabric is required.
-- **Access to Microsoft Fabric**: Participants should have access to Microsoft Fabric with Copilot enabled to perform the exercises.
-- **Knowledge of SQL and data visualization**: Understanding SQL queries and data visualization techniques will assist in executing the lab tasks effectively.
+- **Basic understanding of data management and analytics:** Familiarity with data concepts and terminology will aid in navigating Microsoft Fabric's features.
+- **Familiarity with Microsoft 365 tools:** Experience with common Microsoft 365 applications, such as Excel and Power BI, will be beneficial.
+- **Knowledge of SQL and data visualization:** Understanding SQL queries and data visualization techniques will assist in executing the lab tasks effectively.
 
 ## Architechture
 
@@ -33,31 +31,31 @@ The architecture for the **Microsoft Fabric with Copilot** lab enables end-to-en
 
 The architecture for this lab involves several key components:
 
-- **Microsoft Fabric**: A comprehensive data analytics platform that integrates tools for data engineering, analytics, and visualization, including AI-powered capabilities like Fabric Copilot.
+- **Microsoft Fabric:** A comprehensive data analytics platform that integrates tools for data engineering, analytics, and visualization, including AI-powered capabilities like Fabric Copilot.
 
-- **Workspace**: A collaborative environment within Microsoft Fabric where resources, projects, and tools are managed, enabling efficient organization and teamwork.
+- **Workspace:** A collaborative environment within Microsoft Fabric where resources, projects, and tools are managed, enabling efficient organization and teamwork.
 
-- **Lakehouse**: A unified data storage architecture combining the benefits of data lakes and data warehouses, optimized for both raw and structured data.  
+- **Lakehouse:** A unified data storage architecture combining the benefits of data lakes and data warehouses, optimized for both raw and structured data.  
 
-- **Pipeline**: A sequence of data processing steps used to implement ETL (Extract, Transform, Load) or ELT (Extract, Load, Transform) workflows to move and process data.  
+- **Pipeline:** A sequence of data processing steps used to implement ETL (Extract, Transform, Load) or ELT (Extract, Load, Transform) workflows to move and process data.  
 
-- **Notebook**: An interactive tool in Fabric that allows users to write and execute Apache Spark code for data analysis and transformation at scale.  
+- **Notebook:** An interactive tool in Fabric that allows users to write and execute Apache Spark code for data analysis and transformation at scale.  
 
-- **SQL**: A programming language used to query, manipulate, and analyze data stored in tables within the Lakehouse or other data stores.  
+- **SQL:** A programming language used to query, manipulate, and analyze data stored in tables within the Lakehouse or other data stores.  
 
-- **Visual Query**: A graphical interface that enables users to design and execute data queries without writing code, making data exploration more accessible.
+- **Visual Query:** A graphical interface that enables users to design and execute data queries without writing code, making data exploration more accessible.
 
-- **Report**: A structured presentation of data insights, often with visualizations like charts and graphs, created for stakeholders to analyze results.
+- **Report:** A structured presentation of data insights, often with visualizations like charts and graphs, created for stakeholders to analyze results.
 
-- **Fabric Copilot**: An AI-driven assistant in Microsoft Fabric that helps automate tasks such as data ingestion, transformation, and reporting using natural language commands.
+- **Fabric Copilot:** An AI-driven assistant in Microsoft Fabric that helps automate tasks such as data ingestion, transformation, and reporting using natural language commands.
 
-- **Dataflow Gen2**: A modernized data pipeline tool in Fabric that enables the creation of scalable and automated workflows for ingesting and transforming data.
+- **Dataflow Gen2:** A modernized data pipeline tool in Fabric that enables the creation of scalable and automated workflows for ingesting and transforming data.
 
-- **Data Warehouse**: A centralized, structured repository optimized for querying and reporting, used for storing processed data ready for analysis.
+- **Data Warehouse:** A centralized, structured repository optimized for querying and reporting, used for storing processed data ready for analysis.
 
-- **Table**: A structured arrangement of data in rows and columns, used to organize and store information in databases or warehouses.  
+- **Table:** A structured arrangement of data in rows and columns, used to organize and store information in databases or warehouses.  
 
-- **Data Model**: A structured representation of data and its relationships, designed to enhance analytical queries and reporting efficiency.  
+- **Data Model:** A structured representation of data and its relationships, designed to enhance analytical queries and reporting efficiency.  
 
 ## Getting Started with the Lab
  
@@ -90,6 +88,52 @@ For convenience, you can open the lab guide in a separate window by selecting th
 Feel free to start, stop, or restart your virtual machine as needed from the **Resources** tab. Your experience is in your hands!
 
 ![](images1/media/getting-started-3.png)
+
+## Lab Guide Zoom In/Zoom Out
+
+To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+
+![alt text](image-1.png)
+
+## Let's Get Started with Fabric Portal
+ 
+1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar:
+
+   ```
+   https://app.fabric.microsoft.com/home
+   ```
+
+2. On the **Enter your email, we'll check if you need to create a new account** tab you will see the login screen, in that enter the following email/username, and click on **Submit**.
+ 
+   - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
+ 
+     ![](images1/media/exercise-1-img-89.png)
+ 
+3. Now enter the following password and click on **Sign in**.
+ 
+   - **Password:** <inject key="AzureAdUserPassword"></inject>
+ 
+     ![](images1/media/exercise-1-img-90.png)
+     
+1. If you see the pop-up **Stay Signed in?**, select **Yes**.
+
+   ![](images1/media/exercise-1-img-91.png)
+
+1. On Welcome to the Fabric view dialog opens, click **Cancel**.
+
+    ![image](https://github.com/user-attachments/assets/6ec9f96c-1635-4d7f-a9e6-de61bcff231c)
+
+1. On Microsoft Fabric (Free) license assignment dialog appears, click **OK** to proceed.
+
+   ![image](https://github.com/user-attachments/assets/710358d8-b496-4e2e-9ac0-20a29b1fd227)
+
+1. You will be navigated to the **Microsoft** **Fabric Home page**.
+
+   ![image](https://github.com/user-attachments/assets/71480b18-7a61-4809-b5bf-213d3aca818b)
+
+   >**Note:** If you receive any pop-ups, please **Close** them.
+
+   ![image](https://github.com/user-attachments/assets/ca4728b9-8af2-4390-b583-adb268b90b8b)
 
 ## Support Contact
 
