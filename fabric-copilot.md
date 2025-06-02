@@ -48,7 +48,7 @@ In this lab, you will complete the following exercises:
 
 4. Type the name **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)**, validate the availability of the name, and click on **Advanced (2)**.
 
-    >**Note:** Only use the workspace name provided above.
+    >**Note:** Please use the workspace name provided above.
 
     ![works-apply.png](images1/media/exercise-1-img-2.png)
 
@@ -85,9 +85,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Lakehouse](images1/media/exercise-1-img-28.png)
 
-1. Copy the name **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** and paste it in the **Name** field. Click on the **Lakehouse schemas (2)** checkbox and then click on the **Create (3)** button.
+1. Enter the name **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**. Tick the **Lakehouse schemas (Public Preview) (2)** checkbox, then click the **Create (3)** button.
 
-    ![Lakehouse](images1/media/exercise-1-img-93.png)
+    ![](images1/media/02062025(5).png)
 
 1. You will be navigated to the newly created lakehouse.
 
