@@ -143,9 +143,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Customers table](images1/media/02062025(9).png)
 
-1. In the **Copilot** pane enter **Only keep South American customers** and then select **Send**.
+1. In the **Copilot** pane enter **Only keep South American customers (1)** and then select **Send (2)**.
 
-    ![Copilto pane](images1/media/image13.png)
+    ![Copilto pane](images1/media/02062025(10).png)
 
     >**Note:** Due to the nature of Copilot, you may end up with differing results. You can also try **Only keep customers from South American countries**.
 
@@ -158,7 +158,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![A screenshot of a computer Description automatically generated](images1/media/exercise-1-img-15.png)
 
-1. You can undo the step by selecting **Undo**. Afterwards, type: **Only keep South American customers**. If this step returns Mexico only, then insert the following step in the **transformation** tab:
+1. You can undo the step by selecting **Undo**. Then, type: **Only keep South American customers**.  If the result shows only Mexico, paste the code below into the **Transformation** tab and press Enter. 
 
     ```
     Table.SelectRows(#"Navigation 1", each List.Contains({"Mexico", "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname"}, [Country]))
@@ -274,11 +274,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 In this task, you will explore Copilot capabilities in Fabric notebooks.
 
-1. Open a new browser tab and go to [PowerBI](https://app.powerbi.com/)
-
-1. In the lower left of the navigation pane for the workspace, select **Fabric**.
-
-1. Open the **Workspace<inject key="DeploymentID" enableCopy="false"/>** fabric training workspace that you created previously. Then, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** you created previously.
+1. On the the **Workspace<inject key="DeploymentID" enableCopy="false"/>** fabric training workspace that you created previously. Then, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** you created previously.
 
 1. On the menu for the Fabric workshop Lakehouse, select **Open notebook** >> **New notebook**.
 
@@ -449,11 +445,11 @@ In this exercise, you'll explore the capabilities of Copilot in Data Factory. Th
 
     ![Power BI menu](images1/media/exercise-1-img-47.png)
 
-1. Ensure the Copilot button is enabled.  
+1. Ensure the Copilot button is enabled.
 
     ![](images1/media/exercise-2-img-13.png) 
 
-1. Select **Get Data** >> **More...** to connect to the dataset needed for your report.
+1. Select **Get Data** **->** **More...** to connect to the dataset needed for your report.
 
     ![](images1/media/exercise-1-img-52.png) 
 
