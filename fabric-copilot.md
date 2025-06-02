@@ -26,7 +26,7 @@ In this lab, you will complete the following exercises:
 
     ![](images1/media/02062025(3).png)
 
-    > **Note:** The Trial capacity region may differ from the one shown in the screenshot. Don't worry - just activate it and proceed to the next step. 
+    > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
 1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Got it**.
 
