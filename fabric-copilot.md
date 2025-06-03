@@ -91,6 +91,10 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. You will be navigated to the newly created lakehouse.
 
+    >**Note:** If you see any pop up tab like below you can close it for now.
+
+    ![Choose data source options](images1/media/exercise-2-img-42.png)
+
 1. From the lakehouse page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
 
     ![Lakehouse](images1/media/exercise-1-img-94.png)
@@ -102,6 +106,10 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 1. On the **North Wind Data** dataflow gen2 **Home** tab, select **Get data (1)** >> **More (2)**.
 
     ![Get data dropdown menu options displayed.](images1/media/exercise-1-img-96.png)
+
+    >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, look for the **New Query** option instead, then select **New Query (1) > Get Data (2) > More (3).**
+
+    ![Choose data source options](images1/media/exercise-2-img-43.png)
 
 1. In the **Choose data source** field, enter **OData (1)** to filter the possible data sources, and then select **OData (2).**
 
@@ -115,7 +123,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/exercise-1-img-10.png)
 
-1. Ensure that **Lakehouse (1)** is selected as the data destination. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Publish (2)**.
+1. Ensure that **Lakehouse (1)** is selected as the data destination. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Publish (2)** button.
 
     ![](images1/media/exercise-1-img-98.png)
 
@@ -127,13 +135,13 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Queries created](images1/media/exercise-1-img-99.png)
 
-    > **Note:** Please wait a few minutes until **North Wind Data** becomes clickable.
+    > **Note:** Please wait a few minutes until **North Wind Data** **Dataflow Gen2** becomes clickable.
 
 1. Select the **Customers** table, scroll to the right and examine the **Country** column. Notice that the countries include **Argentina** and **Mexico**.
 
     ![Customers table](images1/media/02062025(6).png)
 
-1. On the **Power Query** toolbar, go to the **Home** tab, click the **dropdown** **>** option, and then select **Copilot**.
+1. On the **Power Query** toolbar, go to the **Home** tab, click the **dropdown** **>** option, and then select **Copilot** (if you don't see the Copilot option visible to you in the toolbar).
 
     ![Customers table](images1/media/02062025(7).png)
 
@@ -143,66 +151,52 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Customers table](images1/media/02062025(9).png)
 
-1. In the **Copilot** pane enter **Only keep South American customers (1)** and then select **Send (2)**.
+1. In the **Copilot** pane enter **Only show Countries Brazil and Venezuela (1)** and then select **Send (2)**.
 
-    ![Copilto pane](images1/media/02062025(10).png)
+    ![Copilto pane](images1/media/exercise-2-img-44.png)
 
-    >**Note:** Due to the nature of Copilot, you may end up with differing results. You can also try **Only keep customers from South American countries**.
+    >**Note:** Due to the nature of Copilot, you may end up with differing results.
 
     The desired Applied Step text is :
     ```
-    Table.SelectRows(#"Navigation 1", each List.Contains({"Mexico", "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname"}, [Country]))
+    Table.SelectRows(#"Navigation 1", each [Country] = "Brazil" or [Country] = "Venezuela")
     ```
 
-1. It will select Mexico only:
+1. You will now notice that the table has been updated to display only **Brazil and Venezuela (1)**. You can undo the step by selecting **Undo (2)** to revert the changes, as we want to use Copilot against the whole dataset. If the **Undo** option isn't visible, you can remove the filter by clicking the **x (3)** next to **Filter Rows**.
 
-    ![A screenshot of a computer Description automatically generated](images1/media/exercise-1-img-15.png)
+    ![Customers table](images1/media/exercise-2-img-45.png)
 
-1. You can undo the step by selecting **Undo**. Then, type: **Only keep South American customers**.  If the result shows only Mexico, paste the code below into the **Transformation** tab and press Enter. 
+1. The **Country** column has been filtered and now only includes customers from **Brazil and Venezuela**
 
-    ```
-    Table.SelectRows(#"Navigation 1", each List.Contains({"Mexico", "Brazil", "Argentina", "Chile", "Peru", "Colombia", "Venezuela", "Ecuador", "Bolivia", "Paraguay", "Uruguay", "Guyana", "Suriname"}, [Country]))
-    ```
-
-    ![Customers table](images1/media/exercise-1-img-102.png)
-
-1. The **Country** column has been filtered and now only includes customers from South America.
-
-    ![Country colum](images1/media/exercise-1-img-103.png)
-
-1. In the **Copilot** pane, select **Undo** to revert the changes, as we want to use Copilot against the whole dataset.
-
-    ![Country colum](images1/media/exercise-2-img-1.png)
+    ![Country colum](images1/media/exercise-2-img-46.png)
 
 1. In the **Copilot** pane, enter **How many customers in each country?** and then select **Send**.
 
-    ![Copilot pane](images1/media/image17.png)
+    ![Copilot pane](images1/media/exercise-2-img-48.png)
 
-1. Sometimes, due to the nature of Copilot, you may end up with different results or errors. Select **Undo** in the Copilot chat.
+1. You will see the total customers present in each country. Sometimes, due to the nature of Copilot, you may end up with different results or errors.
 
     ![Example screen showing errors in the Country column.](images1/media/exercise-1-img-17.png)
-
-    ![Undo button located above the Copilot pane.](images1/media/exercise-2-img-1.png)
 
     >**Note:** You need to have an accurate question, so you can also try: **What is the total number of customers in each country?**
 
     The desired Applied Step text is :
 
     ```
-    Table.Group(#"Navigation 1", {"Country"}, {{"Total Customers", each Table.RowCount(_)}})
+    Table.Group(#"Navigation 1", {"Country"}, {{"CustomerCount", each Table.RowCount(_)}})
     ```
 
 1. The query outputs a list displaying the number of customers per country.
 
-    ![Query outputs](images1/media/image20.png)
+    ![Query outputs](images1/media/exercise-2-img-49.png)
 
-1. In the **Copilot** pane, select **Undo** to revert the changes.
+1. You can undo the step by selecting **Undo (1)** to revert the changes, as we want to use Copilot against the whole dataset. If the **Undo** option isn't visible, you can remove the filter by clicking the **x (2)** next to **Group by**.
 
-    ![Undo button on the Copilot pane ](images1/media/image21.png)
+    ![Undo button on the Copilot pane ](images1/media/exercise-2-img-47.png)
 
 1. Select the **Order_Details** query, then in the **Copilot** pane, enter **Only keep orders whose quantities are above the median value** and then select **Send**.
 
-    ![Copilot pane](images1/media/image22.png)
+    ![Copilot pane](images1/media/exercise-2-img-50.png)
 
 1. The **Quantity** column now displays all values above 20.
 
