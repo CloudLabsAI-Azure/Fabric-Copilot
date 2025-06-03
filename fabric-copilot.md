@@ -107,7 +107,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Get data dropdown menu options displayed.](images1/media/exercise-1-img-96.png)
 
-    >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zomm out the browser or in that case, look for the **New Query** option instead, then select **New Query (1) > Get Data (2) > More (3).**
+    >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, look for the **New Query** option instead, then select **New Query (1) > Get Data (2) > More (3).**
 
     ![Choose data source options](images1/media/exercise-2-img-43.png)
 
