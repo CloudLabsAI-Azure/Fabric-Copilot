@@ -56,7 +56,7 @@ In this lab, you will complete the following exercises:
 
     ![works-apply.png](images1/media/exercise-1-img-3.png)
 
-    > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, Apply it, and continue to the next step. 
+    > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, apply it, and continue to the next step. 
 
     >**Note:** Close any pop-up that appears on the screen.
 
@@ -70,7 +70,7 @@ In this lab, you will complete the following exercises:
 
 Microsoft has integrated Copilot and other generative AI features into
 Fabric to introduce new ways for you to transform and analyze data,
-generate insights, and create visualizations and reports. You must
+generate insights and create visualizations and reports. You must
 enable Copilot before you can use it. Copilot in Fabric is not available
 in all regions. In this activity, you will integrate Copilot for data
 analysis and visualization.
@@ -89,13 +89,13 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/02062025(5).png)
 
-1. You will be navigated to the newly created lakehouse.
+1. You will be navigated to the newly created Lakehouse.
 
-    >**Note:** If you see any pop up tab like below you can close it for now.
+    >**Note:** If you see any pop-up tab like below you can close it for now.
 
     ![Choose data source options](images1/media/exercise-2-img-42.png)
 
-1. From the lakehouse page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
+1. From the Lakehouse page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
 
     ![Lakehouse](images1/media/exercise-1-img-94.png)
 
@@ -168,7 +168,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. The **Country** column has been filtered and now only includes customers from **Brazil and Venezuela**
 
-    ![Country colum](images1/media/exercise-2-img-46.png)
+    ![Country column](images1/media/exercise-2-img-46.png)
 
 1. In the **Copilot** pane, enter **How many customers in each country?** and then select **Send**.
 
@@ -616,7 +616,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     ORDER BY Customers[CompanyName] ASC
     ```
 
-1. Now, you can **Run (2)** the query to see the results of the query generated. Then, **select anywhere (3)** on the query tab to make the **Update model with changes** button enable and then click **Update model with changes (4)** to generate measures in Model.
+1. Now, you can **Run (2)** the query to see the results of the query generated. Then, **select anywhere (3)** on the query tab to make the **Update model with changes** button enables and then click **Update model with changes (4)** to generate measures in Model.
 
     ![](images1/media/exercise-2-img-61.png)
 
@@ -679,7 +679,6 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     ![](images1/media/exercise-2-img-37.png)
 
     ![](images1/media/exercise-2-img-32.png)
-
 
 1. Open your published report by going to the link [Microsoft Fabric](https://app.fabric.microsoft.com/). Navigate to your workspace and then select the **Northwind Order Analysis**. You will see the visual report displayed on the screen.
 

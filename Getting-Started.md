@@ -10,7 +10,7 @@ This hands-on lab introduces participants to Microsoft Fabric and its Copilot fe
 
 This lab is designed to provide participants with practical experience in utilizing Microsoft Fabric and its Copilot feature to create workspaces, ingest and transform data, and analyze data within a warehouse.
 
-- **Create a Fabric workspace:** Sign up for the Microsoft Fabric Trial and set up a workspace to explore data integration, analytics, and visualization tools..
+- **Create a Fabric workspace:** Sign up for the Microsoft Fabric Trial and set up a workspace to explore data integration, analytics, and visualization tools.
 - **Ingest data with a pipeline in Microsoft Fabric:** Implement ETL/ELT solutions using pipelines and Apache Spark to load and transform data into a Lakehouse for analysis.
 - **Data Engineering - Ingest Data in Fabric with Fabric Copilot:** Utilize Fabric Copilot and Dataflow Gen2 to create a data pipeline, leveraging natural language for data ingestion and transformation.
 - **Data Warehouse - Analyze Data in a Warehouse with Fabric Copilot:** Analyze data in a warehouse by connecting to data sources, running queries, and visualizing insights using Fabric Copilot to enhance decision-making.
@@ -23,7 +23,7 @@ Participants should have the following prerequisites:
 - **Familiarity with Microsoft 365 tools:** Experience with common Microsoft 365 applications, such as Excel and Power BI, will be beneficial.
 - **Knowledge of SQL and data visualization:** Understanding SQL queries and data visualization techniques will assist in executing the lab tasks effectively.
 
-## Architechture
+## Architecture
 
 The architecture for the **Microsoft Fabric with Copilot** lab enables end-to-end data integration, analytics, and visualization workflows using Fabric's advanced tools and AI capabilities. It begins with creating a dedicated **workspace** to manage resources and collaborate effectively. **Data ingestion** is facilitated through **pipelines** and **Spark-powered** notebooks, storing data in a **Lakehouse** for analysis. Structured data is processed in a **data warehouse**, where **tables** and **data models** are created for efficient querying and reporting. **Fabric Copilot** enhances automation by enabling natural language interactions for data ingestion, transformation, and report generation. This streamlined architecture provides scalability, productivity, and actionable insights, supporting complex data engineering and analytics scenarios.
 
