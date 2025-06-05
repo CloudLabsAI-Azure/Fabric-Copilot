@@ -8,7 +8,7 @@ This hands-on lab provides comprehensive training on leveraging Microsoft Fabric
 
 In this lab, you will complete the following exercises:
 
-- Exercise 1: Create and set up Fabric Workspace 
+- Exercise 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
 
 - Exercise 2: Explore Copilot for Data Flows
 
