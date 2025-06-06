@@ -16,6 +16,8 @@ In this lab, you will complete the following exercises:
 
 ## Exercise 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
 
+In this exercise, you will activate a 60-day free trial of Microsoft Fabric and create a workspace linked to Copilot-enabled capacity. This setup will prepare you to bring in data, build models, and generate reports using Microsoft Fabric’s integrated tools.
+
 ### Task 1: Start Free fabric trial
 
 1. On the top right corner of the screen, select the **User icon** and select **Free trial**.
@@ -68,12 +70,10 @@ In this lab, you will complete the following exercises:
 
 ## Exercise 2: Explore Copilot for Data Flows
 
-Microsoft has integrated Copilot and other generative AI features into
-Fabric to introduce new ways for you to transform and analyze data,
-generate insights and create visualizations and reports. You must
-enable Copilot before you can use it. Copilot in Fabric is not available
-in all regions. In this activity, you will integrate Copilot for data
-analysis and visualization.
+In this exercise, you’ll use Microsoft Fabric Copilot to ingest, transform, and analyze data. You’ll load the Northwind dataset using Dataflow Gen2, then use Copilot in Power Query and notebooks to generate queries, summarize data, and create Python code, showcasing AI-assisted data analysis.
+
+Microsoft has integrated Copilot and other generative AI features into Fabric to introduce new ways for you to transform and analyze data, generate insights and create visualizations and reports. You must
+enable Copilot before you can use it. Copilot in Fabric is not available in all regions. In this activity, you will integrate Copilot for data analysis and visualization.
 
 ### Task 1: Ingest the dataset via Data Pipelines to Lakehouse File Section
 
@@ -442,11 +442,11 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
 # Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
 
+In this exercise, you will use Copilot for Power BI to connect to a Microsoft Fabric dataset, generate visual reports, create and describe DAX measures, and gain insights using natural language prompts. You’ll build a report from a Lakehouse, use Copilot to summarize data, generate report content, suggest measures, and publish the report to the Power BI service. Finally, you will explore the report as a consumer, using Copilot to summarize visuals and answer leadership questions.
+
 Let's leverage Copilot for Power BI to create interactive reports using curated data stored in OneLake. This exercise will guide you through the end-to-end process: connecting to your dataset, using Copilot for Power BI to explore data, and generating insightful visualizations with minimal manual effort.
 
 **Power BI:** This integration incorporates generative AI to automatically build reports based on topics you select or prompts you create.
-
-In this exercise, you'll explore the capabilities of Copilot in Data Factory. The Power BI Copilot will be covered in a later exercise within this lab and will use Copilot in Power BI to generate reports and enhance your data analysis process.
 
 ### Task 1: Connect to a Fabric dataset and create visualizations using Copilot
 
@@ -738,4 +738,12 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. You can follow the prompts to generate the report. Make sure to save the report if you want to access it later with the most recent updates.
 
-## You have successfully completed the lab.
+### Review
+
+In this lab, you have completed the following exercises:
+
+- Getting Started with Microsoft Fabric: Activated Trial fabric and Set Up a Workspace
+- Explored Copilot for Data Flows
+- Visualized and gained Insights using Copilot for Power BI
+
+## You have successfully completed the lab!

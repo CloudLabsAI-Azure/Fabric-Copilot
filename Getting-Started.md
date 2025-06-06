@@ -6,14 +6,13 @@
 
 This hands-on lab introduces participants to Microsoft Fabric and its Copilot features. It covers setting up a Fabric workspace, ingesting data via pipelines, using Copilot in notebooks for data transformation, and leveraging Copilot in Power BI to generate visualizations and DAX queries streamlining analytics through AI-powered assistance.
 
-## Objective
+## Objectives
 
 This lab is designed to provide participants with practical experience in utilizing Microsoft Fabric and its Copilot feature to create workspaces, ingest and transform data, and analyze data within a warehouse.
 
-- **Create a Fabric workspace:** Sign up for the Microsoft Fabric Trial and set up a workspace to explore data integration, analytics, and visualization tools.
-- **Ingest data with a pipeline in Microsoft Fabric:** Implement ETL/ELT solutions using pipelines and Apache Spark to load and transform data into a Lakehouse for analysis.
-- **Data Engineering - Ingest Data in Fabric with Fabric Copilot:** Utilize Fabric Copilot and Dataflow Gen2 to create a data pipeline, leveraging natural language for data ingestion and transformation.
-- **Data Warehouse - Analyze Data in a Warehouse with Fabric Copilot:** Analyze data in a warehouse by connecting to data sources, running queries, and visualizing insights using Fabric Copilot to enhance decision-making.
+- **Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace:** It introduces users to Microsoft Fabric by guiding them through the process of activating a free trial and creating their first workspace.
+- **Explore Copilot for Data Flows:** It provides an introduction to using Microsoft Fabric Copilot to simplify data transformation and pipeline creation. With natural language input, users can generate, edit, and manage data flows more efficiently streamlining tasks like data ingestion, mapping, and transformation without writing complex code.
+- **Visualizing and gaining Insights using Copilot for Power BI:** it explores how to leverage Copilot in Power BI to create reports, generate visuals, and uncover insights using natural language. It simplifies data analysis by allowing users to ask questions and build dashboards without deep technical skills, making data exploration more intuitive and accessible.
 
 ## Prerequisites
 
