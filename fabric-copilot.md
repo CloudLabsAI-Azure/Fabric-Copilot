@@ -2,7 +2,7 @@
 
 ## Lab Overview
 
-This hands-on lab provides comprehensive training on leveraging Microsoft Fabric and Copilot capabilities for data ingestion, preparation, and visualization. Participants will create and set up a Fabric workspace, including starting a free trial and linking it with Copilot-enabled capacity (F2). They will ingest datasets into the Lakehouse via Data Pipelines, explore Copilot’s AI-assisted features in Fabric notebooks, and connect to Fabric datasets to generate visualizations in Power BI using Copilot. Additionally, participants will use Copilot to write DAX queries, update measure descriptions, and optionally explore Copilot as a report consumer, gaining a solid understanding of its potential across the data and analytics workflows in Microsoft Fabric.
+This hands on lab provides comprehensive training on leveraging Microsoft Fabric and Copilot capabilities for data ingestion, preparation, and visualization. Participants will create and set up a Fabric workspace, including starting a free trial and linking it with Copilot-enabled capacity (F2). They will ingest datasets into the Lakehouse via Data Pipelines, explore Copilot’s AI-assisted features in Fabric notebooks, and connect to Fabric datasets to generate visualizations in Power BI using Copilot. Additionally, participants will use Copilot to write DAX queries, update measure descriptions, and optionally explore Copilot as a report consumer, gaining a solid understanding of its potential across the data and analytics workflows in Microsoft Fabric.
 
 ## Lab objectives
 
@@ -20,17 +20,19 @@ In this exercise, you will activate a 60-day free trial of Microsoft Fabric and 
 
 ### Task 1: Start Free fabric trial
 
+Start a free Microsoft Fabric trial to explore powerful data analytics, integration, and visualization features.
+
 1. On the top right corner of the screen, select the **User icon** and select **Free trial**.
 
     ![](images1/media/02062025(3).png)
 
-1. On Activate your 60-day free Fabric trial capacity dialog opens. Select **Activate**.
+1. On **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
 
     ![](images1/media/image-10.png)
 
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
-1. Successfully upgraded to Microsoft Fabric dialog opens. Select **Got it**.
+1. **Successfully upgraded to Microsoft Fabric** dialog opens. Select **Got it**.
 
     ![](images1/media/02062025(4).png)
 
@@ -39,6 +41,8 @@ In this exercise, you will activate a 60-day free trial of Microsoft Fabric and 
     ![](images1/media/image-12.png)
 
 ### Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
+
+Create a new workspace in Microsoft Fabric to organize your data and analytics assets. Link it to a Copilot-enabled capacity to leverage AI-powered features like queries and intelligent data insights within the workspace.
 
 1. Now let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar.
 
@@ -99,13 +103,16 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Lakehouse](images1/media/exercise-1-img-94.png)
 
+    ![Lakehouse](images1/media/northwind.png)
+
+
 1. Select the **Dataflow Gen2** in the menu, select the **Dataflow 1 (1)** then in the **Name** field, enter **North Wind Data (2)** and then press **Enter** from the keyboard.
 
     ![](images1/media/exercise-1-img-95.png)
 
 1. On the **North Wind Data** dataflow gen2 **Home** tab, select **Get data (1)** >> **More (2)**.
 
-    ![Get data dropdown menu options displayed.](images1/media/exercise-1-img-96.png)
+    ![Get data dropdown menu options displayed.](images1/media/getdata.png)
 
     >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, look for the **New Query** option instead, then select **New Query (1) > Get Data (2) > More (3).**
 
@@ -123,29 +130,29 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/exercise-1-img-10.png)
 
-1. Ensure that **Lakehouse (1)** is selected as the data destination. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Publish (2)** button.
+1. Ensure that **Lakehouse (1)** is selected as the data destination. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Save & run** button from the top left.
 
-    ![](images1/media/exercise-1-img-98.png)
+    ![Save and run](images1/media/saverun.png)
 
 1. The query should look like the following:
 
     ![Queries created](images1/media/exercise-1-img-12.png)
 
-1. You will be navigated to your workspace. Select **North Wind Data** dataflow that you have created.
+1. Navigate back to your workspace. Select **North Wind Data** dataflow that you have created.
 
     ![Queries created](images1/media/exercise-1-img-99.png)
 
     > **Note:** Please wait a few minutes until **North Wind Data** **Dataflow Gen2** becomes clickable.
 
-1. Select the **Customers** table, scroll to the right and examine the **Country** column. Notice that the countries include **Argentina** and **Mexico**.
+1. Select the **Customers(1)** table, **scroll to the right(2)** and examine the **Country(3)** column. Notice that the countries include **Argentina** and **Mexico**.
 
     ![Customers table](images1/media/02062025(6).png)
 
 1. On the **Power Query** toolbar, go to the **Home** tab, click the **dropdown** **>** option, and then select **Copilot** (if you don't see the Copilot option visible to you in the toolbar).
 
-    ![Customers table](images1/media/02062025(7).png)
+    ![Nextpowerquery](images1/media/nextpowerquery.png)
 
-    ![Customers table](images1/media/02062025(8).png)
+    ![Copilot](images1/media/copilot.png)
 
     > **Note:** If the **Copilot** option isn’t visible, try reducing your browser's zoom level.
 
@@ -194,7 +201,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Undo button on the Copilot pane ](images1/media/exercise-2-img-47.png)
 
-1. Select the **Order_Details** query, then in the **Copilot** pane, enter **Only keep orders whose quantities are above the median value** and then select **Send**.
+1. Select the **Order_Details** query from the left pane, then in the **Copilot** pane, enter **Only keep orders whose quantities are above the median value** and then select **Send**.
+
+    ![order_details pane](images1/media/orderdet.png)
 
     ![Copilot pane](images1/media/exercise-2-img-50.png)
 
@@ -242,6 +251,8 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Select the **Orders** query.
 
+    ![selectorders](images1/media/selorders.png)
+
 1. In the **Copilot** pane, enter the following text: **Create a new query named "Value By Delivery Country" showing the order value aggregated by shipCountry** and then select **Send**
 
     ![](images1/media/exercise-1-img-24.png)
@@ -250,9 +261,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Table containing the shipCountry](images1/media/exercise-1-img-25.png)
 
-1. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** under **Query** section to verify the correct formula.
+1. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** to verify the correct formula.
 
-    ![Power Querytoolbar](images1/media/exercise-1-img-19.png)
+    ![advancedquery](images1/media/advquery.png)
 
 1. The value of Freight is being used. Should this be the intended behavior? Review Copilot's actions to confirm.
 
@@ -264,7 +275,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/exercise-2-img-5.png)
 
-1. Select **Publish** to publish your data to your lake house. Select your target Lakehouse connection before publishing. (Skip this step if you already published the dataset in an earlier step.)
+1. Select **Save and Run** to save your data to your lake house. Select your target Lakehouse connection before saving. (Skip this step if you already saved the dataset in an earlier step.)
 
 ### Task 2: Exploring Copilot capabilities in Fabric notebooks
 
@@ -278,7 +289,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Bronze lakehouse meny](images1/media/exercise-2-img-7.png)
 
-    >**Note:** If tour pop-up appears, feel free to skip it for now.
+    >**Note:** If tour pop-up appears, feel free to skip it for now by selecting **Skip tour**.
 
     ![Bronze lakehouse meny](images1/media/exercise-2-img-9.png)
 
@@ -403,11 +414,12 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
     Create a dataframe by loading data from nyc_yellowtaxi_raw table and sampling it with 1 percentage, count the rows in the dataframe and show the amount.
     ```
 
-1. Select **Insert code** to create a new cell in the Notebook. Run the cell:
+1. Select **Insert code(1)** to create a new cell in the Notebook. Run the cell:
 
     ![Notebook screen](images1/media/exercise-1-img-44.png)
 
     ![Notebook screen](images1/media/exercise-1-img-45.png)
+    > **Note**: If you do not see the **Insert Code** option copy the code generated by Copilot, add a new cell in the notebook and paste it, then click on **Run Cell**
 
 1. If Copilot does not create the command for you, add a new cell to the notebook. Then, add the following code to the new cell and then select the **Run cell** button.
 
@@ -449,6 +461,8 @@ Let's leverage Copilot for Power BI to create interactive reports using curated 
 **Power BI:** This integration incorporates generative AI to automatically build reports based on topics you select or prompts you create.
 
 ### Task 1: Connect to a Fabric dataset and create visualizations using Copilot
+
+In this task you will be connecting to a Fabric dataset to access and explore structured data. Use Copilot to generate visualizations effortlessly by describing what insights you want, enabling quick, AI-assisted data analysis and report creation.
 
 1. Launch the **Power BI** application by double clicking the desktop shortcut icon.
 
@@ -526,13 +540,13 @@ Let's leverage Copilot for Power BI to create interactive reports using curated 
 
     ![Customers table](images1/media/02062025(17).png)
 
-1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide**, then select **"Give me an executive summary."**
+1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide(1)**, then select **"Give me an executive summary" (2)**
 
     ![](images1/media/exercise-2-img-16.png)
 
     ![](images1/media/exercise-1-img-81.png)
 
-1. Next, select **"Suggest content for a new report page"** based on the semantic model.
+1. Select the **Prompt Guide(1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
 
     ![](images1/media/exercise-2-img-17.png)
 
@@ -562,11 +576,11 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
     ![](images1/media/02062025(18).png)
 
-1. Ensure that the **Measure Descriptions with Copilot** feature is enabled. Navigate to **File -> Options and settings (1) -> Options (2).**
+1. Ensure that the **Measure Descriptions with Copilot** feature is enabled.From the top left corner navigate to **File -> Options and settings (1) -> Options (2).**
 
     ![](images1/media/exercise-1-img-72.png)
 
-1. Under the options tab, select **Preview features (1)**, then enable **Measure descriptions with Copilot (2)** at the bottom of the list if not enabled, then select **OK (3)**
+1. Under the **Options** tab, select **Preview features (1)**, then enable **Measure descriptions with Copilot (2)** at the bottom of the list if not enabled, then select **OK (3)**
 
     ![](images1/media/exercise-2-img-40.png)
 
@@ -584,7 +598,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
     ![](images1/media/exercise-2-img-19.png)
 
-1. To proceed, copy the code provided below and paste it into the query box. 
+1. To proceed, copy the code provided below and paste it into the **query box (1)**. 
 
     ```
     // DAX query generated by Fabric Copilot with "Based on my data suggest new measures in a DAX query for further analysis and try them out with one or more suitable columns"
@@ -634,7 +648,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
-1. Navigate to the **Model view (1)** and select the **New measure (2)** created. Navigate to the **Properties** section for the model and select **Create with Copilot (preview) (3).** Copilot generates a new measure description in a few seconds.
+1. Navigate to the **Model view (1)** on the left pane and select the **New measure (2)** created. Navigate to the **Properties** section for the model and select **Create with Copilot (preview) (3).** Copilot generates a new measure description in a few seconds.
 
     ![](images1/media/exercise-2-img-63.png)
 
@@ -667,6 +681,8 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     ![](images1/media/exercise-2-img-30.png)
 
 ### Task 3: Explore Copilot for Power BI as a report consumer
+
+In this task, you as a report consumer, use Copilot for Power BI to ask questions and get instant insights from reports. It helps you understand data trends, summaries, and key metrics without needing to write complex queries
 
 1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar if not opened.
 
