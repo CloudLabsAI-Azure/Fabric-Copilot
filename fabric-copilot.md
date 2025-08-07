@@ -130,7 +130,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/exercise-1-img-10.png)
 
-1. Ensure that **Lakehouse (1)** is selected as the data destination. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Save & run** button from the top left.
+1. Ensure that **Lakehouse (1)** is selected as the data destination. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Save & run(2)** button from the top left.
 
     ![Save and run](images1/media/saverun.png)
 
@@ -148,7 +148,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Customers table](images1/media/02062025(6).png)
 
-1. On the **Power Query** toolbar, go to the **Home** tab, click the **dropdown** **>** option, and then select **Copilot** (if you don't see the Copilot option visible to you in the toolbar).
+1. On the **Power Query** toolbar, go to the **Home** tab, click the **>** option, and then select **Copilot** (if you don't see the Copilot option visible to you in the toolbar).
 
     ![Nextpowerquery](images1/media/nextpowerquery.png)
 
