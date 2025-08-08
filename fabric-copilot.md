@@ -102,10 +102,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 1. From the Lakehouse page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
 
     ![Lakehouse](images1/media/exercise-1-img-94.png)
-
-    ![Lakehouse](images1/media/northwind.png)
-
-
+    
 1. In the Name field enter **North Wind Data (1)** and click on **Create (2)**.
 
     ![](images1/media/northwind.png)
