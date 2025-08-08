@@ -132,7 +132,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    >**Note:** If you receive any pop-ups, please **Close** them.
 
-   ![image](https://github.com/user-attachments/assets/ca4728b9-8af2-4390-b583-adb268b90b8b)
+   ![tour](images1/media/tour.png)
 
 ## Support Contact
 
