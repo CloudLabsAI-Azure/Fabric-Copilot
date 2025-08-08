@@ -2,7 +2,7 @@
 
 ## Lab Overview
 
-This hands on lab provides comprehensive training on leveraging Microsoft Fabric and Copilot capabilities for data ingestion, preparation, and visualization. Participants will create and set up a Fabric workspace, including starting a free trial and linking it with Copilot-enabled capacity (F2). They will ingest datasets into the Lakehouse via Data Pipelines, explore Copilot’s AI-assisted features in Fabric notebooks, and connect to Fabric datasets to generate visualizations in Power BI using Copilot. Additionally, participants will use Copilot to write DAX queries, update measure descriptions, and optionally explore Copilot as a report consumer, gaining a solid understanding of its potential across the data and analytics workflows in Microsoft Fabric.
+This hands on lab provides comprehensive training on leveraging Microsoft Fabric and Copilot capabilities for data ingestion, preparation, and visualization. Participants will create and set up a Fabric workspace, including starting a free trial and linking it with Copilot-enabled capacity (F64). They will ingest datasets into the Lakehouse via Data Pipelines, explore Copilot’s AI-assisted features in Fabric notebooks, and connect to Fabric datasets to generate visualizations in Power BI using Copilot. Additionally, participants will use Copilot to write DAX queries, update measure descriptions, and optionally explore Copilot as a report consumer, gaining a solid understanding of its potential across the data and analytics workflows in Microsoft Fabric.
 
 ## Lab objectives
 
@@ -102,10 +102,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 1. From the Lakehouse page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
 
     ![Lakehouse](images1/media/exercise-1-img-94.png)
-
-    ![Lakehouse](images1/media/northwind.png)
-
-
+    
 1. In the Name field enter **North Wind Data (1)** and click on **Create (2)**.
 
     ![](images1/media/northwind.png)
@@ -760,5 +757,6 @@ In this lab, you have completed the following exercises:
 - Getting Started with Microsoft Fabric: Activated Trial fabric and Set Up a Workspace
 - Explored Copilot for Data Flows
 - Visualized and gained Insights using Copilot for Power BI
+
 
 ## You have successfully completed the lab!

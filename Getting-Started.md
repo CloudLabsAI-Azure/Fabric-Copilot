@@ -26,6 +26,11 @@ Participants should have the following prerequisites:
 
 The architecture for the **Microsoft Fabric with Copilot** lab enables end-to-end data integration, analytics, and visualization workflows using Fabric's advanced tools and AI capabilities. It begins with creating a dedicated **workspace** to manage resources and collaborate effectively. **Data ingestion** is facilitated through **pipelines** and **Spark-powered** notebooks, storing data in a **Lakehouse** for analysis. Structured data is processed in a **data warehouse**, where **tables** and **data models** are created for efficient querying and reporting. **Fabric Copilot** enhances automation by enabling natural language interactions for data ingestion, transformation, and report generation. This streamlined architecture provides scalability, productivity, and actionable insights, supporting complex data engineering and analytics scenarios.
 
+
+## Architecture Diagram
+
+![arch](images1/media/fabar.png)
+
 ## Explanation of Components
 
 The architecture for this lab involves several key components:
@@ -58,6 +63,14 @@ The architecture for this lab involves several key components:
 
 **Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
   
+
+- **Power BI:** Power BI is Microsoft’s data visualization and business intelligence tool that helps users analyze, visualize, and share insights from their data.
+
+- **DAX Queries:** Calculation language in Power BI to create measures.
+
+- **OData:** OData is an open protocol for querying and updating data over the web, enabling seamless access to structured datasets.
+
+- **Storage Account:** It is a Azure cloud-based service for storing and accessing data objects like blobs, files, queues, and tables, supporting both structured and unstructured data.
 
 ## Getting Started with the Lab
  
