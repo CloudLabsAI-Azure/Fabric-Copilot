@@ -106,17 +106,18 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
     ![Lakehouse](images1/media/northwind.png)
 
 
-1. Select the **Dataflow Gen2** in the menu, select the **Dataflow 1 (1)** then in the **Name** field, enter **North Wind Data (2)** and then press **Enter** from the keyboard.
+1. In the Name field enter **North Wind Data (1)** and click on **Create (2)**.
 
-    ![](images1/media/exercise-1-img-95.png)
+    ![](images1/media/northwind.png)
+
+    > **Note:** The checkbox for **Enable Git Integration, deployment pipelines and Public API scenarios** is enabled by default ensure to keep it as it is.
 
 1. On the **North Wind Data** dataflow gen2 **Home** tab, select **Get data (1)** >> **More (2)**.
 
     ![Get data dropdown menu options displayed.](images1/media/getdata.png)
 
-    >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, look for the **New Query** option instead, then select **New Query (1) > Get Data (2) > More (3).**
+    >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, then select **Get Data (1) > More (2).**
 
-    ![Choose data source options](images1/media/exercise-2-img-43.png)
 
 1. In the **Choose data source** field, enter **OData (1)** to filter the possible data sources, and then select **OData (2).**
 
@@ -211,9 +212,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Quantity column results](images1/media/exercise-2-img-2.png)
 
-1. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** under **Query** section.
+1. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor**.
 
-    ![Power Query toolbar](images1/media/exercise-1-img-19.png)
+    ![Power Query toolbar](images1/media/advquery.png)
 
 1. Review the definition of the formula used in the query.
 
@@ -494,9 +495,9 @@ In this task you will be connecting to a Fabric dataset to access and explore st
 
     >**Note:** If you receive any pop-ups, please **Close** them.
 
-    ![alt text](image.png)
+    ![alt text](images1/media/pop2.png)
 
-    ![alt text](image-1.png)
+    ![alt text](images1/media/pop1.png)
 
 1. Select **Get Data** **->** **More...** to connect to the dataset needed for your report.
 
@@ -696,8 +697,6 @@ In this task, you as a report consumer, use Copilot for Power BI to ask question
 
     ![](images1/media/exercise-2-img-32.png)
 
-1. Open your published report by going to the link [Microsoft Fabric](https://app.fabric.microsoft.com/). Navigate to your workspace and then select the **Northwind Order Analysis**. You will see the visual report displayed on the screen.
-
 1. Select the **Copilot** logo on the top-right and click on **Get started** to open the prompt guide. 
 
     ![](images1/media/exercise-2-img-33.png)
@@ -706,7 +705,7 @@ In this task, you as a report consumer, use Copilot for Power BI to ask question
 
 1. Select **Prompt guide** then click **Summarize visual on the page** to gain insights from each visual. The output you observe should resemble the example below:
 
-    ![](images1/media/exercise-2-img-35.png)
+    ![summ](images1/media/summ.png)
 
     ```
     The "Sales Performance" page of the Northwind Order Analysis report contains three visuals:
@@ -728,7 +727,7 @@ In this task, you as a report consumer, use Copilot for Power BI to ask question
 
 1. Again, select **Prompt guide** then click **Answer questions from leadership** to prepare for your upcoming meeting with leadership. The output you observe should resemble the example below.
 
-    ![](images1/media/exercise-2-img-36.png)
+    ![lead](images1/media/lead.png)
 
     ```
     The Northwind Order Analysis report provides an overview of sales performance across different products and regions. The total sales amount to 56.5K. Sales by region indicate that each region, including AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY, has a uniform sales value of 56.5K.
