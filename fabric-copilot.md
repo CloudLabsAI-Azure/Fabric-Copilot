@@ -113,7 +113,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Get data dropdown menu options displayed.](images1/media/getdata.png)
 
-     >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, then select **Get Data (1) > More (2).**
+    >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, then select **Get Data (1) > More (2).**
 
 
 1. In the **Choose data source** field, enter **OData (1)** to filter the possible data sources, and then select **OData (2).**
