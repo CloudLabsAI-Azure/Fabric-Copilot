@@ -61,9 +61,6 @@ The architecture for this lab involves several key components:
 
 - **Data Model:** A structured representation of data and its relationships, designed to enhance analytical queries and reporting efficiency.
 
-**Fabric trial provides access to most features, but excludes Copilot, private links, and trusted workspace access ([learn more](https://learn.microsoft.com/en-us/fabric/fundamentals/fabric-trial#overview-of-the-trial-capacity)).**
-  
-
 - **Power BI:** Power BI is Microsoft’s data visualization and business intelligence tool that helps users analyze, visualize, and share insights from their data.
 
 - **DAX Queries:** Calculation language in Power BI to create measures.
