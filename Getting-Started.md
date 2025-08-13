@@ -1,6 +1,6 @@
 # Fabric Copilot
 
-### Overall Estimated Duration: 4 Hours
+## Overall Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -160,4 +160,4 @@ Now, click on **Next** from the lower right corner to move on to the next page.
 
 ![](images1/media/overview-05.png)
 
-### Happy Learning!
+## Happy Learning!
