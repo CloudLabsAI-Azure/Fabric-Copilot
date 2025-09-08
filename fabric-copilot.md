@@ -747,6 +747,8 @@ In this task, you as a report consumer, use Copilot for Power BI to ask question
 
     ![Toolbar](images1/media/image70.png)
 
+    >**Note**: If you see a message saying "To help me respond to requests like this, turn on Q&A for this semantic model," please click it to enable Q&A. Then, paste the query again.
+
 1. You can follow the prompts to generate the report. Make sure to save the report if you want to access it later with the most recent updates.
 
 ## Review
@@ -756,6 +758,7 @@ In this lab, you have completed the following exercises:
 - Getting Started with Microsoft Fabric: Activated Trial fabric and Set Up a Workspace
 - Explored Copilot for Data Flows
 - Visualized and gained Insights using Copilot for Power BI
+
 
 
 ## You have successfully completed the lab!
