@@ -573,6 +573,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
     ![](images1/media/02062025(18).png)
 
+<!-- 
 1. Ensure that the **Measure Descriptions with Copilot** feature is enabled. From the top left corner navigate to **File -> Options and settings (1) -> Options (2).**
 
     ![](images1/media/exercise-1-img-72.png)
@@ -586,6 +587,8 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     >**Note:** Do not restart Power BI at this moment.
 
     ![](images1/media/exercise-1-img-74.png)
+
+-->
 
 1. Under **Dax query view (1)**, select **Copilot (Preview) (2)** then select **Suggest measures** option.
 
@@ -747,6 +750,8 @@ In this task, you as a report consumer, use Copilot for Power BI to ask question
 
     ![Toolbar](images1/media/image70.png)
 
+    >**Note**: If you see a message saying "To help me respond to requests like this, turn on Q&A for this semantic model," please click it to enable Q&A. Then, paste the query again.
+
 1. You can follow the prompts to generate the report. Make sure to save the report if you want to access it later with the most recent updates.
 
 ## Review
@@ -758,4 +763,6 @@ In this lab, you have completed the following exercises:
 - Visualized and gained Insights using Copilot for Power BI
 
 
+
 ## You have successfully completed the lab!
+
