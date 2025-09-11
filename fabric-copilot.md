@@ -72,6 +72,12 @@ Create a new workspace in Microsoft Fabric to organize your data and analytics a
 
 1. A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into a Lakehouse and use the data from the Lakehouse to build our model and report on it.
 
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="bf14a857-da8b-49dc-9159-77cb14984ba3" />
+
 ## Exercise 2: Explore Copilot for Data Flows
 
 In this exercise, you’ll use Microsoft Fabric Copilot to ingest, transform, and analyze data. You’ll load the Northwind dataset using Dataflow Gen2, then use Copilot in Power Query and notebooks to generate queries, summarize data, and create Python code, showcasing AI-assisted data analysis.
@@ -273,6 +279,12 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
     ![](images1/media/exercise-2-img-5.png)
 
 1. Select **Save and Run** to save your data to your lake house. Select your target Lakehouse connection before saving. (Skip this step if you already saved the dataset in an earlier step.)
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+> - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+> - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+> - If you need any assistance, please contact us at cloudlabs-support@spektrasystems.com. We are available 24/7 to help you out.
+<validation step="a2c099c2-1da1-4240-8b09-280d6f094dba" />
 
 ### Task 2: Exploring Copilot capabilities in Fabric notebooks
 
@@ -758,11 +770,10 @@ In this task, you as a report consumer, use Copilot for Power BI to ask question
 
 In this lab, you have completed the following exercises:
 
-- Getting Started with Microsoft Fabric: Activated Trial fabric and Set Up a Workspace
-- Explored Copilot for Data Flows
-- Visualized and gained Insights using Copilot for Power BI
-
-
+- Set Up a Workspace in Microsoft Fabric 
+- Used Copilot in Dataflows to load and analyze dataset with AI-assisted queries and Python code
+- Used Copilot for Power BI to connect to a Fabric dataset, build and publish reports, generate DAX measures, and gain insights with natural language.
 
 ## You have successfully completed the lab!
 
+By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
