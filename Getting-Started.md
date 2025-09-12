@@ -81,7 +81,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 Your virtual machine is your workhorse throughout the workshop. The **Guide** is your roadmap to success.
 
-![](images1/media/getting-started-1.png)
+![](images1/media/76.png)
 
 ## Exploring Your Lab Resources
  
@@ -105,7 +105,7 @@ Feel free to **start, stop, or restart (1)** your virtual machine as needed from
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![](images1/media/02062025(1).png)
+![](images1/media/77.png)
 
 ## Let's Get Started with Fabric Portal
  
@@ -115,37 +115,37 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    https://app.fabric.microsoft.com/home
    ```
 
-2. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following email/username, and click on **Submit**.
+2. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following **email/username (1)**, and click on **Submit (2)**.
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![](images1/media/02062025(2).png)
+     ![](images1/media/001.png)
  
-3. Now enter the following password and click on **Sign in**.
+3. Now enter the following **password (1)** and click on **Sign in (2)**.
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![](images1/media/exercise-1-img-90.png)
+     ![](images1/media/002.png)
      
 1. If you see the pop-up **Stay Signed in?**, select **Yes**.
 
-   ![](images1/media/exercise-1-img-91.png)
+   ![](images1/media/03.png)
 
 1. On Welcome to the Fabric view dialog opens, click **Cancel**.
 
-    ![image](https://github.com/user-attachments/assets/6ec9f96c-1635-4d7f-a9e6-de61bcff231c)
+   ![](images1/media/04.png)
 
 1. On Microsoft Fabric (Free) license assignment dialog appears, click **OK** to proceed.
 
-   ![image](https://github.com/user-attachments/assets/710358d8-b496-4e2e-9ac0-20a29b1fd227)
+   ![](images1/media/05.png)
 
 1. You will be navigated to the **Microsoft** **Fabric Home page**.
 
-   ![image](https://github.com/user-attachments/assets/71480b18-7a61-4809-b5bf-213d3aca818b)
+   ![tour](images1/media/07.png)
 
    >**Note:** If you receive any pop-ups, please **Close** them.
 
-   ![tour](images1/media/tour.png)
+   ![tour](images1/media/06.png)
 
 ## Support Contact
 
