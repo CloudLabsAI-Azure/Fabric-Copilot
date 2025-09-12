@@ -22,19 +22,19 @@ In this exercise, you will activate a 60-day free trial of Microsoft Fabric and 
 
 Start a free Microsoft Fabric trial to explore powerful data analytics, integration, and visualization features.
 
-1. On the top right corner of the screen, select the **User icon** and select **Free trial**.
+1. On the top right corner of the screen, select the **User icon (1)** and select **Free trial (2)**.
 
-    ![](images1/media/02062025(3).png)
+    ![](images1/media/08.png)
 
 1. On **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
 
-    ![](images1/media/image-10.png)
+    ![](images1/media/09.png)
 
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
 1. **Successfully upgraded to Microsoft Fabric** dialog opens. Select **Got it**.
 
-    ![](images1/media/02062025(4).png)
+    ![](images1/media/10.png)
 
 1. You will be navigated to the **Microsoft Fabric Home page**.
 
@@ -48,7 +48,7 @@ Create a new workspace in Microsoft Fabric to organize your data and analytics a
 
 2. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
-    ![](images1/media/exercise-1-img-92.png)
+    ![](images1/media/11.png)
 
 3. **Create a workspace** dialog opens on the right side of the browser.
 
@@ -60,13 +60,13 @@ Create a new workspace in Microsoft Fabric to organize your data and analytics a
 
 5. Ensure **Fabric capacity (1)** is enabled, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
 
-    ![works-apply.png](images1/media/exercise-1-img-3.png)
+    ![works-apply.png](images1/media/12.png)
 
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, apply it, and continue to the next step. 
 
     >**Note:** Close any pop-up that appears on the screen.
 
-    ![gotit-popup.png](images1/media/gotit-popup.png)
+    ![gotit-popup.png](images1/media/13.png)
 
     >**Note:** Wait for the Power BI Workspace to load.
 
@@ -93,7 +93,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Click on **+ New item (1)** button. In the pop-up window, search for **Lakehouse (2)** in the search bar and click on **Lakehouse (3)**.
 
-    ![Lakehouse](images1/media/exercise-1-img-28.png)
+    ![Lakehouse](images1/media/E214.png)
 
 1. Enter the name **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**. Tick the **Lakehouse schemas (Public Preview) (2)** checkbox, then click the **Create (3)** button.
 
@@ -103,35 +103,35 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     >**Note:** If you see any pop-up tab like below you can close it for now.
 
-    ![Choose data source options](images1/media/exercise-2-img-42.png)
+    ![Choose data source options](images1/media/15.png)
 
 1. From the Lakehouse page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
 
-    ![Lakehouse](images1/media/exercise-1-img-94.png)
+    ![Lakehouse](images1/media/16.png)
     
 1. In the Name field enter **North Wind Data (1)** and click on **Create (2)**.
 
-    ![](images1/media/northwind.png)
+    ![](images1/media/17.png)
 
     > **Note:** The checkbox for **Enable Git Integration, deployment pipelines and Public API scenarios** is enabled by default ensure to keep it as it is.
 
 1. On the **North Wind Data** dataflow gen2 **Home** tab, select **Get data (1)** >> **More (2)**.
 
-    ![Get data dropdown menu options displayed.](images1/media/getdata.png)
+    ![Get data dropdown menu options displayed.](images1/media/18.png)
 
     >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, then select **Get Data (1) > More (2).**
 
 1. In the **Choose data source** field, enter **OData (1)** to filter the possible data sources, and then select **OData (2).**
 
-    ![Choose data source options](images1/media/exercise-1-img-97.png)
+    ![Choose data source options](images1/media/19.png)
 
-1. In the **Connect to data source** window, under **Connection settings**, in the **URL** field, copy and paste **https://services.odata.org/V4/Northwind/Northwind.svc/** and then select **Next.**
+1. In the **Connect to data source** window, under **Connection settings**, in the **URL** field, copy and paste **https://services.odata.org/V4/Northwind/Northwind.svc/** **(1)** and then select **Next (2).**
 
-    ![Connect to data source options men](images1/media/exercise-1-img-9.png)
+    ![Connect to data source options men](images1/media/20.png)
 
 1. In the **Choose Data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**, and then select **Create.** 
 
-    ![](images1/media/exercise-1-img-10.png)
+    ![](images1/media/21.png)
 
 1. Ensure that **Lakehouse (1)** is selected as the data destination. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Save & run(2)** button from the top left.
 
@@ -139,11 +139,11 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. The query should look like the following:
 
-    ![Queries created](images1/media/exercise-1-img-12.png)
+    ![Queries created](images1/media/22.png)
 
 1. Navigate back to your workspace. Select **North Wind Data** dataflow that you have created.
 
-    ![Queries created](images1/media/exercise-1-img-99.png)
+    ![Queries created](images1/media/23.png)
 
     > **Note:** Please wait a few minutes until **North Wind Data** **Dataflow Gen2** becomes clickable.
 
@@ -159,11 +159,11 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     > **Note:** If the **Copilot** option isn’t visible, try reducing your browser's zoom level.
 
-    ![Customers table](images1/media/02062025(9).png)
+    ![Customers table](images1/media/24.png)
 
 1. In the **Copilot** pane enter **Only show Countries Brazil and Venezuela (1)** and then select **Send (2)**.
 
-    ![Copilto pane](images1/media/exercise-2-img-44.png)
+    ![Copilto pane](images1/media/25.png)
 
     >**Note:** Due to the nature of Copilot, you may end up with differing results.
 
@@ -178,7 +178,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. The **Country** column has been filtered and now only includes customers from **Brazil and Venezuela**
 
-    ![Country column](images1/media/exercise-2-img-46.png)
+    ![Country column](images1/media/26.png)
 
 1. In the **Copilot** pane, enter **How many customers in each country?** and then select **Send**.
 
@@ -186,7 +186,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. You will see the total customers present in each country. Sometimes, due to the nature of Copilot, you may end up with different results or errors.
 
-    ![Example screen showing errors in the Country column.](images1/media/exercise-1-img-17.png)
+    ![Example screen showing errors in the Country column.](images1/media/27.png)
 
     >**Note:** You need to have an accurate question, so you can also try: **What is the total number of customers in each country?**
 
@@ -198,7 +198,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. The query outputs a list displaying the number of customers per country.
 
-    ![Query outputs](images1/media/exercise-2-img-49.png)
+    ![Query outputs](images1/media/28.png)
 
 1. You can undo the step by selecting **Undo (1)** to revert the changes, as we want to use Copilot against the whole dataset. If the **Undo** option isn't visible, you can remove the filter by clicking the **x (2)** next to **Group by**.
 
@@ -222,7 +222,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Select **Cancel** to exit the Advanced editor without making changes.
 
-    ![Formula used in the query.](images1/media/exercise-1-img-20.png)
+    ![Formula used in the query.](images1/media/29.png)
 
     >**Note:** In the advance editor, the query values might be different from the screenshot mentioned.
 
@@ -232,9 +232,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Copilot** pane, enter **Create a new query with data for official public holidays for Australia in 2024** and then select **Send**.
 
-    ![Copilot pane](images1/media/exercise-1-img-21.png)
+    ![Copilot pane](images1/media/30.png)
 
-    ![Table with the Query results](images1/media/exercise-2-img-3.png)
+    ![Table with the Query results](images1/media/31.png)
 
 1. Australian public holidays have been added to the list. Review them as needed.
 
@@ -246,7 +246,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![A screenshot of a computer ](images1/media/image29.png)
 
-    ![Copilot pane](images1/media/exercise-1-img-23.png)
+    ![Copilot pane](images1/media/32.png)
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
@@ -262,7 +262,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. A table containing the **shipCountry** and **Order value aggregates** is displayed.
 
-    ![Table containing the shipCountry](images1/media/exercise-1-img-25.png)
+    ![Table containing the shipCountry](images1/media/33.png)
 
 1. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor** to verify the correct formula.
 
@@ -274,11 +274,17 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Select **Cancel** to close the Advanced editor, and then in the **Copilot** pane, select **Undo** to revert the changes.
 
+    ![advancedquery](images1/media/34.png)
+
+    ![advancedquery](images1/media/35.png)
+
 1. Ensure that **Lakehouse** is selected as the **Data destination.**
 
     ![](images1/media/exercise-2-img-5.png)
 
 1. Select **Save and Run** to save your data to your lake house. Select your target Lakehouse connection before saving. (Skip this step if you already saved the dataset in an earlier step.)
+
+     ![advancedquery](images1/media/36.png)
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
 > - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
@@ -291,40 +297,42 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 In this task, you will explore Copilot capabilities in Fabric notebooks.
 
 1. In the **Workspace<inject key="DeploymentID" enableCopy="false"/>** Fabric workspace you created earlier, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** you previously created.
+  
+   ![](images1/media/37.1.png)
 
-   > **Note:** Wait for the tables to load up before proceeding to next steps.
+   >**Note:** Wait for the tables to load up before proceeding to next steps.
 
-1. On the menu for the Fabric workshop Lakehouse, select **Open notebook -> New notebook**.
+2. On the menu for the Fabric workshop Lakehouse, select **Open notebook -> New notebook**.
 
-    ![Bronze lakehouse meny](images1/media/exercise-2-img-7.png)
+    ![Bronze lakehouse meny](images1/media/38.png)
 
     >**Note:** If tour pop-up appears, feel free to skip it for now by selecting **Skip tour**.
 
-    ![Bronze lakehouse meny](images1/media/exercise-2-img-9.png)
+    ![Bronze lakehouse meny](images1/media/39.png)
 
-1. At the upper left of the page, select the **Notebook 1** notebook name. Replace the name with **CopilotDemoNotebook** and select **Enter** from keyboard.
+3. At the upper left of the page, select the **Notebook 1 (1)** notebook name. Replace the name with **CopilotDemoNotebook (2)** and select **Enter** from keyboard.
 
-    ![](images1/media/02062025(11).png)
+    ![](images1/media/40.png)
 
-1. From the notebook menu, click on the **ellipsis (...)** and select **Copilot**.
+4. From the notebook menu, click on the **ellipsis (...) (1)** and select **Copilot (2)**.
 
-    ![](images1/media/02062025(12).png)
+    ![](images1/media/41.png)
 
     >**Note:** If tour pop-up appears, feel free to skip it for now.
 
-1. Click **Get Started (1)** in the Copilot tab, then select **Run cell (2)** button to initiate the session. Once the session has started, you can proceed to the next step.
+5. Click **Get Started (1)** in the Copilot tab, then select **Run cell (2)** button to initiate the session. Once the session has started, you can proceed to the next step.
 
-    ![](images1/media/02062025(13).png)
+   ![](images1/media/02062025(13).png)
 
-    >**Note:** As this is your first session, it may take a few minutes (around 1-2 minutes) to get started.
+   >**Note:** As this is your first session, it may take a few minutes (around 1-2 minutes) to get started.
 
-1. Move the cursor to the lower left of the last cell in the notebook and select **+ Code** to add a new cell.
+6. Move the cursor to the lower left of the last cell in the notebook and select **+ Code** to add a new cell.
 
    > **Note:** If you don’t see the **+ Code** button, try hovering the mouse slightly below the last cell.
 
-    ![](images1/media/exercise-2-img-11.png)
+    ![](images1/media/42.png)
 
-1. Enter the following **code (1)** in the new cell and then select **Run cell (2)**.
+7. Enter the following **code (1)** in the new cell and then select **Run cell (2)**.
 
     >**Note:** This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.
 
@@ -357,7 +365,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![](images1/media/02062025(15).png)
 
-1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code saves the data as a delta table in the Lakehouse.
+8. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code saves the data as a delta table in the Lakehouse.
 
     ```
     table_name = "nyc_yellowtaxi_raw"
@@ -366,11 +374,11 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
     print(f"Spark dataframe (filtered_nyc_yellowtaxi_df) saved to a delta table: {table_name}")
     ```
 
-    ![Notebook text](images1/media/exercise-1-img-37.png)
+    ![Notebook text](images1/media/43.png)
 
     >**Note:** It may take around 1-2 minutes to run the above notebook code.
 
-1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code runs a query to select and aggregate data.
+9. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code runs a query to select and aggregate data.
 
     ```
     %%sql
@@ -381,7 +389,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Notebook with the output dataset](images1/media/exercise-1-img-38.png)
 
-1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code counts the number of records returned.
+10. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code counts the number of records returned.
 
     ```
     filtered_nyc_yellowtaxi_df.count()
@@ -390,9 +398,9 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     >**Note:** During testing, 69,402,938 rows were returned.
 
-1. At the bottom of the Copilot pane, enter the prompt **Describe the structure of the filtered_nyc_yellowtaxi_df dataframe** and then select **Enter**.
+11. At the bottom of the Copilot pane, enter the prompt **Describe the structure of the filtered_nyc_yellowtaxi_df dataframe** and then select **Enter**.
 
-    ![Copilot lateral pane](images1/media/image47.png)
+    ![Copilot lateral pane](images1/media/44.png)
 
     ![Copilot lateral pane](images1/media/exercise-1-img-40.png)
 
@@ -404,9 +412,9 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
     filtered_nyc_yellowtaxi_df.describe().show()
     ```
 
-1. In other cases, Copilot responded with **I'm unable to provide a description without more context or the structure of the dataset** or **I must decline to assist with that request**. These issues should be resolved as this Copilot evolves.
+12. In other cases, Copilot responded with **I'm unable to provide a description without more context or the structure of the dataset** or **I must decline to assist with that request**. These issues should be resolved as this Copilot evolves.
 
-1. If Copilot does not create a command for you, add a new cell to the notebook. Add the following code to the new cell and then select the **Run cell** button:
+13. If Copilot does not create a command for you, add a new cell to the notebook. Add the following code to the new cell and then select the **Run cell** button:
 
     ```
     filtered_nyc_yellowtaxi_df.describe().show()
@@ -417,20 +425,20 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     > **Note:** Running the code may take 2–3 minutes. Please wait for it to complete.
 
-1. At the bottom of the **Copilot** pane, enter the following prompt and then select **Enter**. Copilot should respond with a command that you can run to create the dataframe.
+14. At the bottom of the **Copilot** pane, enter the following prompt and then select **Enter**. Copilot should respond with a command that you can run to create the dataframe.
 
     ```
     Create a dataframe by loading data from nyc_yellowtaxi_raw table and sampling it with 1 percentage, count the rows in the dataframe and show the amount.
     ```
 
-1. Select **Insert code(1)** to create a new cell in the Notebook. Run the cell:
+15. Select **Insert code(1)** to create a new cell in the Notebook. Run the cell:
 
     ![Notebook screen](images1/media/exercise-1-img-44.png)
 
     ![Notebook screen](images1/media/exercise-1-img-45.png)
     > **Note**: If you do not see the **Insert Code** option copy the code generated by Copilot, add a new cell in the notebook and paste it, then click on **Run Cell**
 
-1. If Copilot does not create the command for you, add a new cell to the notebook. Then, add the following code to the new cell and then select the **Run cell** button.
+16. If Copilot does not create the command for you, add a new cell to the notebook. Then, add the following code to the new cell and then select the **Run cell** button.
 
     ```
     %%code
@@ -439,7 +447,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Notebook screen](images1/media/exercise-1-img-46.png)
 
-1. If you encounter any issues creating the command with Copilot or see errors in the results, you can use the code below, which was generated by Copilot while testing the functionality. Add the following code to the new cell and then select the **Run cell** button.
+17. If you encounter any issues creating the command with Copilot or see errors in the results, you can use the code below, which was generated by Copilot while testing the functionality. Add the following code to the new cell and then select the **Run cell** button.
 
     ```
     # ATTENTION: AI-generated code can include errors or operations you didn't intend. Review the code in this cell carefully before running it.
@@ -499,17 +507,17 @@ In this task you will be connecting to a Fabric dataset to access and explore st
 
 1. Select **Blank Report** to create a new dashboard. 
 
-    ![Power BI menu](images1/media/exercise-1-img-47.png) 
+    ![Power BI menu](images1/media/45.1.png) 
 
     >**Note:** If you receive any pop-ups, please **Close** them.
 
-    ![alt text](images1/media/pop2.png)
+    ![alt text](images1/media/46.png)
 
-    ![alt text](images1/media/pop1.png)
+    ![alt text](images1/media/47.png)
 
-1. Select **Get Data** **->** **More...** to connect to the dataset needed for your report.
+1. Select **Get Data** **-> (1)** **More...(2)** to connect to the dataset needed for your report.
 
-    ![](images1/media/exercise-1-img-52.png) 
+    ![](images1/media/48.png) 
 
 1. Select **Microsoft Fabric (1)** and then select **Lakehouses (2) -> Connect (3)**
 
@@ -517,7 +525,7 @@ In this task you will be connecting to a Fabric dataset to access and explore st
 
 1. Select the **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** created in the earlier exercise and select **Connect to SQL endpoint (3)** by selecting the arrow next to **Connect (2)**.
 
-    ![Lakehouse view](images1/media/exercise-2-img-15.png)
+    ![Lakehouse view](images1/media/49.png)
 
 1. Then, log in with the below credentials.
 
@@ -529,47 +537,47 @@ In this task you will be connecting to a Fabric dataset to access and explore st
 
     **Customers, Employees, Orders, Order_Details, Products, Shippers, Suppliers**
 
-    ![Targeted dataset](images1/media/exercise-1-img-79.png)
+    ![Targeted dataset](images1/media/50.png)
 
 1. Create a real-time connection to your Lakehouse by selecting **DirectQuery (1)** then **OK (2)**.
 
-    ![](images1/media/exercise-1-img-80.png)
+    ![](images1/media/51.png)
 
 1. On the Home menu, click on **Copilot**.
 
-    ![](images1/media/exercise-2-img-13.png)
+    ![](images1/media/51.png)
 
     >**Note:** If you're unable to find Copilot, try zooming out the browser tab to 80% - it should then become visible.
 
 1. Select the workspace **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)** and click **OK (2)**.
 
-    ![Customers table](images1/media/02062025(16).png)
+    ![Customers table](images1/media/53.png)
 
 1. Click **Get started** in the Copilot chat window.
 
-    ![Customers table](images1/media/02062025(17).png)
+    ![Customers table](images1/media/54.png)
 
 1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide(1)**, then select **"Give me an executive summary" (2)**
 
-    ![](images1/media/exercise-2-img-16.png)
+    ![](images1/media/55.png)
 
-    ![](images1/media/exercise-1-img-81.png)
+    ![](images1/media/56.png)
 
 1. Select the **Prompt Guide(1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
 
-    ![](images1/media/exercise-2-img-17.png)
+    ![](images1/media/57.png)
 
 1. Select **+ Create (1)** under **Sales Performance** to generate a report analyzing order details, unit prices, and quantities sold.
 
-    ![](images1/media/exercise-1-img-82.png)
+    ![](images1/media/58.png)
 
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
 1. To view the chart clearly after generating the report, minimize the **Filters (1)**, **Visualizations (2)**, and **Data (3)** panes, and close the **Copilot Suggestions (4)** tab. 
 
-    ![](images1/media/exercise-2-img-39.png)
+    ![](images1/media/59.png)
 
-    ![](images1/media/exercise-1-img-83.png)
+    ![](images1/media/60.png)
 
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
@@ -579,11 +587,11 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. Select the **Dax query view (1)**, then **Copilot (Preview) (2).**
 
-    ![](images1/media/exercise-2-img-18.png)
+    ![](images1/media/61.1.png)
 
     >**Note:** Close any pop-up that appears on the screen.
 
-    ![](images1/media/02062025(18).png)
+    ![](images1/media/63.png)
 
 <!-- 
 1. Ensure that the **Measure Descriptions with Copilot** feature is enabled. From the top left corner navigate to **File -> Options and settings (1) -> Options (2).**
@@ -604,7 +612,9 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. Under **Dax query view (1)**, select **Copilot (Preview) (2)** then select **Suggest measures** option.
 
-    ![](images1/media/exercise-2-img-22.png)
+    ![](images1/media/64.png)
+
+    >**Note:** If you get pop up something went wrong, close it and continue from step 3.
 
 1. Once the measure has been generated, verify it and click **Discard query** for now as it would create different code for every users.
 
@@ -644,11 +654,11 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. Now, you can **Run (2)** the query to see the results of the query generated. Then, **select anywhere (3)** on the query tab to make the **Update model with changes** button enables and then click **Update model with changes (4)** to generate measures in Model.
 
-    ![](images1/media/exercise-2-img-61.png)
+    ![](images1/media/65.png)
 
 1. Then, on the **Are you sure?** tab, select **Update model**.
 
-    ![](images1/media/exercise-2-img-60.png)
+    ![](images1/media/66.png)
 
     >**Note:** You may need to wait for 1-2 minutes for **Update model with changes** option to be enabled after running the query.
 
@@ -656,41 +666,41 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 1. You will notice **two Measures (1)** will be generated under **Model**.
 
-    ![](images1/media/exercise-2-img-62.png)
+    ![](images1/media/67.png)
 
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
 1. Navigate to the **Model view (1)** on the left pane and select the **New measure (2)** created. Navigate to the **Properties** section for the model and select **Create with Copilot (preview) (3).** Copilot generates a new measure description in a few seconds.
 
-    ![](images1/media/exercise-2-img-63.png)
+    ![](images1/media/68.png)
 
 1. Review the measure description to ensure that it aligns with your model. Select **Keep it** to save the description.
 
-    ![](images1/media/exercise-2-img-25.png)
+    ![](images1/media/69.png)
 
 1. You will observe that the **Description** has been automatically added by Copilot.
 
-    ![](images1/media/exercise-2-img-64.png)
+    ![](images1/media/70.png)
 
 1. Now, let's publish the report to the Power BI service so that consumers can visualize and derive insights from it.
 
-1. Select **Home** and then select **Publish.** 
+1. Select **Home (1)** and then select **Publish (2).** 
 
-    ![](images1/media/exercise-2-img-27.png)
+    ![](images1/media/71.png)
 
-1. Select **Save** and then save the report as **Northwind Order Analysis** under your desired location on your machine.
+1. Select **Save** and then save the report as **Northwind Order Analysis (1)** under your desired location on your machine.
 
-    ![](images1/media/exercise-2-img-28.png)
+    ![](images1/media/72.png)
 
-    ![](images1/media/exercise-2-img-29.png)
+    ![](images1/media/73.png)
 
 1. Select **Workspace<inject key="DeploymentID" enableCopy="false"/>** and click **Select** to publish it under the workspace.
 
-    ![](images1/media/exercise-2-img-31.png)
+    ![](images1/media/74.png)
 
 1. After the report gets published, you will see the Success pop-up window.
 
-    ![](images1/media/exercise-2-img-30.png)
+    ![](images1/media/75.png)
 
 ### Task 3: Explore Copilot for Power BI as a report consumer
 
