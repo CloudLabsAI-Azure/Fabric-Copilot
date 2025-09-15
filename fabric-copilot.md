@@ -46,19 +46,19 @@ Create a new workspace in Microsoft Fabric to organize your data and analytics a
 
 1. Now let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar.
 
-2. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
+1. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
     ![](images1/media/11.png)
 
-3. **Create a workspace** dialog opens on the right side of the browser.
+1. **Create a workspace** dialog opens on the right side of the browser.
 
-4. Type the name **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)**, validate the availability of the name, and click on **Advanced (2)**.
+1. Type the name **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)**, validate the availability of the name, and click on **Advanced (2)**.
 
     >**Note:** Please use the workspace name provided above.
 
     ![works-apply.png](images1/media/exercise-1-img-2.png)
 
-5. Ensure **Fabric capacity (1)** is enabled, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
+1. Ensure **Fabric capacity (1)** is enabled, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
 
     ![works-apply.png](images1/media/12.png)
 
@@ -298,11 +298,11 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
 1. In the **Workspace<inject key="DeploymentID" enableCopy="false"/>** Fabric workspace you created earlier, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** you previously created.
   
-   ![](images1/media/37.1.png)
+    ![](images1/media/37.1.png)
 
-   >**Note:** Wait for the tables to load up before proceeding to next steps.
+    >**Note:** Wait for the tables to load up before proceeding to next steps.
 
-2. On the menu for the Fabric workshop Lakehouse, select **Open notebook -> New notebook**.
+1. On the menu for the Fabric workshop Lakehouse, select **Open notebook -> New notebook**.
 
     ![Bronze lakehouse meny](images1/media/38.png)
 
@@ -310,29 +310,29 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Bronze lakehouse meny](images1/media/39.png)
 
-3. At the upper left of the page, select the **Notebook 1 (1)** notebook name. Replace the name with **CopilotDemoNotebook (2)** and select **Enter** from keyboard.
+1. At the upper left of the page, select the **Notebook 1 (1)** notebook name. Replace the name with **CopilotDemoNotebook (2)** and select **Enter** from keyboard.
 
     ![](images1/media/40.png)
 
-4. From the notebook menu, click on the **ellipsis (...) (1)** and select **Copilot (2)**.
+1. From the notebook menu, click on the **ellipsis (...) (1)** and select **Copilot (2)**.
 
     ![](images1/media/41.png)
 
     >**Note:** If tour pop-up appears, feel free to skip it for now.
 
-5. Click **Get Started (1)** in the Copilot tab, then select **Run cell (2)** button to initiate the session. Once the session has started, you can proceed to the next step.
+1. Click **Get Started (1)** in the Copilot tab, then select **Run cell (2)** button to initiate the session. Once the session has started, you can proceed to the next step.
 
-   ![](images1/media/02062025(13).png)
+    ![](images1/media/02062025(13).png)
 
-   >**Note:** As this is your first session, it may take a few minutes (around 1-2 minutes) to get started.
+    >**Note:** As this is your first session, it may take a few minutes (around 1-2 minutes) to get started.
 
-6. Move the cursor to the lower left of the last cell in the notebook and select **+ Code** to add a new cell.
+1. Move the cursor to the lower left of the last cell in the notebook and select **+ Code** to add a new cell.
 
-   > **Note:** If you don’t see the **+ Code** button, try hovering the mouse slightly below the last cell.
+    > **Note:** If you don’t see the **+ Code** button, try hovering the mouse slightly below the last cell.
 
     ![](images1/media/42.png)
 
-7. Enter the following **code (1)** in the new cell and then select **Run cell (2)**.
+1. Enter the following **code (1)** in the new cell and then select **Run cell (2)**.
 
     >**Note:** This code specifies Azure storage access and connectivity information for the NYC Yellow Taxi open dataset. The last line of code filters the data to limit the volume of data that you'll ingest for this exercise.
 
@@ -365,7 +365,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![](images1/media/02062025(15).png)
 
-8. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code saves the data as a delta table in the Lakehouse.
+1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code saves the data as a delta table in the Lakehouse.
 
     ```
     table_name = "nyc_yellowtaxi_raw"
@@ -378,7 +378,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     >**Note:** It may take around 1-2 minutes to run the above notebook code.
 
-9. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code runs a query to select and aggregate data.
+1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code runs a query to select and aggregate data.
 
     ```
     %%sql
@@ -389,16 +389,17 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Notebook with the output dataset](images1/media/exercise-1-img-38.png)
 
-10. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code counts the number of records returned.
+1. Add another cell to the notebook. Add the following code to the new cell and then select the **Run cell** button. This code counts the number of records returned.
 
-    ```
-    filtered_nyc_yellowtaxi_df.count()
-    ```
+     ```
+     filtered_nyc_yellowtaxi_df.count()
+     ```
+
     ![Notebook screen](images1/media/exercise-1-img-39.png)
 
     >**Note:** During testing, 69,402,938 rows were returned.
 
-11. At the bottom of the Copilot pane, enter the prompt **Describe the structure of the filtered_nyc_yellowtaxi_df dataframe** and then select **Enter**.
+1. At the bottom of the Copilot pane, enter the prompt **Describe the structure of the filtered_nyc_yellowtaxi_df dataframe** and then select **Enter**.
 
     ![Copilot lateral pane](images1/media/44.png)
 
@@ -412,33 +413,35 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
     filtered_nyc_yellowtaxi_df.describe().show()
     ```
 
-12. In other cases, Copilot responded with **I'm unable to provide a description without more context or the structure of the dataset** or **I must decline to assist with that request**. These issues should be resolved as this Copilot evolves.
+1. In other cases, Copilot responded with **I'm unable to provide a description without more context or the structure of the dataset** or **I must decline to assist with that request**. These issues should be resolved as this Copilot evolves.
 
-13. If Copilot does not create a command for you, add a new cell to the notebook. Add the following code to the new cell and then select the **Run cell** button:
+1. If Copilot does not create a command for you, add a new cell to the notebook. Add the following code to the new cell and then select the **Run cell** button:
 
     ```
     filtered_nyc_yellowtaxi_df.describe().show()
     ```
+
     ![](images1/media/exercise-1-img-42.png)
 
     ![](images1/media/exercise-1-img-43.png)
 
     > **Note:** Running the code may take 2–3 minutes. Please wait for it to complete.
 
-14. At the bottom of the **Copilot** pane, enter the following prompt and then select **Enter**. Copilot should respond with a command that you can run to create the dataframe.
+1. At the bottom of the **Copilot** pane, enter the following prompt and then select **Enter**. Copilot should respond with a command that you can run to create the dataframe.
 
     ```
     Create a dataframe by loading data from nyc_yellowtaxi_raw table and sampling it with 1 percentage, count the rows in the dataframe and show the amount.
     ```
 
-15. Select **Insert code(1)** to create a new cell in the Notebook. Run the cell:
+1. Select **Insert code(1)** to create a new cell in the Notebook. Run the cell:
 
     ![Notebook screen](images1/media/exercise-1-img-44.png)
 
     ![Notebook screen](images1/media/exercise-1-img-45.png)
+
     > **Note**: If you do not see the **Insert Code** option copy the code generated by Copilot, add a new cell in the notebook and paste it, then click on **Run Cell**
 
-16. If Copilot does not create the command for you, add a new cell to the notebook. Then, add the following code to the new cell and then select the **Run cell** button.
+1. If Copilot does not create the command for you, add a new cell to the notebook. Then, add the following code to the new cell and then select the **Run cell** button.
 
     ```
     %%code
@@ -447,7 +450,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Notebook screen](images1/media/exercise-1-img-46.png)
 
-17. If you encounter any issues creating the command with Copilot or see errors in the results, you can use the code below, which was generated by Copilot while testing the functionality. Add the following code to the new cell and then select the **Run cell** button.
+1. If you encounter any issues creating the command with Copilot or see errors in the results, you can use the code below, which was generated by Copilot while testing the functionality. Add the following code to the new cell and then select the **Run cell** button.
 
     ```
     # ATTENTION: AI-generated code can include errors or operations you didn't intend. Review the code in this cell carefully before running it.
@@ -491,15 +494,15 @@ In this task you will be connecting to a Fabric dataset to access and explore st
 
 1. On the **Sign in to Microsoft** tab, you will see a login screen. Enter the following email and then click on **Next**.
 
-   * Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
+    - Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
    
-     ![](images1/media/exercise-1-img-49.png)
+      ![](images1/media/exercise-1-img-49.png)
      
 1. Now enter the following password and click on **Sign in**.
 
-   * Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
+    - Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
    
-     ![](images1/media/exercise-1-img-50.png) 
+      ![](images1/media/exercise-1-img-50.png) 
 
 1. On the **Automatically sign in to all desktop apps and websites on this device** pop-up, click on **No, this app only**.
 
@@ -529,9 +532,9 @@ In this task you will be connecting to a Fabric dataset to access and explore st
 
 1. Then, log in with the below credentials.
 
-   * Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>**
+    - Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>**
 
-   * Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
+    - Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
 
 1. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load:**
 
@@ -708,9 +711,9 @@ In this task, you as a report consumer, use Copilot for Power BI to ask question
 
 1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar if not opened.
 
-   ```
-   https://app.fabric.microsoft.com/
-   ```
+    ```
+    https://app.fabric.microsoft.com/
+    ```
 
 1. Navigate to your workspace and then select the **Northwind Order Analysis** report. You will see the visual report displayed on the screen :
 
