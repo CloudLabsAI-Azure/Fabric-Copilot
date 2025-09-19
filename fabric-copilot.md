@@ -16,11 +16,11 @@ In this lab, you will complete the following exercises:
 
 ## Exercise 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
 
-In this exercise, you will activate a 60-day free trial of Microsoft Fabric and create a workspace linked to Copilot-enabled capacity. This setup will prepare you to bring in data, build models, and generate reports using Microsoft Fabric’s integrated tools.
+In this exercise, you will activate a 60-day free trial of Microsoft Fabric and set up a new workspace. The workspace will be linked to a Copilot-enabled capacity, allowing you to prepare the environment for bringing in data, building models, and generating reports using Microsoft Fabric’s integrated tools.
 
 ### Task 1: Start Free fabric trial
 
-Start a free Microsoft Fabric trial to explore powerful data analytics, integration, and visualization features.
+In this task, you will activate the free 60-day Microsoft Fabric trial. This trial provides access to Fabric’s powerful data analytics, integration, and visualization features, enabling you to explore and work with the platform without requiring an active license.
 
 1. On the top right corner of the screen, select the **User icon (1)** and select **Free trial (2)**.
 
@@ -42,7 +42,7 @@ Start a free Microsoft Fabric trial to explore powerful data analytics, integrat
 
 ### Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
-Create a new workspace in Microsoft Fabric to organize your data and analytics assets. Link it to a Copilot-enabled capacity to leverage AI-powered features like queries and intelligent data insights within the workspace.
+In this task, you will create a new workspace in Microsoft Fabric to organize and manage your data and analytics assets. The workspace will be linked to a Copilot-enabled capacity, providing access to AI-powered features such as natural language queries and intelligent data insights.
 
 1. Now let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar.
 
@@ -482,7 +482,7 @@ Let's leverage Copilot for Power BI to create interactive reports using curated 
 
 ### Task 1: Connect to a Fabric dataset and create visualizations using Copilot
 
-In this task you will be connecting to a Fabric dataset to access and explore structured data. Use Copilot to generate visualizations effortlessly by describing what insights you want, enabling quick, AI-assisted data analysis and report creation.
+In this task, you will connect to a Fabric dataset to access and explore structured data. Using Microsoft Fabric Copilot, you will generate visualizations by simply describing the insights you need. This enables quick, AI-assisted data analysis and streamlined report creation.
 
 1. Launch the **Power BI** application by double clicking the desktop shortcut icon.
 
@@ -586,7 +586,7 @@ In this task you will be connecting to a Fabric dataset to access and explore st
 
 ### Task 2: Create DAX queries and update measure descriptions using Copilot
 
-Let's use Dax query copilot to generate a new measure for **total Sales after Discount (measure)** and update the description of the current measure.
+In this task, you will use DAX Query Copilot to extend your dataset with new calculations and improve documentation. Copilot will help you generate a new measure for **Total Sales after Discount** and update the description of an existing measure to ensure clarity and consistency.
 
 1. Select the **Dax query view (1)**, then **Copilot (Preview) (2).**
 
@@ -595,23 +595,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
     >**Note:** Close any pop-up that appears on the screen.
 
     ![](images1/media/63.png)
-
-<!-- 
-1. Ensure that the **Measure Descriptions with Copilot** feature is enabled. From the top left corner navigate to **File -> Options and settings (1) -> Options (2).**
-
-    ![](images1/media/exercise-1-img-72.png)
-
-1. Under the **Options** tab, select **Preview features (1)**, then enable **Measure descriptions with Copilot (2)** at the bottom of the list if not enabled, then select **OK (3)**
-
-    ![](images1/media/exercise-2-img-40.png)
-
-    >**Note:** If you make any feature updates, a pop-up will appear prompting you to restart the Power BI application for the changes to take effect. Click **OK** to proceed.
-
-    >**Note:** Do not restart Power BI at this moment.
-
-    ![](images1/media/exercise-1-img-74.png)
-
--->
+    
 
 1. Under **Dax query view (1)**, select **Copilot (Preview) (2)** then select **Suggest measures** option.
 
@@ -707,7 +691,7 @@ Let's use Dax query copilot to generate a new measure for **total Sales after Di
 
 ### Task 3: Explore Copilot for Power BI as a report consumer
 
-In this task, you as a report consumer, use Copilot for Power BI to ask questions and get instant insights from reports. It helps you understand data trends, summaries, and key metrics without needing to write complex queries
+In this task, you will explore Copilot for Power BI from a report consumer’s perspective. Copilot allows you to ask natural language questions directly within a report and receive instant insights. This helps you quickly understand data trends, summaries, and key metrics without the need to write complex queries.
 
 1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar if not opened.
 
