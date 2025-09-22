@@ -131,11 +131,11 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    ![](images1/media/03.png)
 
-1. On Welcome to the Fabric view dialog opens, click **Cancel**.
+1. On **Welcome to the Fabric view** dialog opens, click **Cancel**.
 
    ![](images1/media/04.png)
 
-1. On Microsoft Fabric (Free) license assignment dialog appears, click **OK** to proceed.
+1. On **Microsoft Fabric (Free) license assigned** dialog appears, click **OK** to proceed.
 
    ![](images1/media/05.png)
 
