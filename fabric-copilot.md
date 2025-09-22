@@ -26,25 +26,25 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 1. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
-    ![](images1/media/11.png)
+    ![](images1/media/fabric-image4.png)
 
-1. **Create a workspace** dialog opens on the right side of the browser.
+1. The **Create a workspace** dialog opens on the right side of the browser.
 
-1. Type the name **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)**, validate the availability of the name, and click on **Advanced (2)**.
+1. Enter the name **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)**, validate that the name is available, and then click **Advanced (2)**.
 
     >**Note:** Please use the workspace name provided above.
 
-    ![works-apply.png](images1/media/exercise-1-img-2.png)
+    ![](images1/media/fabric-image5.png)
 
-1. Ensure **Fabric capacity (1)** is enabled, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
+1. Ensure **Fabric capacity (1)** is chosen, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
 
-    ![works-apply.png](images1/media/12.png)
+    ![](images1/media/fabric-image6.png)
 
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, apply it, and continue to the next step. 
 
     >**Note:** Close any pop-up that appears on the screen.
 
-    ![gotit-popup.png](images1/media/13.png)
+    ![](images1/media/fabric-image7.png)
 
     >**Note:** Wait for the Power BI Workspace to load.
 
@@ -753,4 +753,5 @@ In this lab, you have completed the following exercises:
 
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
 
