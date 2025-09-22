@@ -282,7 +282,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/exercise-2-img-5.png)
 
-1. Select **Save and Run** to save your data to your lake house. Select your target Lakehouse connection before saving. (Skip this step if you already saved the dataset in an earlier step.)
+1. Click the **Down arrow** next to the **Save and Run (1)** icon, and then select **Save and Run (2)** to save your data to your Lakehouse. Make sure to select your target Lakehouse connection before saving. (Skip this step if you have already saved the dataset in an earlier step.)
 
      ![advancedquery](images1/media/36.png)
 
@@ -302,19 +302,19 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     >**Note:** Wait for the tables to load up before proceeding to next steps.
 
-1. On the menu for the Fabric workshop Lakehouse, select **Open notebook -> New notebook**.
+1. On the **Fabric workshop Lakehouse**, use the menu bar to select **Open notebook (1)**, and then choose **New notebook (2)**.
 
     ![Bronze lakehouse meny](images1/media/38.png)
 
-    >**Note:** If tour pop-up appears, feel free to skip it for now by selecting **Skip tour**.
+    >**Note:** If the tour pop-up appears, you can skip it for now by selecting **Skip tour**.
 
     ![Bronze lakehouse meny](images1/media/39.png)
 
-1. At the upper left of the page, select the **Notebook 1 (1)** notebook name. Replace the name with **CopilotDemoNotebook (2)** and select **Enter** from keyboard.
+1. At the upper left of the page, select the notebook name **Notebook 1 (1)**. Replace it with **CopilotDemoNotebook (2)**, and press **Enter** on your **keyboard**.
 
     ![](images1/media/40.png)
 
-1. From the notebook menu, click on the **ellipsis (...) (1)** and select **Copilot (2)**.
+1. From the notebook menu, click the **ellipsis (...) (1)**, and then select **Copilot (2)**.
 
     ![](images1/media/41.png)
 
@@ -326,9 +326,9 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     >**Note:** As this is your first session, it may take a few minutes (around 1-2 minutes) to get started.
 
-1. Move the cursor to the lower left of the last cell in the notebook and select **+ Code** to add a new cell.
+1. Move the cursor to the lower left of the last cell in the notebook, and select **+ Code** to add a new cell.
 
-    > **Note:** If you don’t see the **+ Code** button, try hovering the mouse slightly below the last cell.
+    >**Note:** If you don’t see the + Code button, hover slightly below the last cell to reveal it.
 
     ![](images1/media/42.png)
 
@@ -544,11 +544,11 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
 1. Create a real-time connection to your Lakehouse by selecting **DirectQuery (1)** then **OK (2)**.
 
-    ![](images1/media/51.png)
+    ![](images1/media/fabric-image25.png)
 
 1. On the Home menu, click on **Copilot**.
 
-    ![](images1/media/51.png)
+    ![](images1/media/fabric-image24.png)
 
     >**Note:** If you're unable to find Copilot, try zooming out the browser tab to 80% - it should then become visible.
 
@@ -562,17 +562,17 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
 1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide(1)**, then select **"Give me an executive summary" (2)**
 
-    ![](images1/media/55.png)
+    ![](images1/media/fabric-image27.png)
 
     ![](images1/media/56.png)
 
 1. Select the **Prompt Guide(1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
 
-    ![](images1/media/57.png)
-
+    ![](images1/media/fabric-image28.png)
+   
 1. Select **+ Create (1)** under **Sales Performance** to generate a report analyzing order details, unit prices, and quantities sold.
 
-    ![](images1/media/58.png)
+    ![](images1/media/fabric-image26.png)
 
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
@@ -588,7 +588,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
 In this task, you will use DAX Query Copilot to extend your dataset with new calculations and improve documentation. Copilot will help you generate a new measure for **Total Sales after Discount** and update the description of an existing measure to ensure clarity and consistency.
 
-1. Select the **Dax query view (1)**, then **Copilot (Preview) (2).**
+1. On **Power BI** from the left pane, select the **Dax query view (1)**, then **Copilot (2).**
 
     ![](images1/media/61.1.png)
 
@@ -596,7 +596,6 @@ In this task, you will use DAX Query Copilot to extend your dataset with new cal
 
     ![](images1/media/63.png)
     
-
 1. Under **Dax query view (1)**, select **Copilot (Preview) (2)** then select **Suggest measures** option.
 
     ![](images1/media/64.png)
@@ -605,7 +604,11 @@ In this task, you will use DAX Query Copilot to extend your dataset with new cal
 
 1. Once the measure has been generated, verify it and click **Discard query** for now as it would create different code for every users.
 
-    ![](images1/media/exercise-2-img-19.png)
+    ![](images1/media/fabric-image30.png)
+
+   >**Note:** When the **Exit Copilot?** window pops up, click **Yes** to exit.
+
+    ![](images1/media/fabric-image31.png)
 
 1. To proceed, copy the code provided below and paste it into the **query box (1)**. 
 
@@ -639,31 +642,31 @@ In this task, you will use DAX Query Copilot to extend your dataset with new cal
     ORDER BY Customers[CompanyName] ASC
     ```
 
-1. Now, you can **Run (2)** the query to see the results of the query generated. Then, **select anywhere (3)** on the query tab to make the **Update model with changes** button enables and then click **Update model with changes (4)** to generate measures in Model.
+1. Now, you can **Run (2)** the query to see the results of the query generated. Then, **select anywhere (3)** on the query tab to make the **Update model with changes** button enables and then click **Update model with changes (4)** to generate measures in **Model**.
 
     ![](images1/media/65.png)
 
 1. Then, on the **Are you sure?** tab, select **Update model**.
 
-    ![](images1/media/66.png)
+    ![](images1/media/fabric-image32.png)
 
     >**Note:** You may need to wait for 1-2 minutes for **Update model with changes** option to be enabled after running the query.
 
     >**Note:** Since these are **Copilot** suggested measures, they might differ from the screenshots shown in the guide.
 
-1. You will notice **two Measures (1)** will be generated under **Model**.
+1. In the **Data** window, select the **Model (1)** tab and notice the two measures created. Expand **Measures (2)** and review the **list of measures (3)**.
 
-    ![](images1/media/67.png)
-
+    ![](images1/media/fabric-image33.png)
+   
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
-1. Navigate to the **Model view (1)** on the left pane and select the **New measure (2)** created. Navigate to the **Properties** section for the model and select **Create with Copilot (preview) (3).** Copilot generates a new measure description in a few seconds.
+1. Navigate to the **Model view (1)** on the left pane and select the New measure **Average order value (2)** created. Navigate to the **Properties** section for the model and select **Create with Copilot (preview) (3).** Copilot generates a new measure description in a few seconds.
 
     ![](images1/media/68.png)
 
-1. Review the measure description to ensure that it aligns with your model. Select **Keep it** to save the description.
+1. Review the measure **Description** to ensure that it aligns with your model. Select **Keep it** to save the description.
 
-    ![](images1/media/69.png)
+    ![](images1/media/fabric-image34.png)
 
 1. You will observe that the **Description** has been automatically added by Copilot.
 
@@ -675,15 +678,17 @@ In this task, you will use DAX Query Copilot to extend your dataset with new cal
 
     ![](images1/media/71.png)
 
-1. Select **Save** and then save the report as **Northwind Order Analysis (1)** under your desired location on your machine.
+1. Select **Save**.
 
-    ![](images1/media/72.png)
+    ![](images1/media/fabric-image35.png)
 
-    ![](images1/media/73.png)
+1. Save the report as **Northwind Order Analysis (1)** then click on **Save (2)**.   
 
-1. Select **Workspace<inject key="DeploymentID" enableCopy="false"/>** and click **Select** to publish it under the workspace.
+    ![](images1/media/fabric-image36.png)
 
-    ![](images1/media/74.png)
+1. Select **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Select (2)** to publish it under the workspace.
+
+    ![](images1/media/fabric-image37.png)
 
 1. After the report gets published, you will see the Success pop-up window.
 
@@ -757,7 +762,7 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
 1. Ask Copilot to generate a report to monitor the current inventory by submitting the following prompt: **Create a report monitoring the product inventory.**
 
-    ![Toolbar](images1/media/image70.png)
+    ![](images1/media/fabric-image38.png)
 
     >**Note**: If you see a message saying "To help me respond to requests like this, turn on Q&A for this semantic model," please click it to enable Q&A. Then, paste the query again.
 
@@ -775,5 +780,6 @@ In this lab, you have completed the following exercises:
 
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
 
 
