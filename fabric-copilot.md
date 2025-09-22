@@ -2,21 +2,21 @@
 
 ## Lab Overview
 
-This hands on lab provides comprehensive training on leveraging Microsoft Fabric and Copilot capabilities for data ingestion, preparation, and visualization. Participants will create and set up a Fabric workspace, including starting a free trial and linking it with Copilot-enabled capacity (F64). They will ingest datasets into the Lakehouse via Data Pipelines, explore Copilot’s AI-assisted features in Fabric notebooks, and connect to Fabric datasets to generate visualizations in Power BI using Copilot. Additionally, participants will use Copilot to write DAX queries, update measure descriptions, and optionally explore Copilot as a report consumer, gaining a solid understanding of its potential across the data and analytics workflows in Microsoft Fabric.
+This hands on lab provides comprehensive training on leveraging Microsoft Fabric and Copilot capabilities for data ingestion, preparation, and visualization. Participants will create and set up a Fabric workspace using the pre-deployed Fabric capacity. They will ingest datasets into the Lakehouse via Data Pipelines, explore Copilot’s AI-assisted features in Fabric notebooks, and connect to Fabric datasets to generate visualizations in Power BI using Copilot. Additionally, participants will use Copilot to write DAX queries, update measure descriptions, and optionally explore Copilot as a report consumer, gaining a solid understanding of its potential across the data and analytics workflows in Microsoft Fabric.
 
 ## Lab objectives
 
 In this lab, you will complete the following exercises:
 
-- Exercise 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
+- Exercise 1: Getting Started with Microsoft Fabric: Set Up a Workspace
 
 - Exercise 2: Explore Copilot for Data Flows
 
 - Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
 
-## Exercise 1: Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace
+## Exercise 1: Getting Started with Microsoft Fabric: Set Up a Workspace
 
-In this exercise, you will activate a 60-day free trial of Microsoft Fabric and set up a new workspace. The workspace will be linked to a Copilot-enabled capacity, allowing you to prepare the environment for bringing in data, building models, and generating reports using Microsoft Fabric’s integrated tools.
+In this exercise, you will create a new workspace using the pre-deployed Fabric capacity. The workspace will be linked to a Copilot-enabled capacity, allowing you to prepare the environment for bringing in data, building models, and generating reports using Microsoft Fabric’s integrated tools.
 
 ### Task 1: Create a workspace and link with Fabric Copilot-enabled capacity
 
@@ -39,8 +39,6 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 1. Ensure **Fabric capacity (1)** is enabled, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
 
     ![works-apply.png](images1/media/12.png)
-
-    > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, apply it, and continue to the next step. 
 
     >**Note:** Close any pop-up that appears on the screen.
 
@@ -750,5 +748,6 @@ In this lab, you have completed the following exercises:
 - Used Copilot for Power BI to connect to a Fabric dataset, build and publish reports, generate DAX measures, and gain insights with natural language.
 
 ## You have successfully completed the lab!
+
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
