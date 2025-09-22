@@ -18,7 +18,29 @@ In this lab, you will complete the following exercises:
 
 In this exercise, you will activate a 60-day free trial of Microsoft Fabric and set up a new workspace. The workspace will be linked to a Copilot-enabled capacity, allowing you to prepare the environment for bringing in data, building models, and generating reports using Microsoft Fabric’s integrated tools.
 
-### Task 1: Create a workspace and link with Fabric Copilot-enabled capacity
+### Task 1: Start Free fabric trial
+ 
+In this task, you will activate the free 60-day Microsoft Fabric trial. This trial provides access to Fabric’s powerful data analytics, integration, and visualization features, enabling you to explore and work with the platform without requiring an active license.
+ 
+1. On the top right corner of the screen, select the **User icon (1)** and select **Free trial (2)**.
+ 
+    ![](images1/media/08.png)
+ 
+1. On **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
+ 
+    ![](images1/media/09.png)
+ 
+    > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
+ 
+1. **Successfully upgraded to Microsoft Fabric** dialog opens. Select **Got it**.
+ 
+    ![](images1/media/10.png)
+ 
+1. You will be navigated to the **Microsoft Fabric Home page**.
+ 
+    ![](images1/media/image-12.png)
+
+### Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
 In this task, you will create a new workspace in Microsoft Fabric to organize and manage your data and analytics assets. The workspace will be linked to a Copilot-enabled capacity, providing access to AI-powered features such as natural language queries and intelligent data insights.
 
@@ -755,6 +777,7 @@ In this lab, you have completed the following exercises:
 
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
 
 
 
