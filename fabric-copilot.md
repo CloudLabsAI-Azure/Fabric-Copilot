@@ -77,13 +77,13 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/02062025(5).png)
 
-1. You will be navigated to the newly created Lakehouse.
+1. You will be navigated to the newly created **Lakehouse**.
 
     >**Note:** If you see any pop-up tab like below you can close it for now.
 
     ![Choose data source options](images1/media/15.png)
 
-1. From the Lakehouse page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
+1. From the **Lakehouse** page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
 
     ![Lakehouse](images1/media/16.png)
     
@@ -111,7 +111,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/21.png)
 
-1. Ensure that **Lakehouse (1)** is selected as the data destination. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Save & run(2)** button from the top left.
+1. Ensure that **Lakehouse (1)** is selected as the **Data destination**. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Save & run(2)** button from the top left.
 
     ![Save and run](images1/media/saverun.png)
 
@@ -250,7 +250,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Advance editor](images1/media/image34.png)
 
-1. Select **Cancel** to close the Advanced editor, and then in the **Copilot** pane, select **Undo** to revert the changes.
+1. Select **Cancel** to close the **Advanced editor**, and then in the **Copilot** pane, select **Undo** to revert the changes.
 
     ![advancedquery](images1/media/34.png)
 
@@ -750,5 +750,6 @@ In this lab, you have completed the following exercises:
 - Used Copilot for Power BI to connect to a Fabric dataset, build and publish reports, generate DAX measures, and gain insights with natural language.
 
 ## You have successfully completed the lab!
+
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
