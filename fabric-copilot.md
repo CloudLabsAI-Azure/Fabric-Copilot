@@ -282,7 +282,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/exercise-2-img-5.png)
 
-1. Select **Save and Run** to save your data to your lake house. Select your target Lakehouse connection before saving. (Skip this step if you already saved the dataset in an earlier step.)
+1. Click the **Down arrow** next to the **Save and Run (1)** icon, and then select **Save and Run (2)** to save your data to your Lakehouse. Make sure to select your target Lakehouse connection before saving. (Skip this step if you have already saved the dataset in an earlier step.)
 
      ![advancedquery](images1/media/36.png)
 
@@ -302,19 +302,19 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     >**Note:** Wait for the tables to load up before proceeding to next steps.
 
-1. On the menu for the Fabric workshop Lakehouse, select **Open notebook -> New notebook**.
+1. On the **Fabric workshop Lakehouse**, use the menu bar to select **Open notebook (1)**, and then choose **New notebook (2)**.
 
     ![Bronze lakehouse meny](images1/media/38.png)
 
-    >**Note:** If tour pop-up appears, feel free to skip it for now by selecting **Skip tour**.
+    >**Note:** If the tour pop-up appears, you can skip it for now by selecting **Skip tour**.
 
     ![Bronze lakehouse meny](images1/media/39.png)
 
-1. At the upper left of the page, select the **Notebook 1 (1)** notebook name. Replace the name with **CopilotDemoNotebook (2)** and select **Enter** from keyboard.
+1. At the upper left of the page, select the notebook name **Notebook 1 (1)**. Replace it with **CopilotDemoNotebook (2)**, and press **Enter** on your **keyboard**.
 
     ![](images1/media/40.png)
 
-1. From the notebook menu, click on the **ellipsis (...) (1)** and select **Copilot (2)**.
+1. From the notebook menu, click the **ellipsis (...) (1)**, and then select **Copilot (2)**.
 
     ![](images1/media/41.png)
 
@@ -326,9 +326,9 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     >**Note:** As this is your first session, it may take a few minutes (around 1-2 minutes) to get started.
 
-1. Move the cursor to the lower left of the last cell in the notebook and select **+ Code** to add a new cell.
+1. Move the cursor to the lower left of the last cell in the notebook, and select **+ Code** to add a new cell.
 
-    > **Note:** If you don’t see the **+ Code** button, try hovering the mouse slightly below the last cell.
+    >**Note:** If you don’t see the + Code button, hover slightly below the last cell to reveal it.
 
     ![](images1/media/42.png)
 
@@ -775,5 +775,6 @@ In this lab, you have completed the following exercises:
 
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
 
 
