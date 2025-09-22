@@ -588,7 +588,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
 In this task, you will use DAX Query Copilot to extend your dataset with new calculations and improve documentation. Copilot will help you generate a new measure for **Total Sales after Discount** and update the description of an existing measure to ensure clarity and consistency.
 
-1. On **Power BI** from the left pane, select the **Dax query view (1)**, then **Copilot (Preview) (2).**
+1. On **Power BI** from the left pane, select the **Dax query view (1)**, then **Copilot (2).**
 
     ![](images1/media/61.1.png)
 
@@ -780,5 +780,6 @@ In this lab, you have completed the following exercises:
 
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
 
 
