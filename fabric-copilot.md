@@ -58,7 +58,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 ## Exercise 2: Explore Copilot for Data Flows
 
-In this exercise, you’ll use Microsoft Fabric Copilot to ingest, transform, and analyze data. You’ll load the Northwind dataset using Dataflow Gen2, then use Copilot in Power Query and notebooks to generate queries, summarize data, and create Python code, showcasing AI-assisted data analysis.
+In this exercise, you will use Microsoft Fabric Copilot to ingest, transform, and analyze data. You will load the Northwind dataset using Dataflow Gen2, then use Copilot in Power Query and notebooks to generate queries, summarize data, and create Python code, showcasing AI-assisted data analysis.
 
 Microsoft has integrated Copilot and other generative AI features into Fabric to introduce new ways for you to transform and analyze data, generate insights and create visualizations and reports. You must
 enable Copilot before you can use it. Copilot in Fabric is not available in all regions. In this activity, you will integrate Copilot for data analysis and visualization.
@@ -71,9 +71,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Click on **+ New item (1)** button. In the pop-up window, search for **Lakehouse (2)** in the search bar and click on **Lakehouse (3)**.
 
-    ![Lakehouse](images1/media/E214.png)
+    ![](images1/media/fabric-image8.png)
 
-1. Enter the name **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**. Tick the **Lakehouse schemas (Public Preview) (2)** checkbox, then click the **Create (3)** button.
+1. Enter the name **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**, select the **Lakehouse schemas (Public Preview) (2)** checkbox, and then click **Create (3)**.
 
     ![](images1/media/02062025(5).png)
 
@@ -83,37 +83,39 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Choose data source options](images1/media/15.png)
 
-1. From the **Lakehouse** page, select the **Get data (1)** option from the toolbar and select **New Dataflow Gen2 (2)** option.
+1. From the **Lakehouse (1)** page, select **Get data (2)** from the toolbar, and then choose **New Dataflow Gen2 (2)**.
 
-    ![Lakehouse](images1/media/16.png)
+    ![](images1/media/fabric-image9.png)
     
-1. In the Name field enter **North Wind Data (1)** and click on **Create (2)**.
+1. In the **Name** field enter **North Wind Data (1)** and click on **Create (2)**.
 
-    ![](images1/media/17.png)
+    ![](images1/media/fabric-image10.png)
 
     > **Note:** The checkbox for **Enable Git Integration, deployment pipelines and Public API scenarios** is enabled by default ensure to keep it as it is.
 
-1. On the **North Wind Data** dataflow gen2 **Home** tab, select **Get data (1)** >> **More (2)**.
+1. On the **North Wind Data** page, go to the **Home** tab, and then select **Get data (1)** > **More (2)**.
 
-    ![Get data dropdown menu options displayed.](images1/media/18.png)
+    ![](images1/media/fabric-image11.png)
 
     >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, then select **Get Data (1) > More (2).**
 
-1. In the **Choose data source** field, enter **OData (1)** to filter the possible data sources, and then select **OData (2).**
+1. In the **Choose data source field**, type **OData (1)** to filter the available data sources, and then select **OData (2)**.
 
-    ![Choose data source options](images1/media/19.png)
+    ![](images1/media/fabric-image12.png)
 
-1. In the **Connect to data source** window, under **Connection settings**, in the **URL** field, copy and paste **https://services.odata.org/V4/Northwind/Northwind.svc/** **(1)** and then select **Next (2).**
+1. In the **Connect to data source** window, under **Connection settings**, paste **https://services.odata.org/V4/Northwind/Northwind.svc/** **(1)** into the URL field, and then select **Next (2)**.
 
-    ![Connect to data source options men](images1/media/20.png)
-
+   ![](images1/media/fabric-image13.png)
+   
 1. In the **Choose Data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**, and then select **Create.** 
 
-    ![](images1/media/21.png)
+    ![](images1/media/fabric-image14.png)
 
 1. Ensure that **Lakehouse (1)** is selected as the **Data destination**. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Save & run(2)** button from the top left.
 
-    ![Save and run](images1/media/saverun.png)
+1. Ensure that **Lakehouse (1)** is selected as the **Data destination**. Hover over the **(i)** icon to view lakehouse details. To load the data, click the **Down arrow (2)** beside the **Save & run** button in the top-left corner, and then select **Save & run (3)** from the drop-down.
+
+    ![](images1/media/fabric-image15.png)
 
 1. The query should look like the following:
 
@@ -121,7 +123,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Navigate back to your workspace. Select **North Wind Data** dataflow that you have created.
 
-    ![Queries created](images1/media/23.png)
+    ![](images1/media/fabric-image16.png)
 
     > **Note:** Please wait a few minutes until **North Wind Data** **Dataflow Gen2** becomes clickable.
 
@@ -150,13 +152,13 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
     Table.SelectRows(#"Navigation 1", each [Country] = "Brazil" or [Country] = "Venezuela")
     ```
 
-1. You will now notice that the table has been updated to display only **Brazil and Venezuela (1)**. You can undo the step by selecting **Undo (2)** to revert the changes, as we want to use Copilot against the whole dataset. If the **Undo** option isn't visible, you can remove the filter by clicking the **x (3)** next to **Filter Rows**.
+1. You will now see that the table has been updated to display only **Brazil and Venezuela**. The Country column has been filtered to include only customers from Brazil and Venezuela.
+
+    ![](images1/media/fabric-image17.png)
+
+1. You can undo the step by selecting **Undo (2)** to revert the changes, as we want to use Copilot against the whole dataset. If the **Undo** option isn't visible, you can remove the filter by clicking the **x (3)** next to **Filter Rows**.
 
     ![Customers table](images1/media/exercise-2-img-45.png)
-
-1. The **Country** column has been filtered and now only includes customers from **Brazil and Venezuela**
-
-    ![Country column](images1/media/26.png)
 
 1. In the **Copilot** pane, enter **How many customers in each country?** and then select **Send**.
 
@@ -176,7 +178,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. The query outputs a list displaying the number of customers per country.
 
-    ![Query outputs](images1/media/28.png)
+    ![](images1/media/fabric-image18.png)
 
 1. You can undo the step by selecting **Undo (1)** to revert the changes, as we want to use Copilot against the whole dataset. If the **Undo** option isn't visible, you can remove the filter by clicking the **x (2)** next to **Group by**.
 
@@ -200,14 +202,14 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Select **Cancel** to exit the Advanced editor without making changes.
 
-    ![Formula used in the query.](images1/media/29.png)
+    ![](images1/media/fabric-image19.png)
 
     >**Note:** In the advance editor, the query values might be different from the screenshot mentioned.
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
-    ![](images1/media/image26.png)
-
+    ![](images1/media/fabric-image20.png)
+   
 1. In the **Copilot** pane, enter **Create a new query with data for official public holidays for Australia in 2024** and then select **Send**.
 
     ![Copilot pane](images1/media/30.png)
@@ -228,7 +230,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
-    ![](images1/media/image30.png)
+    ![](images1/media/fabric-image20.png)
 
 1. Select the **Orders** query.
 
@@ -753,5 +755,6 @@ In this lab, you have completed the following exercises:
 
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
 
 
