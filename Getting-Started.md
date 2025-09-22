@@ -119,13 +119,13 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![](images1/media/001.png)
+     ![](images1/media/fabric-image1.png)
  
 3. Now enter the following **password (1)** and click on **Sign in (2)**.
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![](images1/media/002.png)
+     ![](images1/media/fabric-image2.png)
      
 1. If you see the pop-up **Stay Signed in?**, select **Yes**.
 
@@ -133,7 +133,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
 1. On **Welcome to the Fabric view** dialog opens, click **Cancel**.
 
-   ![](images1/media/04.png)
+   ![](images1/media/fabric-image3.png)
 
 1. On **Microsoft Fabric (Free) license assigned** dialog appears, click **OK** to proceed.
 
