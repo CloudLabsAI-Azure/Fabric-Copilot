@@ -26,13 +26,13 @@ In this task, you will activate the free 60-day Microsoft Fabric trial. This tri
  
     ![](images1/media/08.png)
  
-1. On **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
+1. When **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
  
     ![](images1/media/09.png)
  
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
  
-1. **Successfully upgraded to Microsoft Fabric** dialog opens. Select **Got it**.
+1. On **Successfully upgraded to Microsoft Fabric** dialog. Select **Got it**.
  
     ![](images1/media/10.png)
  
@@ -119,19 +119,17 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, then select **Get Data (1) > More (2).**
 
-1. In the **Choose data source field**, type **OData (1)** to filter the available data sources, and then select **OData (2)**.
+1. In the **Choose data source** field, type **OData (1)** to filter the available data sources, and then select **OData (2)**.
 
     ![](images1/media/fabric-image12.png)
 
-1. In the **Connect to data source** window, under **Connection settings**, paste **https://services.odata.org/V4/Northwind/Northwind.svc/** **(1)** into the URL field, and then select **Next (2)**.
+1. In the **Connect to data source** window, under **Connection settings**, paste **https://services.odata.org/V4/Northwind/Northwind.svc/** **(1)** into the **URL** field, and then select **Next (2)**.
 
     ![](images1/media/fabric-image13.png)
    
-1. In the **Choose Data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**, and then select **Create.** 
+1. In the **Choose data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**, and then select **Create.** 
 
     ![](images1/media/fabric-image14.png)
-
-1. Ensure that **Lakehouse (1)** is selected as the **Data destination**. You can hover over the **(i)** box to see the lakehouse details. Load the data to the Lakehouse by selecting **Save & run(2)** button from the top left.
 
 1. Ensure that **Lakehouse (1)** is selected as the **Data destination**. Hover over the **(i)** icon to view lakehouse details. To load the data, click the **Down arrow (2)** beside the **Save & run** button in the top-left corner, and then select **Save & run (3)** from the drop-down.
 
@@ -224,7 +222,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/fabric-image19.png)
 
-    >**Note:** In the advance editor, the query values might be different from the screenshot mentioned.
+    >**Note:** In the Advance editor, the query values might be different from the screenshot mentioned.
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
@@ -300,7 +298,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
   
     ![](images1/media/37.1.png)
 
-    >**Note:** Wait for the tables to load up before proceeding to next steps.
+    >**Note:** Wait for the tables to load up before proceeding to the next steps.
 
 1. On the **Fabric workshop Lakehouse**, use the menu bar to select **Open notebook (1)**, and then choose **New notebook (2)**.
 
@@ -318,7 +316,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![](images1/media/41.png)
 
-    >**Note:** If tour pop-up appears, feel free to skip it for now.
+    >**Note:** If the tour pop-up appears, feel free to skip it for now.
 
 1. Click **Get Started (1)** in the Copilot tab, then select **Run cell (2)** button to initiate the session. Once the session has started, you can proceed to the next step.
 
@@ -530,7 +528,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![Lakehouse view](images1/media/49.png)
 
-1. Then, log in with the below credentials.
+1. Then, log in using the credentials provided below.
 
     - Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>**
 
@@ -560,13 +558,15 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![Customers table](images1/media/54.png)
 
-1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide(1)**, then select **"Give me an executive summary" (2)**
+1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide (1)**, then select **"Give me an executive summary" (2)**
 
     ![](images1/media/fabric-image27.png)
 
     ![](images1/media/56.png)
 
-1. Select the **Prompt Guide(1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
+   >**Note**: If you don’t get a result the first time, repeat the step by selecting **Prompt Guide (1)**, then **"Give me an executive summary" (2)** to generate the result.
+
+1. Select the **Prompt Guide (1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
 
     ![](images1/media/fabric-image28.png)
    
@@ -604,11 +604,11 @@ In this task, you will use DAX Query Copilot to extend your dataset with new cal
 
 1. Once the measure has been generated, verify it and click **Discard query** for now as it would create different code for every users.
 
-    ![](images1/media/fabric-image30.png)
+     ![](images1/media/fabric-image30.png)
 
-   >**Note:** When the **Exit Copilot?** window pops up, click **Yes** to exit.
+     >**Note:** When the **Exit Copilot?** window pops up, click **Yes** to exit.
 
-    ![](images1/media/fabric-image31.png)
+     ![](images1/media/fabric-image31.png)
 
 1. To proceed, copy the code provided below and paste it into the **query box (1)**. 
 
@@ -698,7 +698,7 @@ In this task, you will use DAX Query Copilot to extend your dataset with new cal
 
 In this task, you will explore Copilot for Power BI from a report consumer’s perspective. Copilot allows you to ask natural language questions directly within a report and receive instant insights. This helps you quickly understand data trends, summaries, and key metrics without the need to write complex queries.
 
-1. On the Lab VM, open **Microsoft Edge** from the desktop. In a new tab, navigate to **Microsoft Fabric** by copying and pasting the following URL into the address bar if not opened.
+1. Open a new tab in **Microsoft Edge**, and navigate to **Microsoft Fabric** by pasting the following **URL** into the address bar (if it is not already open).
 
     ```
     https://app.fabric.microsoft.com/
@@ -716,7 +716,7 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
     ![](images1/media/exercise-2-img-34.png)
 
-1. Select **Prompt guide(1)** then click **Summarize visual on the page(2)** to gain insights from each visual. The output you observe should resemble the example below:
+1. Select **Prompt guide (1)** then click **Summarize visual on the page (2)** to gain insights from each visual. The output you observe should resemble the example below:
 
     ![summ](images1/media/summ.png)
 
@@ -738,7 +738,7 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
         - Products include Alice Mutton, Aniseed Syrup, Boston Crab Meat, Camembert Pierrot, Carnarvon Tigers, Chai, Chang, Chartreuse verte, Chef Anton's Cajun Seasoning, Chef Anton's Gumbo Mix, Chocolade, Côte de Blaye, Escargots de Bourgogne, Filo Mix, Flotemysost, Geitost, Genen Shouyu, Gnocchi di nonna Alice, Gorgonzola Telino, Grandma's Boysenberry Spread, Gravad lax, Guaraná Fantástica, Gudbrandsdalsost, Gula Malacca, Gumbär Gummibärchen, Gustaf's Knäckebröd, Ikura, Inlagd Sill, Ipoh Coffee, Jack's New England Clam Chowder, Konbu, Lakkalikööri, Laughing Lumberjack Lager, Longlife Tofu, Louisiana Fiery Hot Pepper Sauce, Louisiana Hot Spiced Okra, Manjimup Dried Apples, Mascarpone Fabioli, Maxilaku, Mishi Kobe Niku, Mozzarella di Giovanni, Nord-Ost Matjeshering, Northwoods Cranberry Sauce, NuNuCa Nuß-Nougat-Creme, Original Frankfurter grüne Soße, Outback Lager, Pâté chinois, Pavlova, Perth Pasties, Queso Cabrales, Queso Manchego La Pastora, Raclette Courdavault, Ravioli Angelo, Rhönbräu Klosterbier, Röd Kaviar, Rogede sild, Rössle Sauerkraut, Sasquatch Ale, Schoggi Schokolade, Scottish Longbreads, Singaporean Hokkien Fried Mee, Sir Rodney's Marmalade, Sir Rodney's Scones, Sirop d'érable, Spegesild, Steeleye Stout, Tarte au sucre, Teatime Chocolate Biscuits, Thüringer Rostbratwurst, Tofu, Tourtière, Tunnbröd, Uncle Bob's Organic Dried Pears, Valkoinen suklaa, Vegie-spread, Wimmers gute Semmelknödel, and Zaanse koeken.
     ```
 
-1. Again, select **Prompt guide(1)** then click **Answer questions from leadership (2)** to prepare for your upcoming meeting with leadership. The output you observe should resemble the example below.
+1. Again, select **Prompt guide (1)** then click **Answer questions from leadership (2)** to prepare for your upcoming meeting with leadership. The output you observe should resemble the example below.
 
     ![lead](images1/media/lead.png)
 
@@ -772,7 +772,7 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
 In this lab, you have completed the following exercises:
 
-- Set Up a Workspace in Microsoft Fabric 
+- Set Up Workspace in Microsoft Fabric 
 - Used Copilot in Dataflows to load and analyze dataset with AI-assisted queries and Python code
 - Used Copilot for Power BI to connect to a Fabric dataset, build and publish reports, generate DAX measures, and gain insights with natural language.
 
@@ -780,6 +780,10 @@ In this lab, you have completed the following exercises:
 
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
+
+
+
 
 
 
