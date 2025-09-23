@@ -222,7 +222,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/fabric-image19.png)
 
-    >**Note:** In the advance editor, the query values might be different from the screenshot mentioned.
+    >**Note:** In the Advance editor, the query values might be different from the screenshot mentioned.
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
@@ -298,7 +298,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
   
     ![](images1/media/37.1.png)
 
-    >**Note:** Wait for the tables to load up before proceeding to next steps.
+    >**Note:** Wait for the tables to load up before proceeding to the next steps.
 
 1. On the **Fabric workshop Lakehouse**, use the menu bar to select **Open notebook (1)**, and then choose **New notebook (2)**.
 
@@ -316,7 +316,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![](images1/media/41.png)
 
-    >**Note:** If tour pop-up appears, feel free to skip it for now.
+    >**Note:** If the tour pop-up appears, feel free to skip it for now.
 
 1. Click **Get Started (1)** in the Copilot tab, then select **Run cell (2)** button to initiate the session. Once the session has started, you can proceed to the next step.
 
@@ -528,7 +528,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![Lakehouse view](images1/media/49.png)
 
-1. Then, log in with the below credentials.
+1. Then, log in using the credentials provided below.
 
     - Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>**
 
@@ -558,13 +558,15 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![Customers table](images1/media/54.png)
 
-1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide(1)**, then select **"Give me an executive summary" (2)**
+1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide (1)**, then select **"Give me an executive summary" (2)**
 
     ![](images1/media/fabric-image27.png)
 
     ![](images1/media/56.png)
 
-1. Select the **Prompt Guide(1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
+   >**Note**: If you don’t get a result the first time, repeat the step by selecting **Prompt Guide (1)**, then **"Give me an executive summary" (2)** to generate the result.
+
+1. Select the **Prompt Guide (1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
 
     ![](images1/media/fabric-image28.png)
    
@@ -714,7 +716,7 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
     ![](images1/media/exercise-2-img-34.png)
 
-1. Select **Prompt guide(1)** then click **Summarize visual on the page(2)** to gain insights from each visual. The output you observe should resemble the example below:
+1. Select **Prompt guide (1)** then click **Summarize visual on the page (2)** to gain insights from each visual. The output you observe should resemble the example below:
 
     ![summ](images1/media/summ.png)
 
@@ -736,7 +738,7 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
         - Products include Alice Mutton, Aniseed Syrup, Boston Crab Meat, Camembert Pierrot, Carnarvon Tigers, Chai, Chang, Chartreuse verte, Chef Anton's Cajun Seasoning, Chef Anton's Gumbo Mix, Chocolade, Côte de Blaye, Escargots de Bourgogne, Filo Mix, Flotemysost, Geitost, Genen Shouyu, Gnocchi di nonna Alice, Gorgonzola Telino, Grandma's Boysenberry Spread, Gravad lax, Guaraná Fantástica, Gudbrandsdalsost, Gula Malacca, Gumbär Gummibärchen, Gustaf's Knäckebröd, Ikura, Inlagd Sill, Ipoh Coffee, Jack's New England Clam Chowder, Konbu, Lakkalikööri, Laughing Lumberjack Lager, Longlife Tofu, Louisiana Fiery Hot Pepper Sauce, Louisiana Hot Spiced Okra, Manjimup Dried Apples, Mascarpone Fabioli, Maxilaku, Mishi Kobe Niku, Mozzarella di Giovanni, Nord-Ost Matjeshering, Northwoods Cranberry Sauce, NuNuCa Nuß-Nougat-Creme, Original Frankfurter grüne Soße, Outback Lager, Pâté chinois, Pavlova, Perth Pasties, Queso Cabrales, Queso Manchego La Pastora, Raclette Courdavault, Ravioli Angelo, Rhönbräu Klosterbier, Röd Kaviar, Rogede sild, Rössle Sauerkraut, Sasquatch Ale, Schoggi Schokolade, Scottish Longbreads, Singaporean Hokkien Fried Mee, Sir Rodney's Marmalade, Sir Rodney's Scones, Sirop d'érable, Spegesild, Steeleye Stout, Tarte au sucre, Teatime Chocolate Biscuits, Thüringer Rostbratwurst, Tofu, Tourtière, Tunnbröd, Uncle Bob's Organic Dried Pears, Valkoinen suklaa, Vegie-spread, Wimmers gute Semmelknödel, and Zaanse koeken.
     ```
 
-1. Again, select **Prompt guide(1)** then click **Answer questions from leadership (2)** to prepare for your upcoming meeting with leadership. The output you observe should resemble the example below.
+1. Again, select **Prompt guide (1)** then click **Answer questions from leadership (2)** to prepare for your upcoming meeting with leadership. The output you observe should resemble the example below.
 
     ![lead](images1/media/lead.png)
 
@@ -770,7 +772,7 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
 In this lab, you have completed the following exercises:
 
-- Set Up a Workspace in Microsoft Fabric 
+- Set Up Workspace in Microsoft Fabric 
 - Used Copilot in Dataflows to load and analyze dataset with AI-assisted queries and Python code
 - Used Copilot for Power BI to connect to a Fabric dataset, build and publish reports, generate DAX measures, and gain insights with natural language.
 
@@ -778,6 +780,7 @@ In this lab, you have completed the following exercises:
 
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
 
 
 
