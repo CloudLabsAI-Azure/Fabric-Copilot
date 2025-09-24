@@ -564,7 +564,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![](images1/media/56.png)
 
-   >**Note**: If you don’t get a result the first time, repeat the step by selecting **Prompt Guide (1)**, then **"Give me an executive summary" (2)** to generate the result.
+    >**Note**: If you don’t get a result the first time, repeat the step by selecting **Prompt Guide (1)**, then **"Give me an executive summary" (2)** to generate the result.
 
 1. Select the **Prompt Guide (1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
 
