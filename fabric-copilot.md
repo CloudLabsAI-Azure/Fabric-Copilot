@@ -19,25 +19,25 @@ In this lab, you will complete the following exercises:
 In this exercise, you will create a new workspace using the pre-deployed Fabric capacity. The workspace will be linked to a Copilot-enabled capacity, allowing you to prepare the environment for bringing in data, building models, and generating reports using Microsoft Fabric’s integrated tools.
 
 ### Task 1: Start Free fabric trial
- 
+
 In this task, you will activate the free 60-day Microsoft Fabric trial. This trial provides access to Fabric’s powerful data analytics, integration, and visualization features, enabling you to explore and work with the platform without requiring an active license.
- 
+
 1. On the top right corner of the screen, select the **User icon (1)** and select **Free trial (2)**.
- 
+
     ![](images1/media/08.png)
- 
+
 1. When **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
- 
+
     ![](images1/media/09.png)
- 
+
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
- 
+
 1. On **Successfully upgraded to Microsoft Fabric** dialog. Select **Got it**.
- 
+
     ![](images1/media/10.png)
- 
+
 1. You will be navigated to the **Microsoft Fabric Home page**.
- 
+
     ![](images1/media/image-12.png)
 
 ### Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
