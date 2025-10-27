@@ -1,6 +1,6 @@
 # Fabric Copilot
 
-## Overall Estimated Duration: 4 Hours
+## Estimated Duration: 4 Hours
 
 ## Overview
 
@@ -11,7 +11,9 @@ This hands-on lab introduces participants to Microsoft Fabric and its Copilot fe
 This lab is designed to provide participants with practical experience in utilizing Microsoft Fabric and its Copilot feature to create workspaces, ingest and transform data, and analyze data within a warehouse.
 
 - **Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace:** It introduces users to Microsoft Fabric by guiding them through the process of activating a free trial and creating their first workspace.
+
 - **Explore Copilot for Data Flows:** It provides an introduction to using Microsoft Fabric Copilot to simplify data transformation and pipeline creation. With natural language input, users can generate, edit, and manage data flows more efficiently streamlining tasks like data ingestion, mapping, and transformation without writing complex code.
+
 - **Visualizing and gaining Insights using Copilot for Power BI:** it explores how to leverage Copilot in Power BI to create reports, generate visuals, and uncover insights using natural language. It simplifies data analysis by allowing users to ask questions and build dashboards without deep technical skills, making data exploration more intuitive and accessible.
 
 ## Prerequisites
@@ -19,7 +21,9 @@ This lab is designed to provide participants with practical experience in utiliz
 Participants should have the following prerequisites:
 
 - **Basic understanding of data management and analytics:** Familiarity with data concepts and terminology will aid in navigating Microsoft Fabric's features.
+
 - **Familiarity with Microsoft 365 tools:** Experience with common Microsoft 365 applications, such as Excel and Power BI, will be beneficial.
+
 - **Knowledge of SQL and data visualization:** Understanding SQL queries and data visualization techniques will assist in executing the lab tasks effectively.
 
 ## Architecture
@@ -71,7 +75,7 @@ The architecture for this lab involves several key components:
 
 ## Getting Started with the Lab
  
-Welcome to your Fabric Copilot Workshop! We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience:
+We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
  
 ## Accessing Your Lab Environment
  
@@ -81,7 +85,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 Your virtual machine is your workhorse throughout the workshop. The **Guide** is your roadmap to success.
 
-![](images1/media/76.png)
+![](images1/media/guide1-2710.png)
 
 ## Exploring Your Lab Resources
  
@@ -97,7 +101,7 @@ For convenience, you can open the lab guide in a separate window by selecting th
  
 ## Managing Your Virtual Machine
  
-Feel free to **start, stop, or restart (1)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
+Feel free to **start, stop, or restart (2)** your virtual machine as needed from the **Resources (1)** tab. Your experience is in your hands!
 
 ![resource](images1/media/resourcetab.png)
 
@@ -125,7 +129,7 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
    - **Password:** <inject key="AzureAdUserPassword"></inject>
  
-     ![](images1/media/fabric-image2.png)
+     ![](images1/pass-2310.png)
      
 1. If you see the pop-up **Stay Signed in?**, select **Yes**.
 

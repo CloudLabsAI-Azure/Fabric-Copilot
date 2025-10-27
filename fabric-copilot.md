@@ -1,18 +1,18 @@
 # Fabric Copilot Hands-On Lab
 
-## Lab Overview
+## Overview
 
 This hands on lab provides comprehensive training on leveraging Microsoft Fabric and Copilot capabilities for data ingestion, preparation, and visualization. Participants will create and set up a Fabric workspace using the pre-deployed Fabric capacity. They will ingest datasets into the Lakehouse via Data Pipelines, explore Copilot’s AI-assisted features in Fabric notebooks, and connect to Fabric datasets to generate visualizations in Power BI using Copilot. Additionally, participants will use Copilot to write DAX queries, update measure descriptions, and optionally explore Copilot as a report consumer, gaining a solid understanding of its potential across the data and analytics workflows in Microsoft Fabric.
 
-## Lab objectives
+## Objectives
 
 In this lab, you will complete the following exercises:
 
-- Exercise 1: Getting Started with Microsoft Fabric: Set Up a Workspace
+- Exercise 1: Getting Started with Microsoft Fabric: Set Up a Workspace.
 
-- Exercise 2: Explore Copilot for Data Flows
+- Exercise 2: Explore Copilot for Data Flows.
 
-- Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
+- Exercise 3: Visualizing and gaining Insights using Copilot for Power BI.
 
 ## Exercise 1: Getting Started with Microsoft Fabric: Set Up a Workspace
 
@@ -39,6 +39,8 @@ In this task, you will activate the free 60-day Microsoft Fabric trial. This tri
 1. You will be navigated to the **Microsoft Fabric Home page**.
 
     ![](images1/media/image-12.png)
+
+    > **Note:** If the **Invite teammates to try Fabric to extend your trial** window appears, please close it.  
 
 ### Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
@@ -93,9 +95,13 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/fabric-image8.png)
 
-1. Enter the name **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**, select the **Lakehouse schemas (Public Preview) (2)** checkbox, and then click **Create (3)**.
+1. Enter the following details to create a new Lake house and click on **Create (4)**:
 
-    ![](images1/media/02062025(5).png)
+    - Name: **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)**
+    - Location: **Workspace<inject key="DeploymentID" enableCopy="false"/> (2)**
+    - Select the **Lakhouse schemas checkbox (3)**
+
+        ![](images1/media/E2T1S3-2710.png)
 
 1. You will be navigated to the newly created **Lakehouse**.
 
@@ -206,7 +212,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![order_details pane](images1/media/orderdet.png)
 
-    ![Copilot pane](images1/media/exercise-2-img-50.png)
+    ![Copilot pane](images1/media/E2T1S23.1-2710.png)
 
 1. The **Quantity** column now displays all values above 20.
 
@@ -226,11 +232,11 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
-    ![](images1/media/fabric-image20.png)
+    ![](images1/media/E2T1S28-2710.png)
    
 1. In the **Copilot** pane, enter **Create a new query with data for official public holidays for Australia in 2024** and then select **Send**.
 
-    ![Copilot pane](images1/media/30.png)
+    ![Copilot pane](images1/media/E2T1S29-2710.png)
 
     ![Table with the Query results](images1/media/31.png)
 
@@ -238,7 +244,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
-    ![Table with the Query results](images1/media/exercise-2-img-4.png)
+    ![Table with the Query results](images1/media/E2T1S31-2710.png)
 
 1. In the **Copilot** pane, enter the following text: **Create a new query with average monthly temperatures for Spain between 2022 and 2025. Display the Months in columns** and then select **Send**
 
@@ -256,7 +262,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Copilot** pane, enter the following text: **Create a new query named "Value By Delivery Country" showing the order value aggregated by shipCountry** and then select **Send**
 
-    ![](images1/media/exercise-1-img-24.png)
+    ![](images1/media/E2T1S35-2710.png)
 
 1. A table containing the **shipCountry** and **Order value aggregates** is displayed.
 
@@ -401,7 +407,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Copilot lateral pane](images1/media/44.png)
 
-    ![Copilot lateral pane](images1/media/exercise-1-img-40.png)
+    ![Copilot lateral pane](images1/media/E2T2S11.2-2710.png)
 
     >**Note:** The output may differ from what is shown in the screenshot.
 
@@ -468,7 +474,7 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     ![Notebook screen](images1/media/exercise-2-img-59.png)
 
-    **Important:** If you want to learn more about Chat-Magics, go to [Overview of chat-magics in Microsoft Fabric notebook](https://learn.microsoft.com/en-us/fabric/get-started/copilot-notebooks-chat-magics)
+    **Important:** To learn more about Chat-Magics, go to [Overview of chat-magics in Microsoft Fabric notebook](https://learn.microsoft.com/en-us/fabric/get-started/copilot-notebooks-chat-magics)
 
 # Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
 
@@ -494,13 +500,13 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     - Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>** 
    
-      ![](images1/media/exercise-1-img-49.png)
+      ![](images1/media/signin-2710.png)
      
 1. Now enter the following password and click on **Sign in**.
 
     - Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
    
-      ![](images1/media/exercise-1-img-50.png) 
+        ![](images1/pass-2310.png)
 
 1. On the **Automatically sign in to all desktop apps and websites on this device** pop-up, click on **No, this app only**.
 
@@ -550,9 +556,9 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     >**Note:** If you're unable to find Copilot, try zooming out the browser tab to 80% - it should then become visible.
 
-1. Select the workspace **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)** and click **OK (2)**.
+1. Select the workspace **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Select workspace (2)**.
 
-    ![Customers table](images1/media/53.png)
+    ![Customers table](images1/media/E3T1S14-2710.png)
 
 1. Click **Get started** in the Copilot chat window.
 
@@ -564,7 +570,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![](images1/media/56.png)
 
-    >**Note**: If you don’t get a result the first time, repeat the step by selecting **Prompt Guide (1)**, then **"Give me an executive summary" (2)** to generate the result.
+    >**Note**: If you don’t get a result the first time, repeat the steps few times by selecting **Prompt Guide (1)**, then **"Give me an executive summary" (2)** to generate the result.
 
 1. Select the **Prompt Guide (1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
 
@@ -588,25 +594,23 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
 In this task, you will use DAX Query Copilot to extend your dataset with new calculations and improve documentation. Copilot will help you generate a new measure for **Total Sales after Discount** and update the description of an existing measure to ensure clarity and consistency.
 
-1. On **Power BI** from the left pane, select the **Dax query view (1)**, then **Copilot (2).**
+1. In the **Power BI** from the left pane select the **Dax query view (1)**. Select **Copilot (Preview) (2)** then select **Suggest measures** option.
 
-    ![](images1/media/61.1.png)
+    ![](images1/media/64.png)
 
     >**Note:** Close any pop-up that appears on the screen.
 
     ![](images1/media/63.png)
-    
-1. Under **Dax query view (1)**, select **Copilot (Preview) (2)** then select **Suggest measures** option.
 
-    ![](images1/media/64.png)
-
-    >**Note:** If you get pop up something went wrong, close it and continue from step 3.
+    >**Note:** If you get pop up something went wrong, close it and continue from the next step.
 
 1. Once the measure has been generated, verify it and click **Discard query** for now as it would create different code for every users.
 
      ![](images1/media/fabric-image30.png)
 
-     >**Note:** When the **Exit Copilot?** window pops up, click **Yes** to exit.
+     >**Note:** Exit copilot by clicking on the **x** icon. When the **Exit Copilot?** window pops up, click **Yes** to exit.
+
+     ![](images1/media/close-copilot-2710.png)
 
      ![](images1/media/fabric-image31.png)
 
@@ -720,45 +724,14 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
     ![summ](images1/media/summ.png)
 
-    ```
-    The "Sales Performance" page of the Northwind Order Analysis report contains three visuals:
+    ![summ](images1/media/E3T3S4.2-2710.png)
 
-    1. **Total Sales:**
-
-        - The total sales amount is $56.5K.
-
-    2. **Sales by Region:**
-
-        - Sales are uniformly distributed across all regions listed, each with a sales amount of $56.5K.
-        - Regions include AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY.
-
-    3. **Sales by Product:**
-        - Sales are uniformly distributed across all products listed, each with a sales amount of $56.5K.
-
-        - Products include Alice Mutton, Aniseed Syrup, Boston Crab Meat, Camembert Pierrot, Carnarvon Tigers, Chai, Chang, Chartreuse verte, Chef Anton's Cajun Seasoning, Chef Anton's Gumbo Mix, Chocolade, Côte de Blaye, Escargots de Bourgogne, Filo Mix, Flotemysost, Geitost, Genen Shouyu, Gnocchi di nonna Alice, Gorgonzola Telino, Grandma's Boysenberry Spread, Gravad lax, Guaraná Fantástica, Gudbrandsdalsost, Gula Malacca, Gumbär Gummibärchen, Gustaf's Knäckebröd, Ikura, Inlagd Sill, Ipoh Coffee, Jack's New England Clam Chowder, Konbu, Lakkalikööri, Laughing Lumberjack Lager, Longlife Tofu, Louisiana Fiery Hot Pepper Sauce, Louisiana Hot Spiced Okra, Manjimup Dried Apples, Mascarpone Fabioli, Maxilaku, Mishi Kobe Niku, Mozzarella di Giovanni, Nord-Ost Matjeshering, Northwoods Cranberry Sauce, NuNuCa Nuß-Nougat-Creme, Original Frankfurter grüne Soße, Outback Lager, Pâté chinois, Pavlova, Perth Pasties, Queso Cabrales, Queso Manchego La Pastora, Raclette Courdavault, Ravioli Angelo, Rhönbräu Klosterbier, Röd Kaviar, Rogede sild, Rössle Sauerkraut, Sasquatch Ale, Schoggi Schokolade, Scottish Longbreads, Singaporean Hokkien Fried Mee, Sir Rodney's Marmalade, Sir Rodney's Scones, Sirop d'érable, Spegesild, Steeleye Stout, Tarte au sucre, Teatime Chocolate Biscuits, Thüringer Rostbratwurst, Tofu, Tourtière, Tunnbröd, Uncle Bob's Organic Dried Pears, Valkoinen suklaa, Vegie-spread, Wimmers gute Semmelknödel, and Zaanse koeken.
-    ```
 
 1. Again, select **Prompt guide (1)** then click **Answer questions from leadership (2)** to prepare for your upcoming meeting with leadership. The output you observe should resemble the example below.
 
     ![lead](images1/media/lead.png)
 
-    ```
-    The Northwind Order Analysis report provides an overview of sales performance across different products and regions. The total sales amount to 56.5K. Sales by region indicate that each region, including AK, BC, CA, Co. Cork, DF, ID, Isle of Wight, Lara, MT, NM, Nueva Esparta, OR, Québec, RJ, SP, Táchira, WA, and WY, has a uniform sales value of 56.5K.
-
-    Sales by product show a wide range of sales values. Product 38 had the highest sales at 5.9K, accounting for 10.45% of the total sales. The lowest sales were for Product 48, with a value of 71.4. Other notable products include Product 29 with sales of 3.71K and Product 59 with sales of 2.76K.
-
-    The calculated insights highlight that Product 38's sales were 8,166.67% higher than Product 48's sales. The sales values across all 77 products ranged from 71.4 to 5.9K.
-
-    ### Questions Leadership Could Ask:
-    - Why do all regions have the same sales value of 56.5K?
-    - What factors contributed to Product 38 achieving the highest sales?
-    - How can we improve sales for products with lower sales values, such as Product 48?
-    - Are there any seasonal trends or external factors affecting the sales distribution across products?
-    - What strategies can be implemented to increase overall sales performance?
-    - How do the sales figures compare to previous periods or forecasts?
-    - What are the key drivers behind the sales performance of top-selling products like Product 38 and Product 29?
-    - Are there any specific regions or products that require targeted marketing efforts?
-    ```
+    ![lead](images1/media/E3T3S5.2-2710.png)
 
 1. Ask Copilot to generate a report to monitor the current inventory by submitting the following prompt: **Create a report monitoring the product inventory.**
 
@@ -768,7 +741,7 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
 1. You can follow the prompts to generate the report. Make sure to save the report if you want to access it later with the most recent updates.
 
-## Review
+## Summary
 
 In this lab, you have completed the following exercises:
 
