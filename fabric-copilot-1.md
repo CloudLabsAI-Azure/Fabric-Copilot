@@ -6,7 +6,7 @@
 
 In this exercise, you will create a new workspace using the pre-deployed Fabric capacity. The workspace will be linked to a Copilot-enabled capacity, allowing you to prepare the environment for bringing in data, building models, and generating reports using Microsoft Fabric’s integrated tools.
 
-## Objective
+## Objectives
 
 In this exercise, you will complete the following tasks:
 
