@@ -1,4 +1,4 @@
-## Exercise 2: Explore Copilot for Data Flows
+# Exercise 2: Explore Copilot for Data Flows
 
 ## Estimated Duration: 1 Hour 30 minutes
 
@@ -407,6 +407,12 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
 
     **Important:** To learn more about Chat-Magics, go to [Overview of chat-magics in Microsoft Fabric notebook](https://learn.microsoft.com/en-us/fabric/get-started/copilot-notebooks-chat-magics)
 
+## Summary
+
+In this exercise, you have completed the following tasks:
+
+- Ingested the dataset via Data Pipelines to Lakehouse File Section
+- Explored Copilot capabilities in Fabric notebooks
 
 You have successfully completed Exercise 2. Click on **Next** from the lower right corner to move on to the next page.
 
