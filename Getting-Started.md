@@ -162,6 +162,6 @@ Learner Support Contacts:
 
 Now, click on **Next** from the lower right corner to move on to the next page.
 
-![](images1/media/overview-05.png)
+![](images1/getting-started-2.png)
 
 ## Happy Learning!
