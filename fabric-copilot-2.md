@@ -1,6 +1,6 @@
 # Exercise 2: Explore Copilot for Data Flows
 
-## Estimated Duration: 1 Hour 30 minutes
+## Estimated Duration: 2 Hours
 
 ## Lab Scenario
 
