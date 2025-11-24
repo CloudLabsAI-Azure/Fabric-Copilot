@@ -114,6 +114,20 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![](images1/media/fabric-image26.png)
 
+    >**Note:** If Copilot is unable to generate the report, follow the steps below to enable Q&A and then try creating the report again.
+
+    1. In Power BI Desktop, open **File**.
+
+       ![](images1/media/file.jpg)
+
+    2. Select **Options and Settings (1)** → **Options (2)**.
+
+       ![](images1/media/options-settings.jpg)
+    
+    3. Under **Current File**, choose **Data Load**. Scroll down to the **Q&A** section. Enable all available options.
+
+        ![](images1/media/current-file-1.png)
+    
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
 1. To view the chart clearly after generating the report, minimize the **Filters (1)**, **Visualizations (2)**, and **Data (3)** panes, and close the **Copilot Suggestions (4)** tab. 
