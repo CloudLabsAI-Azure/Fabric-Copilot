@@ -123,13 +123,13 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
  
    - **Email/Username:** <inject key="AzureAdUserEmail"></inject>
  
-     ![](images1/media/fabric-image1.png)
+       ![](images1/media/fabric-image1.png)
  
-3. Now enter the following **password (1)** and click on **Sign in (2)**.
+3. Now **Enter Temporary Access Pass** and click on **Sign in**.
  
-   - **Password:** <inject key="AzureAdUserPassword"></inject>
+   - **Temporary Access Pass:** <inject key="AzureAdUserPassword"></inject>
  
-     ![](images1/pass-2310.png)
+       ![](images1/pass-2310.png)
      
 1. If you see the pop-up **Stay Signed in?**, select **Yes**.
 

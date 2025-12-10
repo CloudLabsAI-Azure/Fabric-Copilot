@@ -1,6 +1,6 @@
 # Exercise 2: Explore Copilot for Data Flows
 
-## Estimated Duration: 2 Hours
+## Estimated Duration: 120 Minutes
 
 ## Lab Scenario
 
@@ -24,7 +24,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Click on **+ New item (1)** button. In the pop-up window, search for **Lakehouse (2)** in the search bar and click on **Lakehouse (3)**.
 
-    ![](images1/media/fabric-image8.png)
+    ![](images1/media/f3.png)
 
 1. Enter the following details to create a new Lake house and click on **Create (4)**:
 
@@ -40,9 +40,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![Choose data source options](images1/media/15.png)
 
-1. From the **Lakehouse (1)** page, select **Get data (2)** from the toolbar, and then choose **New Dataflow Gen2 (2)**.
+1. From the **Lakehouse (1)** page, select **Get data (2)** from the toolbar, and then choose **New Dataflow Gen2 (3)**.
 
-    ![](images1/media/fabric-image9.png)
+    ![](images1/media/f4.png)
     
 1. In the **Name** field enter **North Wind Data (1)** and click on **Create (2)**.
 
@@ -52,7 +52,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. On the **North Wind Data** page, go to the **Home** tab, and then select **Get data (1)** > **More (2)**.
 
-    ![](images1/media/fabric-image11.png)
+    ![](images1/media/f5.png)
 
     >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, then select **Get Data (1) > More (2).**
 
@@ -64,7 +64,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/fabric-image13.png)
    
-1. In the **Choose data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**, and then select **Create.** 
+1. In the **Choose data** window, select the following seven tables **Customers**, **Employees**, **Order_Details**, **Orders**, **Products**, **Shippers**, **Suppliers**,**(1)** and then select **Create (2).** 
 
     ![](images1/media/fabric-image14.png)
 
@@ -84,13 +84,13 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. Select the **Customers(1)** table, **scroll to the right(2)** and examine the **Country(3)** column. Notice that the countries include **Argentina** and **Mexico**.
 
-    ![Customers table](images1/media/02062025(6).png)
+    ![Customers table](images1/media/f6.png)
 
 1. On the **Power Query** toolbar, go to the **Home** tab, click the **>** option, and then select **Copilot** (if you don't see the Copilot option visible to you in the toolbar).
 
     ![Nextpowerquery](images1/media/nextpowerquery.png)
 
-    ![Copilot](images1/media/copilot.png)
+    ![Copilot](images1/media/f7.png)
 
     > **Note:** If the **Copilot** option isn’t visible, try reducing your browser's zoom level.
 
@@ -98,7 +98,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Copilot** pane enter **Only show Countries Brazil and Venezuela (1)** and then select **Send (2)**.
 
-    ![Copilto pane](images1/media/25.png)
+    ![Copilto pane](images1/media/f8.png)
 
     >**Note:** Due to the nature of Copilot, you may end up with differing results.
 
@@ -111,9 +111,9 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/fabric-image17.png)
 
-1. You can undo the step by selecting **Undo (2)** to revert the changes, as we want to use Copilot against the whole dataset. If the **Undo** option isn't visible, you can remove the filter by clicking the **x (3)** next to **Filter Rows**.
+1. You can undo the step by selecting **Undo (1)** to revert the changes, as we want to use Copilot against the whole dataset. If the **Undo** option isn't visible, you can remove the filter by clicking the **x (2)** next to **Filter Rows**.
 
-    ![Customers table](images1/media/exercise-2-img-45.png)
+    ![Customers table](images1/media/f9.png)
 
 1. In the **Copilot** pane, enter **How many customers in each country?** and then select **Send**.
 
@@ -137,7 +137,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. You can undo the step by selecting **Undo (1)** to revert the changes, as we want to use Copilot against the whole dataset. If the **Undo** option isn't visible, you can remove the filter by clicking the **x (2)** next to **Group by**.
 
-    ![Undo button on the Copilot pane ](images1/media/exercise-2-img-47.png)
+    ![Undo button on the Copilot pane ](images1/media/f10.png)
 
 1. Select the **Order_Details** query from the left pane, then in the **Copilot** pane, enter **Only keep orders whose quantities are above the median value** and then select **Send**.
 
@@ -147,7 +147,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. The **Quantity** column now displays all values above 20.
 
-    ![Quantity column results](images1/media/exercise-2-img-2.png)
+    ![Quantity column results](images1/media/f11.png)
 
 1. On the **Power Query** toolbar, on the **Home** tab, select **Advanced editor**.
 
@@ -179,13 +179,13 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. In the **Copilot** pane, enter the following text: **Create a new query with average monthly temperatures for Spain between 2022 and 2025. Display the Months in columns** and then select **Send**
 
-    ![A screenshot of a computer ](images1/media/image29.png)
+    ![A screenshot of a computer ](images1/media/f12.png)
 
     ![Copilot pane](images1/media/32.png)
 
 1. In the **Copilot** pane, select **Undo** to revert the changes.
 
-    ![](images1/media/fabric-image20.png)
+    ![](images1/media/f13.png)
 
 1. Select the **Orders** query.
 
@@ -195,7 +195,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
     ![](images1/media/E2T1S35-2710.png)
 
-1. A table containing the **shipCountry** and **Order value aggregates** is displayed.
+1. A table containing the **shipCountry** and **Total Order value aggregates** is displayed.
 
     ![Table containing the shipCountry](images1/media/33.png)
 
@@ -205,7 +205,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 1. The value of Freight is being used. Should this be the intended behavior? Review Copilot's actions to confirm.
 
-    ![Advance editor](images1/media/image34.png)
+    ![Advance editor](images1/media/f14.png)
 
 1. Select **Cancel** to close the **Advanced editor**, and then in the **Copilot** pane, select **Undo** to revert the changes.
 
@@ -231,7 +231,7 @@ In this task, you will ingest the dataset into the **Lakehouse File** section us
 
 In this task, you will explore Copilot capabilities in Fabric notebooks.
 
-1. In the **Workspace<inject key="DeploymentID" enableCopy="false"/>** Fabric workspace you created earlier, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/>** you previously created.
+1. In the **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)** Fabric workspace you created earlier, select the **lakehouse<inject key="DeploymentID" enableCopy="false"/> (2)** you previously created.
   
     ![](images1/media/37.1.png)
 
@@ -260,6 +260,10 @@ In this task, you will explore Copilot capabilities in Fabric notebooks.
     ![](images1/media/02062025(13).png)
 
     >**Note:** As this is your first session, it may take a few minutes (around 1-2 minutes) to get started.
+    
+    >**Note:** If the cell output shows **InvalidHttpRequestToLivy**, click on the **... (ellipses)** beside the lakehouse in the left panel, select **Refresh**, and then **Run Cell** again.
+    
+    ![](images1/media/f23.png)
 
 1. Move the cursor to the lower left of the last cell in the notebook, and select **+ Code** to add a new cell.
 
@@ -415,5 +419,6 @@ In this exercise, you have completed the following tasks:
 - Explored Copilot capabilities in Fabric notebooks
 
 You have successfully completed Exercise 2. Click on **Next** from the lower right corner to move on to the next page.
+
 
 ![](images1/getting-started-2.png)

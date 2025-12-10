@@ -1,6 +1,6 @@
 # Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
 
-## Estimated Duration: 1 Hour 30 minutes
+## Estimated Duration: 90 Minutes
 
 ## Lab Scenario
 
@@ -28,7 +28,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
 1. Click on **Sign in (1)** from the upper right corner of the application. Provide Email: **<inject key="AzureAdUserEmail" enableCopy="true"/> (2)** then click **Continue (3)**.
 
-    ![](images1/media/exercise-1-img-48.png)
+    ![](images1/media/f17.png)
 
 1. On the **Sign in to Microsoft** tab, you will see a login screen. Enter the following email and then click on **Next**.
 
@@ -36,19 +36,19 @@ In this task, you will connect to a Fabric dataset to access and explore structu
    
       ![](images1/media/signin-2710.png)
      
-1. Now enter the following password and click on **Sign in**.
+1. Now **Enter Temporary Access Pass** and click on **Sign in**.
 
-    - Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
+    - Temporary Access Pass: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
    
         ![](images1/pass-2310.png)
 
-1. On the **Automatically sign in to all desktop apps and websites on this device** pop-up, click on **No, this app only**.
+1. On the **Sign in to all apps, websites and services on this device?** pop-up, click on **No, this app only**.
 
-    ![](images1/media/exercise-1-img-51.png)
+    ![](images1/media/f18.png)
 
 1. Select **Blank Report** to create a new dashboard. 
 
-    ![Power BI menu](images1/media/45.1.png) 
+    ![Power BI menu](images1/media/f19.png) 
 
     >**Note:** If you receive any pop-ups, please **Close** them.
 
@@ -72,13 +72,13 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     - Email: **<inject key="AzureAdUserEmail" enableCopy="true"/>**
 
-    - Enter password: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
+    - Enter Temporary Access Pass: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
 
-1. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load:**
+1. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load (2)**
 
-    **Customers, Employees, Orders, Order_Details, Products, Shippers, Suppliers**
+    **Customers, Employees, Orders, Order_Details, Products, Shippers, Suppliers** **(1)**.
 
-    ![Targeted dataset](images1/media/50.png)
+    ![Targeted dataset](images1/media/f20.png)
 
 1. Create a real-time connection to your Lakehouse by selecting **DirectQuery (1)** then **OK (2)**.
 
@@ -116,19 +116,19 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     >**Note:** If Copilot is unable to generate the report, follow the steps below to enable Q&A and then try creating the report again.
 
-    1. In Power BI Desktop, open **File**.
+1. In Power BI Desktop, open **File**.
 
-       ![](images1/media/file.jpg)
+   ![](images1/media/file.jpg)
 
-    2. Select **Options and Settings (1)** → **Options (2)**.
+1. Select **Options and Settings (1)** → **Options (2)**.
 
-       ![](images1/media/options-settings.jpg)
+   ![](images1/media/options-settings.jpg)
     
-    3. Under **Current File**, choose **Data Load**. Scroll down to the **Q&A** section. Enable all available options.
+1. Under **Current File**, choose **Data Load**. Scroll down to the **Q&A** section. Enable all available options.
 
-        ![](images1/media/current-file-1.png)
+   ![](images1/media/current-file-1.png)
     
-    > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
+   > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
 1. To view the chart clearly after generating the report, minimize the **Filters (1)**, **Visualizations (2)**, and **Data (3)** panes, and close the **Copilot Suggestions (4)** tab. 
 
@@ -142,7 +142,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
 In this task, you will use DAX Query Copilot to extend your dataset with new calculations and improve documentation. Copilot will help you generate a new measure for **Total Sales after Discount** and update the description of an existing measure to ensure clarity and consistency.
 
-1. In the **Power BI** from the left pane select the **Dax query view (1)**. Select **Copilot (Preview) (2)** then select **Suggest measures** option.
+1. In the **Power BI** from the left pane select the **Dax query view (1)**. Select **Copilot (2)** then select **Suggest measures (3)** option.
 
     ![](images1/media/64.png)
 
@@ -212,9 +212,9 @@ In this task, you will use DAX Query Copilot to extend your dataset with new cal
    
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
-1. Navigate to the **Model view (1)** on the left pane and select the New measure **Average order value (2)** created. Navigate to the **Properties** section for the model and select **Create with Copilot (preview) (3).** Copilot generates a new measure description in a few seconds.
+1. Navigate to the **Model view (1)** on the left pane and select the New measure **Average order value (2)** created. Navigate to the **Properties** section for the model and select **Create with Copilot (3).** Copilot generates a new measure description in a few seconds.
 
-    ![](images1/media/68.png)
+    ![](images1/media/f21.png)
 
 1. Review the measure **Description** to ensure that it aligns with your model. Select **Keep it** to save the description.
 
@@ -297,5 +297,6 @@ In this exercise, you have completed the following tasks:
 - Explored Copilot for Power BI as a report consumer
 
 By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
 
 ## You have successfully completed the lab!
