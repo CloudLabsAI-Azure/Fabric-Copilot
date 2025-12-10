@@ -19,21 +19,21 @@ In this task, you will activate the free 60-day Microsoft Fabric trial. This tri
 
 1. On the top right corner of the screen, select the **User icon (1)** and select **Free trial (2)**.
 
-    ![](images1/media/08.png)
+   ![](images1/media/08.png)
 
 1. When **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
 
-    ![](images1/media/09.png)
+   ![](images1/media/09.png)
 
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
-1. On **Successfully upgraded to Microsoft Fabric** dialog. Select **Got it**.
+1. On **Successfully upgraded to Microsoft Fabric** dialog. Select **OK**.
 
-    ![](images1/media/10.png)
+   ![](images1/media/f1.png)
 
 1. You will be navigated to the **Microsoft Fabric Home page**.
 
-    ![](images1/media/image-12.png)
+   ![](images1/media/image-12.png)
 
     > **Note:** If the **Invite teammates to try Fabric to extend your trial** window appears, please close it.  
 
@@ -45,7 +45,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 1. Click **+ New workspace (2)** found at the bottom of the pop-out menu.
 
-    ![](images1/media/fabric-image4.png)
+   ![](images1/media/f2.png)
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 
@@ -57,7 +57,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 1. Ensure **Fabric capacity (1)** is chosen, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
 
-    ![](images1/media/fabric-image6.png)
+   ![](images1/media/fabric-image6.png)
 
     >**Note:** Close any pop-up that appears on the screen.
 
@@ -80,5 +80,6 @@ In this lab, you have completed the following tasks:
 - Created a workspace and linked with Fabric Copilot-enabled capacity
 
 ## You have successfully completed Exercise 1. Click on **Next** from the lower right corner to move on to the next page.
+
 
 ![](images1/getting-started-2.png)
