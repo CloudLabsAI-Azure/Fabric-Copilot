@@ -1,4 +1,4 @@
-# Fabric Copilot
+# Fabric Copilot Hands-on Lab
 
 ## Estimated Duration: 4 Hours
 
