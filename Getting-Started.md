@@ -85,7 +85,7 @@ Once you're ready to dive in, your virtual machine and lab guide will be right a
  
 Your virtual machine is your workhorse throughout the workshop. The **Guide** is your roadmap to success.
 
-![](images1/media/guide1-2710.png)
+![](images1/media/VM&LG.png)
 
 ## Exploring Your Lab Resources
  
