@@ -55,9 +55,9 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
     ![](images1/media/fabric-image5.png)
 
-1. Ensure **Fabric capacity (1)** is chosen, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Capacity**, and then click **Apply (3)**.
+1. Ensure **Fabric (1)** is chosen, verify that **capacity<inject key="DeploymentID" enableCopy="false"/> - <inject key="Region" enableCopy="false"/> (2)** is selected under **Details**, and then click **Apply (3)**.
 
-   ![](images1/media/fabric-image6.png)
+   ![](images1/media/E1T2S5.png)
 
     >**Note:** Close any pop-up that appears on the screen.
 
