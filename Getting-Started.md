@@ -4,17 +4,34 @@
 
 ## Overview
 
-This hands-on lab introduces participants to Microsoft Fabric and its Copilot features. It covers setting up a Fabric workspace, ingesting data via pipelines, using Copilot in notebooks for data transformation, and leveraging Copilot in Power BI to generate visualizations and DAX queries streamlining analytics through AI-powered assistance.
+In this hands-on lab, you will explore Microsoft Fabric and its Copilot capabilities. You will create a Fabric workspace, ingest data using pipelines, transform data using Copilot in notebooks, and generate reports using Copilot in Power BI.
+
+By the end of this lab, you will understand how AI-powered assistance streamlines analytics workflows—from data ingestion to visualization and insight generation.
 
 ## Objectives
 
-This lab is designed to provide participants with practical experience in utilizing Microsoft Fabric and its Copilot feature to create workspaces, ingest and transform data, and analyze data within a warehouse.
+**By completing this lab, you will be able to:**
 
-- **Getting Started with Microsoft Fabric: Activate Trial and Set Up a Workspace:** It introduces users to Microsoft Fabric by guiding them through the process of activating a free trial and creating their first workspace.
+- Activate a Microsoft Fabric trial and create a workspace
 
-- **Explore Copilot for Data Flows:** It provides an introduction to using Microsoft Fabric Copilot to simplify data transformation and pipeline creation. With natural language input, users can generate, edit, and manage data flows more efficiently streamlining tasks like data ingestion, mapping, and transformation without writing complex code.
+- Ingest and transform data using Dataflow Gen2 and notebooks
 
-- **Visualizing and gaining Insights using Copilot for Power BI:** it explores how to leverage Copilot in Power BI to create reports, generate visuals, and uncover insights using natural language. It simplifies data analysis by allowing users to ask questions and build dashboards without deep technical skills, making data exploration more intuitive and accessible.
+- Use Copilot to simplify data transformation tasks
+
+- Build reports and generate DAX queries using Copilot in Power BI
+
+- Analyze structured data within a warehouse environment
+
+**Key Learning Areas**
+
+- **Getting Started with Microsoft Fabric:**
+Activate a free trial and create your first workspace to manage data resources efficiently.
+
+- **Explore Copilot for Dataflows:**
+Use natural language prompts to generate, edit, and manage data pipelines. Copilot simplifies ingestion, transformation, and mapping without requiring complex code.
+
+- **Visualizing and Gaining Insights with Copilot in Power BI:**
+Create reports, generate visuals, and build DAX queries using natural language. This makes data exploration more intuitive and accessible.
 
 ## Prerequisites
 
@@ -75,7 +92,7 @@ The architecture for this lab involves several key components:
 
 ## Getting Started with the Lab
  
-We've prepared a seamless environment for you to explore and learn about Azure services. Let's begin by making the most of this experience.
+A pre-configured lab environment is available for you. Follow the steps below to access your virtual machine and begin working with Microsoft Fabric.
  
 ## Accessing Your Lab Environment
  
