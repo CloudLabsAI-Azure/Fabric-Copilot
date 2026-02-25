@@ -1,4 +1,4 @@
-# Exercise 3: Visualizing and gaining Insights using Copilot for Power BI
+# Exercise 3: Visualizing and Gaining Insights Using Copilot for Power BI
 
 ## Estimated Duration: 90 Minutes
 
