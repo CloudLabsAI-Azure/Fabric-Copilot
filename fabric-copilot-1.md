@@ -1,4 +1,4 @@
-# Exercise 1: Getting Started with Microsoft Fabric: Set Up a Workspace.
+# Exercise 1: Getting Started with Microsoft Fabric – Set Up a Workspace
 
 ## Estimated Duration: 30 minutes
 
@@ -10,14 +10,14 @@ In this exercise, you will create a new workspace using the pre-deployed Fabric 
 
 In this exercise, you will complete the following tasks:
 
-- Task 1: Start Free fabric trial
+- Task 1: Start the Microsoft Fabric Free Trial
 - Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
-## Task 1: Start Free fabric trial
+## Task 1: Start the Microsoft Fabric Free Trial
 
 In this task, you will activate the free 60-day Microsoft Fabric trial. This trial provides access to Fabric’s powerful data analytics, integration, and visualization features, enabling you to explore and work with the platform without requiring an active license.
 
-1. On the top right corner of the screen, select the **User icon (1)** and select **Free trial (2)**.
+1. In the top right corner of the screen, select the **User icon (1)** and select **Free trial (2)**.
 
    ![](images1/media/08.png)
 
@@ -75,7 +75,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 ## Summary
 
-In this lab, you have completed the following tasks:
+In this exercise, you completed the following tasks:
 - Started Free fabric trial
 - Created a workspace and linked with Fabric Copilot-enabled capacity
 
