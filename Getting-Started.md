@@ -4,9 +4,9 @@
 
 ## Overview
 
-In this comprehensive hands-on lab, you will explore Microsoft Fabric and its Copilot capabilities through practical, real-world scenarios. You will create a Fabric workspace to establish a collaborative environment, ingest data using pipelines and Dataflow Gen2 tools, transform data using Copilot-assisted notebooks with Spark processing, structure data within a data warehouse, and generate insightful reports using Copilot in Power BI with DAX query generation.
+In this comprehensive hands-on lab, you will explore Microsoft Fabric and its Copilot capabilities through practical approach. You will create a Fabric workspace to establish a collaborative environment, ingest data using pipelines and Dataflow Gen2 tools, transform data using Copilot-assisted notebooks, structure data within a data warehouse, and generate insightful reports using Copilot in Power BI with DAX query generation.
 
-By the end of this lab, you will have a solid understanding of how to leverage Microsoft Fabric's Copilot features to streamline your data analytics workflows, from data ingestion and transformation to visualization and insight generation. This hands-on experience will equip you with the skills needed to harness the full potential of Microsoft Fabric and its Copilot capabilities for your data projects.
+By the end of this lab, you will have a solid understanding of how to leverage Microsoft Fabric's Copilot features to streamline your data analytics workflows, from data ingestion and transformation to visualization and insight generation. This hands-on lab will equip you with the skills needed to harness the potential of Microsoft Fabric and its Copilot capabilities for your data projects.
 
 ## Objectives
 
