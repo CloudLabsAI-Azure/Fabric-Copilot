@@ -1,8 +1,8 @@
 # Exercise 3: Visualizing and Gaining Insights Using Copilot for Power BI
 
-## Estimated Duration: 90 Minutes
+### Estimated Duration: 90 Minutes
 
-## Lab Scenario
+## Overview
 
 In this exercise, you will use Copilot for Power BI to connect to a Microsoft Fabric dataset, generate visual reports, create and describe DAX measures, and gain insights using natural language prompts. You’ll build a report from a Lakehouse, use Copilot to summarize data, generate report content, suggest measures, and publish the report to the Power BI service. Finally, you will explore the report as a consumer, using Copilot to summarize visuals and answer leadership questions.
 
@@ -18,11 +18,11 @@ In this exercise, you will complete the following tasks:
 - Task 2: Create DAX queries and update measure descriptions using Copilot
 - Task 3: Explore Copilot for Power BI as a report consumer
 
-## Task 1: Connect to a Fabric dataset and create visualizations using Copilot
+### Task 1: Connect to a Fabric dataset and create visualizations using Copilot
 
 In this task, you will connect to a Fabric dataset to access and explore structured data. Using Microsoft Fabric Copilot, you will generate visualizations by simply describing the insights you need. This enables quick, AI-assisted data analysis and streamlined report creation.
 
-1. Launch the **Power BI** application by double clicking the desktop shortcut icon.
+1. In your LabVM, launch the Power BI Desktop application by double-clicking the **Power BI Desktop** icon on the desktop.
 
     ![](images1/media/exercise-2-img-14.png)
 
@@ -74,13 +74,21 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     - Enter Temporary Access Pass: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
 
-1. A navigator window appears to select the targeted dataset. Select the following entities and then select **Load (2)**
+    >**Note:** On the **Sign in to all apps, websites and services on this device?** pop-up, click on **No, this app only**.
 
-    **Customers, Employees, Orders, Order_Details, Products, Shippers, Suppliers** **(1)**.
+1. In the Navigator window, select the below listed tables **(1)** and then select **Load (2)** to load the data into Power BI.
 
-    ![Targeted dataset](images1/media/f20.png)
+    - Customers
+    - Employees
+    - Orders
+    - Order_Details
+    - Products
+    - Shippers
+    - Suppliers
 
-1. Create a real-time connection to your Lakehouse by selecting **DirectQuery (1)** then **OK (2)**.
+        ![Targeted dataset](images1/media/f20.png)
+
+1. On the **Connection settings** window, create a real-time connection to your Lakehouse by selecting **DirectQuery (1)** then **OK (2)**.
 
     ![](images1/media/fabric-image25.png)
 
@@ -88,9 +96,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![](images1/media/fabric-image24.png)
 
-    >**Note:** If you're unable to find Copilot, try zooming out the browser tab to 80% - it should then become visible.
-
-1. Select the workspace **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Select workspace (2)**.
+1. On the **Connect to a workspace that supports Copilot** window, select the workspace **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)** and click **Select workspace (2)**.
 
     ![Customers table](images1/media/E3T1S14-2710.png)
 
@@ -104,7 +110,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![](images1/media/56.png)
 
-    >**Note**: If you don’t get a result the first time, repeat the steps few times by selecting **Prompt Guide (1)**, then **"Give me an executive summary" (2)** to generate the result.
+    >**Note**: If you don’t get a result the first time, then select any other prompt from the **Prompt Guide (1)** first, and again select **"Give me an executive summary" (2)** to generate the result.
 
 1. Select the **Prompt Guide (1)**, then select **"Suggest content for a new report page" (2)** based on the semantic model.
 
@@ -127,7 +133,9 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 1. Under **Current File**, choose **Data Load**. Scroll down to the **Q&A** section. Enable all available options.
 
    ![](images1/media/current-file-1.png)
-    
+
+1. Close and open the **Copilot** window, and try creating the report again by selecting **Prompt Guide**, then **"Suggest content for a new report page"** based on the semantic model and then select **+ Create** under **Sales Performance**.
+
    > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
 1. To view the chart clearly after generating the report, minimize the **Filters (1)**, **Visualizations (2)**, and **Data (3)** panes, and close the **Copilot Suggestions (4)** tab. 
@@ -138,19 +146,21 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     > **Note:** Copilot’s suggestions may vary. Please proceed by creating whatever Copilot suggests, even if it differs from the example shown.
 
-## Task 2: Create DAX queries and update measure descriptions using Copilot
+### Task 2: Create DAX queries and update measure descriptions using Copilot
 
 In this task, you will use DAX Query Copilot to extend your dataset with new calculations and improve documentation. Copilot will help you generate a new measure for **Total Sales after Discount** and update the description of an existing measure to ensure clarity and consistency.
 
 1. In the **Power BI** from the left pane select the **Dax query view (1)**. Select **Copilot (2)** then select **Suggest measures (3)** option.
 
-    ![](images1/media/64.png)
+    ![](images1/media/E3T2S1-1103.png)
 
     >**Note:** Close any pop-up that appears on the screen.
 
     ![](images1/media/63.png)
 
-    >**Note:** If you get pop up something went wrong, close it and continue from the next step.
+    >**Note:** If you get pop up something went wrong, please close the Copilot pane and open it again and select **Suggest measures** again. If it still doesn't work, please close the Power BI Desktop and open it again, make sure to reperform Task 1 and then try Task 2 again.
+
+    >    ![](images1/media/E3T2S2-1103.png)
 
 1. Once the measure has been generated, verify it and click **Discard query** for now as it would create different code for every users.
 
@@ -250,21 +260,25 @@ In this task, you will use DAX Query Copilot to extend your dataset with new cal
 
 In this task, you will explore Copilot for Power BI from a report consumer’s perspective. Copilot allows you to ask natural language questions directly within a report and receive instant insights. This helps you quickly understand data trends, summaries, and key metrics without the need to write complex queries.
 
-1. Open a new tab in **Microsoft Edge**, and navigate to **Microsoft Fabric** by pasting the following **URL** into the address bar (if it is not already open).
+1. Navigate back to the Fabric portal in your browser. If you have closed the tab, open a new tab in **Microsoft Edge**, and navigate to **Microsoft Fabric** by pasting the following **URL** into the address bar.
 
     ```
     https://app.fabric.microsoft.com/
     ```
 
-1. Navigate to your workspace and then select the **Northwind Order Analysis** report. You will see the visual report displayed on the screen :
+1. From the left navigation pane, click on **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)**, then click on the report **Workspace<inject key="DeploymentID" enableCopy="false"/> (2)**
 
-    ![](images1/media/exercise-2-img-37.png)
+    ![](images1/media/E3T3S2-1103.png)
+
+1. Click on the **Northwind Order Analysis** report to open it.
+
+    ![](images1/media/E3T3S3.1-1103.png)
 
     ![](images1/media/exercise-2-img-32.png)
 
 1. Select the **Copilot** logo on the top-right and click on **Get started** to open the prompt guide. 
 
-    ![](images1/media/exercise-2-img-33.png)
+    ![](images1/media/E3T3S4.1-1103.png)
 
     ![](images1/media/exercise-2-img-34.png)
 
@@ -286,17 +300,17 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
     >**Note**: If you see a message saying "To help me respond to requests like this, turn on Q&A for this semantic model," please click it to enable Q&A. Then, paste the query again.
 
-1. You can follow the prompts to generate the report. Make sure to save the report if you want to access it later with the most recent updates.
+1. You may follow the prompts to generate the report. 
+
+1. You can also save the report to your workspace by clicking on File > Save a copy and then selecting your workspace and providing a name for the report in order to access it later.
+
+1. We encourage you to explore different prompts in the prompt guide and ask your own questions to see how Copilot can assist you in gaining insights from your data.
 
 ## Summary
 
-In this exercise, you have completed the following tasks:
-
-- Connected to a Fabric dataset and created visualizations using Copilot
-- Created DAX queries and updated measure descriptions using Copilot
-- Explored Copilot for Power BI as a report consumer
-
-By completing this lab **Fabric Copilot** , you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity (F64), you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+In this exercise, you explored how Copilot for Power BI empowers report consumers to interact with data using natural language. You connected to a published report in the Power BI service, used Copilot to summarize visuals and answer questions, and even generated a new report based on a prompt. This demonstrates how Copilot for Power BI can democratize data insights, enabling users of all skill levels to engage with data and derive value without needing to write complex queries or understand the underlying data model.
 
 
-## You have successfully completed the lab!
+By completing this **Fabric Copilot** hands-on lab, you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity, you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
+### You have successfully completed the lab!

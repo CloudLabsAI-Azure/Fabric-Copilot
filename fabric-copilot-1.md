@@ -1,8 +1,8 @@
 # Exercise 1: Getting Started with Microsoft Fabric – Set Up a Workspace
 
-## Estimated Duration: 30 minutes
+### Estimated Duration: 30 minutes
 
-## Lab Scenario
+## Overview
 
 In this exercise, you will create a new workspace using the pre-deployed Fabric capacity. The workspace will be linked to a Copilot-enabled capacity, allowing you to prepare the environment for bringing in data, building models, and generating reports using Microsoft Fabric’s integrated tools.
 
@@ -13,7 +13,7 @@ In this exercise, you will complete the following tasks:
 - Task 1: Start the Microsoft Fabric Free Trial
 - Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
-## Task 1: Start the Microsoft Fabric Free Trial
+### Task 1: Start the Microsoft Fabric Free Trial
 
 In this task, you will activate the free 60-day Microsoft Fabric trial. This trial provides access to Fabric’s powerful data analytics, integration, and visualization features, enabling you to explore and work with the platform without requiring an active license.
 
@@ -37,9 +37,9 @@ In this task, you will activate the free 60-day Microsoft Fabric trial. This tri
 
     > **Note:** If the **Invite teammates to try Fabric to extend your trial** window appears, please close it.  
 
-## Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
+### Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
-In this task, you will create a new workspace in Microsoft Fabric to organize and manage your data and analytics assets. The workspace will be linked to a Copilot-enabled capacity, providing access to AI-powered features such as natural language queries and intelligent data insights.
+In this task, you will create a new workspace and link it to the Copilot-enabled capacity that has been set up for you. 
 
 1. Now let's create a workspace with a Fabric license. Select **Workspaces** **(1)** from the left navigation bar.
 
@@ -49,7 +49,7 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 1. The **Create a workspace** dialog opens on the right side of the browser.
 
-1. Enter the name **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)**, validate that the name is available, and then click **Advanced (2)**.
+1. Enter the name as **Workspace<inject key="DeploymentID" enableCopy="false"/> (1)**, validate that the name is available, and then click **Advanced (2)**.
 
     >**Note:** Please use the workspace name provided above.
 
@@ -75,11 +75,8 @@ In this task, you will create a new workspace in Microsoft Fabric to organize an
 
 ## Summary
 
-In this exercise, you completed the following tasks:
-- Started Free fabric trial
-- Created a workspace and linked with Fabric Copilot-enabled capacity
+In this exercise, you have successfully activated the Microsoft Fabric free trial and created a new workspace linked to the Copilot-enabled capacity. This workspace will serve as the foundation for your data analytics and reporting activities in Microsoft Fabric. You are now ready to bring in data, build models, and generate insights using the powerful tools available in the platform.
 
-## You have successfully completed Exercise 1. Click on **Next** from the lower right corner to move on to the next page.
-
+#### You have successfully completed Exercise 1. Click on **Next** from the lower right corner to move on to the next page.
 
 ![](images1/getting-started-2.png)
