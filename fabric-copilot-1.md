@@ -1,6 +1,6 @@
 # Exercise 1: Getting Started with Microsoft Fabric – Set Up a Workspace
 
-### Estimated Duration: 30 minutes
+### Estimated Duration: 30 Minutes
 
 ## Overview
 
@@ -80,3 +80,4 @@ In this exercise, you have successfully activated the Microsoft Fabric free tria
 #### You have successfully completed Exercise 1. Click on **Next** from the lower right corner to move on to the next page.
 
 ![](images1/getting-started-2.png)
+
