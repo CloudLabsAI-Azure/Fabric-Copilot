@@ -310,7 +310,8 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
 In this exercise, you explored how Copilot for Power BI empowers report consumers to interact with data using natural language. You connected to a published report in the Power BI service, used Copilot to summarize visuals and answer questions, and even generated a new report based on a prompt. This demonstrates how Copilot for Power BI can democratize data insights, enabling users of all skill levels to engage with data and derive value without needing to write complex queries or understand the underlying data model.
 
+### You have successfully completed the lab!
 
 By completing this **Fabric Copilot** hands-on lab, you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity, you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
 
-### You have successfully completed the lab!
+
