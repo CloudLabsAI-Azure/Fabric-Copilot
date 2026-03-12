@@ -1,12 +1,12 @@
 # Fabric Copilot Hands-on Lab
 
-## Estimated Duration: 4 Hours
+### Estimated Duration: 4 Hours
 
 ## Overview
 
-In this hands-on lab, you will explore Microsoft Fabric and its Copilot capabilities. You will create a Fabric workspace, ingest data using pipelines, transform data using Copilot in notebooks, and generate reports using Copilot in Power BI.
+In this comprehensive hands-on lab, you will explore Microsoft Fabric and its Copilot capabilities through practical approach. You will create a Fabric workspace to establish a collaborative environment, ingest data using pipelines and Dataflow Gen2 tools, transform data using Copilot-assisted notebooks, structure data within a data warehouse, and generate insightful reports using Copilot in Power BI with DAX query generation.
 
-By the end of this lab, you will understand how AI-powered assistance streamlines analytics workflows—from data ingestion to visualization and insight generation.
+By the end of this lab, you will have a solid understanding of how to leverage Microsoft Fabric's Copilot features to streamline your data analytics workflows, from data ingestion and transformation to visualization and insight generation. This hands-on lab will equip you with the skills needed to harness the potential of Microsoft Fabric and its Copilot capabilities for your data projects.
 
 ## Objectives
 
@@ -92,7 +92,7 @@ The architecture for this lab involves several key components:
 
 ## Getting Started with the Lab
  
-A pre-configured lab environment is available for you. Follow the steps below to access your virtual machine and begin working with Microsoft Fabric.
+A pre-configured lab environment is available for you. Follow the steps below to begin working with Microsoft Fabric.
  
 ## Accessing Your Lab Environment
  
