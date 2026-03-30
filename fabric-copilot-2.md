@@ -246,13 +246,13 @@ In this task, you will explore the capabilities of Copilot in Fabric notebooks. 
 
     >**Note:** Wait for the tables to load up before proceeding to the next steps.
 
-1. On the **Lakehouse**, click on the 3 dots **(1)** in the menu bar and select **Open notebook (2)**, and then choose **New notebook (3)**.
+1. On the **Lakehouse**, click on **Open notebook (1)**, and then choose **New notebook (2)**.
 
-    ![Bronze lakehouse meny](images1/media/E2T2S2-1103.png)
+    ![Bronze lakehouse meny](images1/media/E1T2S2.png)
 
     >**Note:** If the tour pop-up appears, you can skip it for now by selecting **Skip tour**.
 
-    ![Bronze lakehouse meny](images1/media/39.png)
+    ![Bronze lakehouse meny](images1/media/E1T2S2-note.png)
 
 1. At the upper left of the page, select the notebook name **Notebook 1 (1)**. Replace it with **CopilotDemoNotebook (2)**, and press **Enter** on your **keyboard**.
 
