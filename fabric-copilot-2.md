@@ -42,9 +42,9 @@ In this task, you will create a Lakehouse in your workspace and use Dataflow Gen
 
     ![](images1/media/f4.png)
     
-1. Enter the name as **North Wind data (1)**, keep the check box for **Enable Git Integration, deployment pipelines and Public API scenarios** enabled **(2)**, and then click on **Create (3)**.
+1. Enter the name as **North Wind data (1)** and then click on **Create (2)**.
 
-    ![](images1/media/E1T1S5-1103.png)
+    ![](images1/media/fabric-ex2-1.png)
 
 1. On the **North Wind Data** page, go to the **Home (1)** tab, and then select **Get data (2)** > **More (3)**.
 
@@ -347,13 +347,15 @@ In this task, you will explore the capabilities of Copilot in Fabric notebooks. 
 
     >**Note:** During testing, 69,402,938 rows were returned.
 
-1. In the **Copilot** pane, enter the prompt **Describe the structure of the filtered_nyc_yellowtaxi_df dataframe** and then select **Enter**.
+1. In the **Copilot** pane, enter the prompt **Describe the structure of the filtered_nyc_yellowtaxi_df dataframe**, click on **+ (1)** to add the current notebook in the chat and then select **Enter (2)**.
 
-    ![Copilot lateral pane](images1/media/44.png)
+    ![Copilot lateral pane](images1/media/fabric-ex2-3.png)
+
+    >**Note:** The output may differ from what is shown in the screenshot.
 
     ![Copilot lateral pane](images1/media/E2T2S11.2-2710.png)
 
-    >**Note:** The output may differ from what is shown in the screenshot.
+    
 
     >**Warning:** Copilot for Fabric notebooks is in preview. During lab testing, we experienced mixed results when we submitted this prompt. In some cases, Copilot responds with a Python command that you can enter in a cell to describe the dataframe structure. The command should resemble the following:
 

@@ -63,6 +63,8 @@ In this task, you will create a new workspace and link it to the Copilot-enabled
 
     ![](images1/media/fabric-image7.png)
 
+    ![](images1/media/fabric-ex1-1.png)
+
     >**Note:** Wait for the Power BI Workspace to load.
 
 1. A new workspace has been created, and you will be able to navigate into this workspace. We will bring data from the different data sources into a Lakehouse and use the data from the Lakehouse to build our model and report on it.
