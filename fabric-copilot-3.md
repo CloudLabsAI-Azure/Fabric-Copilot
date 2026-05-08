@@ -46,7 +46,23 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![](images1/media/f18.png)
 
-1. Select **Blank Report** to create a new dashboard. 
+1. In Power BI Desktop, open **File**.
+
+   ![](images1/media/file.jpg)
+
+1. Select **Options and Settings (1)** → **Options (2)**.
+
+   ![](images1/media/options-settings.jpg)
+
+1. Under **GLOBAL**, Select **Preview features (1)**. Click on check box for both the Preview features - ***Q&A for live connected Analytics Services databases* AND *Connect to external semantic models shared with me* (2)**, then click on **OK (3)**.
+
+    ![](images1/media/fabric-ex3-1.png)
+
+1. A window appears to restart Power BI app, click on **OK**, close the app and reopen it again.
+
+    ![](images1/media/fabric-ex3-2.png)
+
+1. After reopening Power BI app, select **Blank Report** to create a new dashboard. 
 
     ![Power BI menu](images1/media/f19.png) 
 
