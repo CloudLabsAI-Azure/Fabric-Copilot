@@ -135,6 +135,8 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
    ```
    https://app.fabric.microsoft.com/home
    ```
+   
+   ![](images1/media/edge.png)
 
 2. On the **Enter your email, we'll check if you need to create a new account** tab, you will see the login screen, in that enter the following **email/username (1)**, and click on **Submit (2)**.
  

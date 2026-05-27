@@ -17,7 +17,7 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will activate the free 60-day Microsoft Fabric trial. This trial provides access to Fabric’s powerful data analytics, integration, and visualization features, enabling you to explore and work with the platform without requiring an active license.
 
-1. In the top right corner of the screen, select the **User icon (1)** and select **Free trial (2)**.
+1. In the top right corner of the screen, select the **User icon (1)** and select **Start trial (2)**.
 
    ![](images1/media/08.png)
 
@@ -31,11 +31,14 @@ In this task, you will activate the free 60-day Microsoft Fabric trial. This tri
 
    ![](images1/media/f1.png)
 
+1. If the **Invite teammates to try Fabric to extend your trial** window appears, please close it.  
+
+    ![](images1/media/fabric-ex1-1.png)
+
 1. You will be navigated to the **Microsoft Fabric Home page**.
 
    ![](images1/media/image-12.png)
 
-    > **Note:** If the **Invite teammates to try Fabric to extend your trial** window appears, please close it.  
 
 ### Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
@@ -62,8 +65,6 @@ In this task, you will create a new workspace and link it to the Copilot-enabled
     >**Note:** Close any pop-up that appears on the screen.
 
     ![](images1/media/fabric-image7.png)
-
-    ![](images1/media/fabric-ex1-1.png)
 
     >**Note:** Wait for the Power BI Workspace to load.
 
