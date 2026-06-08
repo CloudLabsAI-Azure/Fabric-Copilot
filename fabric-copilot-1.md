@@ -27,6 +27,10 @@ In this task, you will activate the free 60-day Microsoft Fabric trial. This tri
 
     > **Note:** The trial capacity region may differ from the one shown in the screenshot. No need to worry – simply use the default selected region, activate it, and continue to the next step.
 
+    >**Note:** If you see the message **Unable to start the Fabric Trial as the maximum number of trials for this tenant has been reached**, you can safely ignore it and continue with the lab. To confirm that Fabric Trial is already active for your account, check the top toolbar in the Fabric portal.
+
+    ![](images1/media/fabric-copilot-feedback-1.png)
+
 1. On **Successfully upgraded to Microsoft Fabric** dialog. Select **OK**.
 
    ![](images1/media/f1.png)
@@ -39,6 +43,15 @@ In this task, you will activate the free 60-day Microsoft Fabric trial. This tri
 
    ![](images1/media/image-12.png)
 
+1. After activating the Fabric Trial, ensure that you are working in the **Microsoft Fabric** experience and not the Power BI experience. You can verify this from the experience selector in the portal before proceeding with the lab.
+
+   ![](images1/media/fabric-copilot-feedback-5.png)
+
+1. If the **Power BI** experience is currently selected, click on it and choose **Fabric** from the experience selector to switch to the Microsoft Fabric portal before proceeding with the lab.
+
+   ![](images1/media/fabric-copilot-feedback-2.png)
+
+   ![](images1/media/fabric-copilot-feedback-4.png)
 
 ### Task 2: Create a workspace and link with Fabric Copilot-enabled capacity
 
@@ -83,4 +96,3 @@ In this exercise, you have successfully activated the Microsoft Fabric free tria
 #### You have successfully completed Exercise 1. Click on **Next** from the lower right corner to move on to the next page.
 
 ![](images1/getting-started-2.png)
-

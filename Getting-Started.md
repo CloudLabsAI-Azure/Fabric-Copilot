@@ -108,13 +108,13 @@ Your virtual machine is your workhorse throughout the workshop. The **Guide** is
  
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
  
-![env](images1/media/updtenv.png)
+![split](images1/media/updatedsplit.png)
  
 ## Utilizing the Split Window Feature
  
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
  
-![split](images1/media/updatedsplit.png)
+![split](images1/media/fabric-copilot-feedback-7.png)
  
 ## Managing Your Virtual Machine
  
