@@ -246,9 +246,9 @@ In this task, you will explore the capabilities of Copilot in Fabric notebooks. 
 
     >**Note:** Wait for the tables to load up before proceeding to the next steps.
 
-1. On the **Lakehouse**, click on **Open notebook (1)**, and then choose **New notebook (2)**.
+1. On the **Lakehouse** page, click **Analyze data with (1)**. From the dropdown menu, select **Notebook (2)**, and then choose **New notebook (3)** to create a new notebook.
 
-    ![Bronze lakehouse meny](images1/media/E1T2S2.png)
+    ![](images1/media/fabric-copilot-feedback-6.png)
 
     >**Note:** If the tour pop-up appears, you can skip it for now by selecting **Skip tour**.
 
