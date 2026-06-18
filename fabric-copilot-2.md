@@ -46,7 +46,7 @@ In this task, you will create a Lakehouse in your workspace and use Dataflow Gen
 
     ![](images1/media/fabric-ex2-2.png)
 
-1. On the **North Wind Data** page, go to the **Home (1)** tab, and then click the **Down arrow (2)** next to **Get data** icon then selct more **More (3)**.
+1. On the **North Wind Data** page, go to the **Home (1)** tab, and then click the **Dropdown arrow (2)** next to **Get data** icon then select **More (3)**.
 
     ![](images1/media/E1T1S6-1103.png)
 
