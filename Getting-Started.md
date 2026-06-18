@@ -2,6 +2,14 @@
 
 ### Estimated Duration: 4 Hours
 
+## Lab Scenario
+
+You are a **Data Analyst** at Contoso, a global organization that collects data from multiple business systems, including sales, operations, and customer engagement platforms. The company faces challenges with managing data across disconnected tools, performing complex transformations, and generating business insights quickly enough to support decision-making.
+
+To address these challenges, Contoso has decided to adopt **Microsoft Fabric** and leverage its **Copilot capabilities** to create a unified analytics platform. The goal is to streamline data ingestion, simplify data transformation, centralize data storage, and enable business users to generate insights more efficiently using natural language experiences.
+
+To achieve this, you will create a Microsoft Fabric workspace, ingest data using Dataflow Gen2 and pipelines, transform and analyze data using Copilot-assisted notebooks, organize structured data within a data warehouse, and build interactive reports using Copilot in Power BI. Throughout the lab, you will use Copilot to accelerate common analytics tasks, reduce manual effort, and improve productivity across the data lifecycle.
+
 ## Overview
 
 In this comprehensive hands-on lab, you will explore Microsoft Fabric and its Copilot capabilities through practical approach. You will create a Fabric workspace to establish a collaborative environment, ingest data using pipelines and Dataflow Gen2 tools, transform data using Copilot-assisted notebooks, structure data within a data warehouse, and generate insightful reports using Copilot in Power BI with DAX query generation.
