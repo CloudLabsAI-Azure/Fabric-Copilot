@@ -22,7 +22,7 @@ In this task, you will create a Lakehouse in your workspace and use Dataflow Gen
 
 1. In your Microsoft Fabric workspace created earlier, click on **+ New item (1)** button. In the pop-up window, search for **Lakehouse (2)** in the search bar and click on **Lakehouse (3)**.
 
-    ![](images1/E1T1S1-1103.png)
+    ![](images1/media/E1T1S1-1103-1.png)
 
 1. Enter the following details to create a new Lakehouse and click on **Create (4)**:
 
@@ -44,15 +44,15 @@ In this task, you will create a Lakehouse in your workspace and use Dataflow Gen
     
 1. Enter the name as **North Wind data (1)** and then click on **Create (2)**.
 
-    ![](images1/media/fabric-ex2-1.png)
+    ![](images1/media/fabric-ex2-2.png)
 
-1. On the **North Wind Data** page, go to the **Home (1)** tab, and then select **Get data (2)** > **More (3)**.
+1. On the **North Wind Data** page, go to the **Home (1)** tab, and then click the **Down arrow (2)** next to **Get data** icon then selct more **More (3)**.
 
     ![](images1/media/E1T1S6-1103.png)
 
-    >**Note:** If you don't see the **Get Data** option, it might be because your browser is zoomed in you can either zoom out the browser or in that case, then select **Get Data > More.**
+    > **Note:** If the **Get data** icon is not visible, it may be hidden due to your browser's zoom level. Zoom out the browser if necessary, then click the **down arrow** next to **Get data** and select **More**.
 
-1. In the **Choose data source** field, type **OData (1)** to filter the available data sources, and then select **OData (2)**.
+1. In the **Choose data source** window, type **OData (1)** to filter the available data sources, and then select **OData (2)**.
 
     ![](images1/media/fabric-image12.png)
 
@@ -107,7 +107,7 @@ In this task, you will create a Lakehouse in your workspace and use Dataflow Gen
 
     ![Copilto pane](images1/media/f8.png)
 
-    >**Note:** Due to the nature of Copilot, you may end up with differing results.
+    >**Note:** Due to the nature of Copilot, you may end up with different results.
 
     The desired Applied Step text is:
     ```

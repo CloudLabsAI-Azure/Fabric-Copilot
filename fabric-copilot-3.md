@@ -46,10 +46,6 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![](images1/media/f18.png)
 
-1. In Power BI Desktop, open **File**.
-
-   ![](images1/media/file.jpg)
-
 1. Select **Options and Settings (1)** → **Options (2)**.
 
    ![](images1/media/options-settings.jpg)
@@ -75,6 +71,10 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 1. Select **Get Data** **-> (1)** **More...(2)** to connect to the dataset needed for your report.
 
     ![](images1/media/48.png) 
+
+    >**Note:** If you receive any pop-up, Click on **No thanks**.
+
+    ![](images1/media/Nothanks.png) 
 
 1. Select **Microsoft Fabric (1)** and then select **Lakehouses (2) -> Connect (3)**
 
@@ -146,7 +146,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
    ![](images1/media/options-settings.jpg)
     
-1. Under **Current File**, choose **Data Load**. Scroll down to the **Q&A** section. Enable all available options.
+1. Under **Current File**, choose **Data Load (1)**. Scroll down to the **Q&A** section. Enable all available options **(2)** and click on **Ok (3)**.
 
    ![](images1/media/current-file-1.png)
 
