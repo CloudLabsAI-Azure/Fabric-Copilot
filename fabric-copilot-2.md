@@ -424,7 +424,7 @@ In this task, you will explore the capabilities of Copilot in Fabric notebooks. 
 
 ## Summary
 
-In this exercies, you have explored Microsoft Fabric Copilot capabilities in Power Query and notebooks to analyze and transform data. You used Copilot to generate queries, summarize data, and create Python code, showcasing AI-assisted data analysis. You also learned how to troubleshoot common issues with Copilot responses. This exercise provided hands-on experience with the powerful AI features integrated into Microsoft Fabric for enhanced data analytics.
+In this exercise, you have explored Microsoft Fabric Copilot capabilities in Power Query and notebooks to analyze and transform data. You used Copilot to generate queries, summarize data, and create Python code, showcasing AI-assisted data analysis. You also learned how to troubleshoot common issues with Copilot responses. This exercise provided hands-on experience with the powerful AI features integrated into Microsoft Fabric for enhanced data analytics.
 
 #### You have successfully completed Exercise 2. Click on **Next** from the lower right corner to move on to the next page.
 
