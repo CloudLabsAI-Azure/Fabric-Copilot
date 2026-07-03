@@ -42,9 +42,9 @@ In this task, you will connect to a Fabric dataset to access and explore structu
    
         ![](images1/pass-2310.png)
 
-1. On the **Sign in to all apps, websites and services on this device?** pop-up, click on **No, this app only**.
+1. On the **Sign in to all apps and websites on this device?** pop-up, click on **No, this app only**.
 
-    ![](images1/media/f18.png)
+    ![](images1/sign-in-apps.png)
 
 1. Select **Options and Settings (1)** → **Options (2)**.
 
@@ -90,7 +90,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     - Enter Temporary Access Pass: **<inject key="AzureAdUserPassword" enableCopy="true"/>**
 
-    >**Note:** On the **Sign in to all apps, websites and services on this device?** pop-up, click on **No, this app only**.
+    >**Note:** On the **Sign in to all apps and websites on this device?** pop-up, click on **No, this app only**.
 
 1. In the Navigator window, select the below listed tables **(1)** and then select **Load (2)** to load the data into Power BI.
 
@@ -116,9 +116,9 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
     ![Customers table](images1/media/E3T1S14-2710.png)
 
-1. Click **Get started** in the Copilot chat window.
+1. The copilot interface appears 
 
-    ![Customers table](images1/media/54.png)
+    ![](images1/media/copilot-interface.png)
 
 1. Once connected, let's use Copilot to summarize our data. Select the **Prompt Guide (1)**, then select **"Give me an executive summary" (2)**
 
@@ -292,11 +292,9 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
     ![](images1/media/exercise-2-img-32.png)
 
-1. Select the **Copilot** logo on the top-right and click on **Get started** to open the prompt guide. 
+1. Select the **Copilot** logo on the top-right.
 
     ![](images1/media/E3T3S4.1-1103.png)
-
-    ![](images1/media/exercise-2-img-34.png)
 
 1. Select **Prompt guide (1)** then click **Summarize visual on the page (2)** to gain insights from each visual. The output you observe should resemble the example below:
 
@@ -318,7 +316,9 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
 1. You may follow the prompts to generate the report. 
 
-1. You can also save the report to your workspace by clicking on File > Save a copy and then selecting your workspace and providing a name for the report in order to access it later.
+1. You can also save the report to your workspace by clicking on **File > Save a copy** and then selecting your workspace and providing a name for the report in order to access it later.
+
+    ![](images1/media/file-save.png)
 
 1. We encourage you to explore different prompts in the prompt guide and ask your own questions to see how Copilot can assist you in gaining insights from your data.
 
