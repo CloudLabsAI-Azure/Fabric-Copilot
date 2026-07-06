@@ -132,9 +132,15 @@ Feel free to **start, stop, or restart (2)** your virtual machine as needed from
 
 ## Lab Guide Zoom In/Zoom Out
 
-To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
+To adjust the zoom level for the environment page, click the **A↕** icon located next to the timer in the lab environment.
 
 ![](images1/media/77.png)
+
+## Resize the Virtual Machine View
+
+Use the **slider (three vertical dots)** located between the **Virtual Machine** and the **Lab Guide** panes to adjust the display size, allowing you to customize the layout based on your preference.
+
+![](images1/resize-vm-guide.png)
 
 ## Let's Get Started with Fabric Portal
  
@@ -170,9 +176,9 @@ To adjust the zoom level for the environment page, click the **A↕ : 100%** ico
 
    ![](images1/media/05.png)
 
-1. You will be navigated to the **Microsoft** **Fabric Home page**.
+1. You will be navigated to the **Power BI Home page**.
 
-   ![tour](images1/media/07.png)
+   ![tour](images1/media/power-bi-homepage.png)
 
    >**Note:** If you receive any pop-ups, please **Close** them.
 
