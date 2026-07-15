@@ -2,11 +2,15 @@
 
 ### Estimated Duration: 30 Minutes
 
-## Overview
+## 📘 Lab Scenario
+
+Contoso Retail is implementing **Microsoft Fabric** to centralize its analytics and reporting workloads. As the first step, you will prepare the environment by activating the Microsoft Fabric Free Trial (if required) and creating a workspace linked to a **Copilot-enabled Fabric capacity**, providing the foundation for subsequent data ingestion, modeling, and AI-assisted reporting tasks.
+
+## 📋  Overview
 
 In this exercise, you will create a new workspace using the pre-deployed Fabric capacity. The workspace will be linked to a Copilot-enabled capacity, allowing you to prepare the environment for bringing in data, building models, and generating reports using Microsoft Fabric’s integrated tools.
 
-## Objectives
+## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -17,9 +21,11 @@ In this exercise, you will complete the following tasks:
 
 In this task, you will activate the free 60-day Microsoft Fabric trial. This trial provides access to Fabric’s powerful data analytics, integration, and visualization features, enabling you to explore and work with the platform without requiring an active license.
 
-1. In the top right corner of the screen, select the **User icon (1)** and select **Start trial (2)**.
+1. In the top right corner of the screen, select the **User icon (1)**. Select **Start trial (2)** and click on **Fabric and PowerBI (3)**.
 
-   ![](images1/media/08.png)
+   ![](images1/media/E1T1S1i.png)
+
+   ![](images1/media/E1T1S1ii.png)
 
 1. When **Activate your 60-day free Fabric trial capacity** dialog opens. Select **Activate**.
 
@@ -31,9 +37,9 @@ In this task, you will activate the free 60-day Microsoft Fabric trial. This tri
 
     ![](images1/media/fabric-copilot-feedback-1.png)
 
-1. On **Successfully upgraded to Microsoft Fabric** dialog. Select **OK**.
+1. On **Your Fabric and Power BI trials are active** dialog. Select **OK**.
 
-   ![](images1/media/f1.png)
+   ![](images1/media/E1T1S3.png)
 
 1. If the **Invite teammates to try Fabric to extend your trial** window appears, please close it.  
 
@@ -41,7 +47,7 @@ In this task, you will activate the free 60-day Microsoft Fabric trial. This tri
 
 1. You will be navigated to the **Microsoft Fabric Home page**.
 
-   ![](images1/media/image-12.png)
+   ![](images1/media/E1T1S5.png)
 
 1. After activating the Fabric Trial, ensure that you are working in the **Microsoft Fabric** experience and not the Power BI experience. You can verify this from the experience selector in the portal before proceeding with the lab.
 

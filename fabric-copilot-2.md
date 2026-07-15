@@ -2,14 +2,19 @@
 
 ### Estimated Duration: 120 Minutes
 
-## Overview
+## 📘 Lab Scenario
+
+Contoso Retail has consolidated its sales data into Microsoft Fabric and wants to accelerate data preparation and analysis using AI-powered capabilities. As a data analyst, you will use **Microsoft Fabric Copilot** to ingest the Northwind dataset with Dataflow Gen2, transform data using Copilot in Power Query, and leverage Copilot in notebooks to generate queries, summarize data, and create Python code for efficient data analysis and insight generation.
+
+
+## 📋 Overview
 
 In this exercise, you will use Microsoft Fabric Copilot to ingest, transform, and analyze data. You will load the Northwind dataset using Dataflow Gen2, then use Copilot in Power Query and notebooks to generate queries, summarize data, and create Python code, showcasing AI-assisted data analysis.
 
 Microsoft has integrated Copilot and other generative AI features into Fabric to introduce new ways for you to transform and analyze data, generate insights and create visualizations and reports. You must
 enable Copilot before you can use it. Copilot in Fabric is not available in all regions. In this activity, you will integrate Copilot for data analysis and visualization.
 
-## Objectives
+## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -349,7 +354,7 @@ In this task, you will explore the capabilities of Copilot in Fabric notebooks. 
 
 1. In the **Copilot** pane, enter the prompt **Describe the structure of the filtered_nyc_yellowtaxi_df dataframe**, click on **+ (1)** to add the current notebook in the chat and then select **Enter (2)**.
 
-    ![Copilot lateral pane](images1/media/fabric-ex2-3.png)
+    ![Copilot lateral pane](images1/media/E2T2S11.png)
 
     >**Note:** The output may differ from what is shown in the screenshot.
 

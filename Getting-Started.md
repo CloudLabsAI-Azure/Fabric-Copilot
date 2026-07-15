@@ -2,7 +2,7 @@
 
 ### Estimated Duration: 4 Hours
 
-## Lab Scenario
+## 📘 Lab Scenario
 
 You are a **Data Analyst** at Contoso, a global organization that collects data from multiple business systems, including sales, operations, and customer engagement platforms. The company faces challenges with managing data across disconnected tools, performing complex transformations, and generating business insights quickly enough to support decision-making.
 
@@ -10,13 +10,13 @@ To address these challenges, Contoso has decided to adopt **Microsoft Fabric** a
 
 To achieve this, you will create a Microsoft Fabric workspace, ingest data using Dataflow Gen2 and pipelines, transform and analyze data using Copilot-assisted notebooks, organize structured data within a data warehouse, and build interactive reports using Copilot in Power BI. Throughout the lab, you will use Copilot to accelerate common analytics tasks, reduce manual effort, and improve productivity across the data lifecycle.
 
-## Overview
+## 📖 Overview
 
 In this comprehensive hands-on lab, you will explore Microsoft Fabric and its Copilot capabilities through practical approach. You will create a Fabric workspace to establish a collaborative environment, ingest data using pipelines and Dataflow Gen2 tools, transform data using Copilot-assisted notebooks, structure data within a data warehouse, and generate insightful reports using Copilot in Power BI with DAX query generation.
 
 By the end of this lab, you will have a solid understanding of how to leverage Microsoft Fabric's Copilot features to streamline your data analytics workflows, from data ingestion and transformation to visualization and insight generation. This hands-on lab will equip you with the skills needed to harness the potential of Microsoft Fabric and its Copilot capabilities for your data projects.
 
-## Objectives
+## 🎯 Objectives
 
 **By completing this lab, you will be able to:**
 
@@ -41,7 +41,7 @@ Use natural language prompts to generate, edit, and manage data pipelines. Copil
 - **Visualizing and Gaining Insights with Copilot in Power BI:**
 Create reports, generate visuals, and build DAX queries using natural language. This makes data exploration more intuitive and accessible.
 
-## Prerequisites
+## ⚙️ Prerequisites
 
 Participants should have the following prerequisites:
 
@@ -51,16 +51,16 @@ Participants should have the following prerequisites:
 
 - **Knowledge of SQL and data visualization:** Understanding SQL queries and data visualization techniques will assist in executing the lab tasks effectively.
 
-## Architecture
+## 🏗️ Architecture
 
 The architecture for the **Microsoft Fabric with Copilot** lab enables end-to-end data integration, analytics, and visualization workflows using Fabric's advanced tools and AI capabilities. It begins with creating a dedicated **workspace** to manage resources and collaborate effectively. **Data ingestion** is facilitated through **pipelines** and **Spark-powered** notebooks, storing data in a **Lakehouse** for analysis. Structured data is processed in a **data warehouse**, where **tables** and **data models** are created for efficient querying and reporting. **Fabric Copilot** enhances automation by enabling natural language interactions for data ingestion, transformation, and report generation. This streamlined architecture provides scalability, productivity, and actionable insights, supporting complex data engineering and analytics scenarios.
 
 
-## Architecture Diagram
+## 🏗️ Architecture Diagram
 
 ![arch](images1/media/fabar.png)
 
-## Explanation of Components
+## 🔍 Explanation of Components
 
 The architecture for this lab involves several key components:
 
@@ -98,7 +98,7 @@ The architecture for this lab involves several key components:
 
 - **Storage Account:** It is a Azure cloud-based service for storing and accessing data objects like blobs, files, queues, and tables, supporting both structured and unstructured data.
 
-## Getting Started with the Lab
+## 🚀 Getting Started with the Lab
  
 A pre-configured lab environment is available for you. Follow the steps below to begin working with Microsoft Fabric.
  
