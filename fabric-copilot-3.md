@@ -2,7 +2,11 @@
 
 ### Estimated Duration: 90 Minutes
 
-## Overview
+## 📘 Lab Scenario
+
+Contoso's leadership team requires interactive dashboards to monitor business performance and make data-driven decisions. As a business analyst, you will use **Copilot for Power BI** to connect to a Microsoft Fabric dataset, generate reports and DAX measures, create AI-assisted visualizations, publish the report to the Power BI service, and use natural language prompts to summarize insights and answer business questions.
+
+## 📋 Overview
 
 In this exercise, you will use Copilot for Power BI to connect to a Microsoft Fabric dataset, generate visual reports, create and describe DAX measures, and gain insights using natural language prompts. You’ll build a report from a Lakehouse, use Copilot to summarize data, generate report content, suggest measures, and publish the report to the Power BI service. Finally, you will explore the report as a consumer, using Copilot to summarize visuals and answer leadership questions.
 
@@ -10,7 +14,7 @@ Let's leverage Copilot for Power BI to create interactive reports using curated 
 
 **Power BI:** This integration incorporates generative AI to automatically build reports based on topics you select or prompts you create.
 
-## Objectives
+## 🎯 Objectives
 
 In this exercise, you will complete the following tasks:
 
@@ -48,7 +52,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
 1. Select **Options and Settings (1)** → **Options (2)**.
 
-   ![](images1/media/options-settings.jpg)
+   ![](images1/media/E3T1S6.png)
 
 1. Under **GLOBAL**, Select **Preview features (1)**. Click on check box for both the Preview features - ***Q&A for live connected Analytics Services databases* AND *Connect to external semantic models shared with me* (2)**, then click on **OK (3)**.
 
@@ -78,7 +82,7 @@ In this task, you will connect to a Fabric dataset to access and explore structu
 
 1. Select **Microsoft Fabric (1)** and then select **Lakehouses (2) -> Connect (3)**
 
-    ![Get Data menu](images1/media/exercise-1-img-53.png)
+    ![Get Data menu](images1/media/E3T1S11.png)
 
 1. Select the **lakehouse<inject key="DeploymentID" enableCopy="false"/> (1)** created in the earlier exercise and select **Connect to SQL endpoint (3)** by selecting the arrow next to **Connect (2)**.
 
@@ -326,6 +330,8 @@ In this task, you will explore Copilot for Power BI from a report consumer’s p
 
 In this exercise, you explored how Copilot for Power BI empowers report consumers to interact with data using natural language. You connected to a published report in the Power BI service, used Copilot to summarize visuals and answer questions, and even generated a new report based on a prompt. This demonstrates how Copilot for Power BI can democratize data insights, enabling users of all skill levels to engage with data and derive value without needing to write complex queries or understand the underlying data model.
 
-### You have successfully completed the lab!
+## Conclusion
 
 By completing this **Fabric Copilot** hands-on lab, you gained hands-on experience in building AI-assisted data analytics workflows. Beginning with activating free trial of Microsoft Fabric and creating a workspace linked to Copilot-enabled capacity, you ingest datasets into the Lakehouse using Data Pipelines and Dataflow Gen2. Leveraging Copilot in Power Query and notebooks, you generate queries, summarize data, and create Python code for AI-assisted analysis. You then connect to Fabric datasets in Power BI, where Copilot helps generate visualizations, write DAX queries, and update measure descriptions. Finally, you publish interactive reports, explore them as a consumer with Copilot-driven insights, and experience how Microsoft Fabric integrates generative AI to transform data preparation, analysis, and visualization into a streamlined, intelligent workflow.
+
+### You have successfully completed the lab!
